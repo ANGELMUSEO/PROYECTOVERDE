@@ -481,3 +481,123 @@ video {
 	width: 100%;
 	display: block;
 }
+
+/*cambio zonas verdes NATA*/
+
+/* 1000: Estilos base y contenedores */
+.zv-1000-bg-azul-oscuro {
+  background-color: #1e3a8a;
+}
+
+/* 2000: Componente zona verde base */
+.zv-2000-zona-verde {
+  position: relative;
+  min-height: 250px;
+  height: 100%;
+  max-height: 300px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  perspective: 1000px;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --bg-image: url(../img/verdes/campillin.jpg);
+}
+
+
+/* 2100: Pseudo-elementos y efectos de fondo */
+.zv-2000-zona-verde::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(-20px) scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+/* 2200: Efectos hover */
+.zv-2000-zona-verde:hover {
+  transform: scale(1.03) rotateY(-5deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.zv-2000-zona-verde:hover::before {
+  transform: translateZ(-10px) scale(1.1);
+}
+
+/* 3000: Contenido de la zona verde */
+.zv-3000-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, 
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  color: white;
+  transform: translateZ(20px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* 3100: Efectos hover del contenido */
+.zv-2000-zona-verde:hover .zv-3000-content {
+  opacity: 1;
+  transform: translateZ(30px);
+}
+
+/* 4000: Tipografía y textos */
+.zv-4000-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* 5000: Botones y controles */
+.zv-5000-btn {
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.zv-5000-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* 6000: Media Queries */
+@media (max-width: 576px) {
+  .zv-2000-zona-verde {
+      min-height: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .zv-2000-zona-verde {
+      min-height: 280px;
+  }
+}
+
+.fondoCampillin{
+  --bg-image: url(../img/verdes/campillin.jpg);
+}
+.fondoRodriga{
+  --bg-image: url(../img/verdes/larodrigamejorada.jpg);
+}
+.fondoSantullano{
+  --bg-image: url(../img/verdes/santullano.jpg);
+}
+.fondoSanPedroArco{
+  --bg-image: url(../img/verdes/sanpedroarcos.jpg);
+}
+.fondoPistaFilandesa{
+  --bg-image: url(../img/verdes/pista-finlandesa.jpg);
+}
+.fondoRioNora{
+  --bg-image: url(../img/verdes/Meandros-del-Nora-Rañeces.jpg);
+}
