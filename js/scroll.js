@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.bindEvents();
         },
 
-        // Vinculación de eventos
+        // Vinculación de eventos D
         bindEvents: function() {
             this.elements.zonas.forEach(zona => {
                 zona.addEventListener('mousemove', this.handleMouseMove.bind(this));
