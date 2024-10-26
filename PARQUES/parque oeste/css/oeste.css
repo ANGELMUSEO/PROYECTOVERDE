@@ -1,0 +1,280 @@
+/* Parque del Oeste - General */ 
+/* Desarrollo efecto parallax oeste principal*/
+.parallaxcovi {
+    background-image: url(../img/alargadas/oes-a-\ \(11\).jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* Historia */ 
+.baner-g{
+    background-image: url("../img/banner/oes-b-\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+/* Desarrollo efecto parallax*/
+.parallax-gema {
+    background-image: url(../img/alargadas/oes-a-\ \(11\).jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* clases personalizadas Historia */
+.baner-g1{
+    background-image: url("../img/banner/oes-b-\ \(9\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.efecto-h{
+    opacity: 90%;
+  }
+  .efecto-h:hover{
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: 0.5s ;
+  }
+  .abetos-g{
+    background-image: url("../img/alargadas/oes-a-\ \(7\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+
+/* Naturaleza */ 
+
+.text-size {
+    font-size: x-large;
+}
+
+.baner {
+    background-image: url(../img/alargadas/oes-a-\ \(16\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sombra-card {
+    box-shadow: 7px 7px 5px grey;
+}
+
+.sombra-text {
+    text-shadow: 5px 5px 3px black;
+}
+
+.border-banner {
+    border-radius: 20px;
+    border: grey solid 2px;
+}
+
+.galeria1 {
+    background-image: url(../img/cuadradas/pur-c-11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.galeria2 {
+    background-image: url(../img/cuadradas/pur-c-18.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.galeria3 {
+    background-image: url(../img/cuadradas/pur-c-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.galeria4 {
+    background-image: url(../img/cuadradas/pur-c-15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.abetos {
+    background-image: url("../img/alargadas/oes-a-\ \(17\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.border-azul-oscuro {
+    border-radius: 20px;
+    border: #0b2c56 solid 2px;
+}
+
+/* esta es la animación de la imagen redonda grande y 3 más pequeñas */
+.imagen:hover {
+    transform: scale(1.3, 1.3);
+    transition: 0.5s;
+}
+
+/* Efecto parallax */
+.parallax-naturaleza {
+    background-image: url(../img/banner/oes-b-\ \(6\).jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* para el efecto de las card que se agranda y tiene sombra */
+
+.video-sombra{
+    box-shadow: -7px -7px 5px grey;
+    border-radius: 20px;
+}
+
+/*css baner de arboreto*/
+.arboreto{
+
+    background-image: url(../img/banner/oes-a-\ \(17\).jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+
+
+/* Deporte */ 
+
+.parallax {
+
+    background-image: url(../img/baner/foto\ 1900x1200.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+    
+    
+.parallax2 {
+
+    background-image: url('../img/alargadas/oes-a-\ \(25\).jpg');
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.deportes {
+
+    background-image: url(../img/cuadradas/oes-c-\ \(60\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.imagen{
+
+    transition: 0.6s ;
+        
+}
+        
+.imagen:hover{
+    transform: scale(1.02,1.02);  
+    transition: 0.6s;
+    box-shadow: 5px 5px 25px;  
+}
+        
+.baner{ box-shadow: 10px 10px 8px black , 20px 20px 18px silver ;}
+.card1{box-shadow: -6px -6px 1px rgba(0, 81, 255, 0)  }
+.borde{
+        
+    border-radius: 15px;
+    box-shadow: 15px 15px 20px grey;
+    
+    }
+
+
+
+.banner-deportes{
+
+    background-image: url(../img/banner/oes-b-\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.caja{
+ 
+    position: relative;
+
+}
+
+.text-banner{
+
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    color: white;
+    font-size: 20pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 6px 6px 3px black;
+}
+
+.text-banner-2{
+
+    position: absolute;
+    top: 220px;
+    left: 40px;
+    color: white;
+    font-size: 27pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 6px 6px 3px black;
+}
+
+.text-banner-3{
+
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    color: white;
+    font-size: 30pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 6px 6px 3px black;
+
+}
+
+.text-banner-4{
+
+    position: absolute;
+    top: 170px;
+    left: 350px;
+    color: white;
+    font-size: 40pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 6px 6px 3px black;
+
+    
+
+}
+
+.text-banner-5{
+
+    position: absolute;
+    top: 100px;
+    right: 60px;
+    color: white;
+    font-size: 10pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 6px 6px 3px black;
+
+}
+
+
+
+
+/* Otros */
+
