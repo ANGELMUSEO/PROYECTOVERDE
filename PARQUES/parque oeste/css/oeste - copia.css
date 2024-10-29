@@ -1,4 +1,4 @@
-
+/* Parque del Oeste - General */ 
 /* Desarrollo efecto parallax oeste principal*/
 .parallaxcovi {
     background-image: url(../img/alargadas/oes-a-\ \(11\).jpg);
@@ -12,7 +12,12 @@
 
 
 /* Historia */ 
-
+.baner-g{
+    background-image: url("../img/banner/oes-b-\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
 /* Desarrollo efecto parallax*/
 .parallax-gema {
     background-image: url(../img/alargadas/oes-a-\ \(11\).jpg);
@@ -29,7 +34,14 @@
     background-size: cover;
     border-radius: 20px;
 }
-
+.efecto-h{
+    opacity: 90%;
+  }
+  .efecto-h:hover{
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: 0.5s ;
+  }
   .abetos-g{
     background-image: url("../img/alargadas/oes-a-\ \(7\).jpg");
     background-repeat: no-repeat;
@@ -39,6 +51,9 @@
 
 /* Naturaleza */ 
 
+.text-size {
+    font-size: x-large;
+}
 
 .baner {
     background-image: url(../img/alargadas/oes-a-\ \(16\).jpg);
@@ -46,14 +61,25 @@
     background-size: cover;
 }
 
+.sombra-card {
+    box-shadow: 7px 7px 5px grey;
+}
 
+.sombra-text {
+    text-shadow: 5px 5px 3px black;
+}
 
 .border-banner {
     border-radius: 20px;
     border: grey solid 2px;
 }
 
+.galeria1 {
+    background-image: url(../img/cuadradas/pur-c-11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
 
 .galeria2 {
     background-image: url(../img/cuadradas/pur-c-18.jpg);
@@ -85,8 +111,11 @@
     border: #0b2c56 solid 2px;
 }
 
-
-
+/* esta es la animación de la imagen redonda grande y 3 más pequeñas */
+.imagen:hover {
+    transform: scale(1.3, 1.3);
+    transition: 0.5s;
+}
 
 /* Efecto parallax */
 .parallax-naturaleza {
@@ -98,7 +127,12 @@
     background-size: cover;
 }
 
+/* para el efecto de las card que se agranda y tiene sombra */
 
+.video-sombra{
+    box-shadow: -7px -7px 5px grey;
+    border-radius: 20px;
+}
 
 /*css baner de arboreto*/
 .arboreto{
@@ -108,11 +142,7 @@
      background-size: cover;
  }
 
- .sombraArboreto{
-    box-shadow: 3px 3px 3px rgb(103, 102, 102);
-    border-radius: 10px;
-    border: 2px black;
-}
+
 
 /* Deporte */ 
 
@@ -147,8 +177,19 @@
 
 }
 
-       
+.imagen{
 
+    transition: 0.6s ;
+        
+}
+        
+.imagen:hover{
+    transform: scale(1.02,1.02);  
+    transition: 0.6s;
+    box-shadow: 5px 5px 25px;  
+}
+        
+.baner{ box-shadow: 10px 10px 8px black , 20px 20px 18px silver ;}
 .card1{box-shadow: -6px -6px 1px rgba(0, 81, 255, 0)  }
 .borde{
         
