@@ -57,96 +57,103 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* zonas verdes*/
-  // IIFE para encapsular el código y evitar contaminación global
-  (function() {
-    //  para la aplicación
-    const ZonasVerdesApp = {
-        // Configuración
-        config: {
-            selectorZona: '.zv-2000-zona-verde',
-            transformDuration: 300, // ms
-        },
+  /**
+         * IIFE para encapsular el código y evitar contaminación del scope global
+         */
+   (() => {
+    /**
+     * Clase principal para manejar la interactividad de las zonas verdes
+     */
+    class ZonasVerdes {
+        constructor() {
+            // Selecciona todas las tarjetas de zonas verdes
+            this.cards = document.querySelectorAll('.zv-2000-zona-verde');
+            this.init();
+        }
 
-        // Cache de elementos DOM
-        elements: {
-            zonas: null
-        },
-
-        // Estado de la aplicación
-        state: {
-            isTransitioning: false
-        },
-
-        // Inicialización
-        init: function() {
-            this.elements.zonas = document.querySelectorAll(this.config.selectorZona);
-            this.bindEvents();
-        },
-
-        // Vinculación de eventos D
-        bindEvents: function() {
-            this.elements.zonas.forEach(zona => {
-                zona.addEventListener('mousemove', this.handleMouseMove.bind(this));
-                zona.addEventListener('mouseleave', this.handleMouseLeave.bind(this));
-                zona.addEventListener('touchstart', this.handleTouchStart.bind(this));
-                zona.addEventListener('touchend', this.handleTouchEnd.bind(this));
+        /**
+         * Inicializa los event listeners para cada tarjeta
+         */
+        init() {
+            this.cards.forEach(card => {
+                card.addEventListener('mouseenter', this.handleMouseEnter.bind(this));
+                card.addEventListener('mouseleave', this.handleMouseLeave.bind(this));
+                card.addEventListener('mousemove', this.handleMouseMove.bind(this));
+                card.addEventListener('touchstart', this.handleTouchStart.bind(this), { passive: true });
+                card.addEventListener('touchend', this.handleTouchEnd.bind(this));
             });
-        },
+        }
 
-        // Manejadores de eventos
-        handleMouseMove: function(e) {
-            if (this.state.isTransitioning) return;
+        /**
+         * Maneja el evento de entrada del mouse
+         * Elimina la transición para movimiento suave
+         */
+        handleMouseEnter(e) {
+            const card = e.currentTarget;
+            card.style.transition = 'none';
+        }
 
-            const zona = e.currentTarget;
-            const rect = zona.getBoundingClientRect();
+        /**
+         * Maneja el evento de salida del mouse
+         * Restaura la transición y resetea la transformación
+         */
+        handleMouseLeave(e) {
+            const card = e.currentTarget;
+            card.style.transition = 'all 0.5s ease';
+            card.style.transform = 'perspective(1000px) scale(1)';
+        }
+
+        /**
+         * Maneja el movimiento del mouse
+         * Calcula y aplica la rotación 3D basada en la posición del cursor
+         */
+        handleMouseMove(e) {
+            const card = e.currentTarget;
+            const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
             
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
+
+            // Calcula la rotación basada en la distancia desde el centro
+            const rotateX = ((y - centerY) / 20) * -1;
+            const rotateY = (x - centerX) / 20;
             
-            const rotateX = ((y - centerY) / 0) * -1;
-            const rotateY = (x - centerX) / 0;
-            
-            this.applyTransform(zona, rotateX, rotateY);
-        },
-
-        handleMouseLeave: function(e) {
-            this.resetTransform(e.currentTarget);
-        },
-
-        handleTouchStart: function(e) {
-            // Prevenir el scroll mientras se toca la tarjeta
-            e.preventDefault();
-            const zona = e.currentTarget;
-            this.applyTransform(zona, 0, -5); // Efecto sutil al tocar
-        },
-
-        handleTouchEnd: function(e) {
-            this.resetTransform(e.currentTarget);
-        },
-
-        // Utilidades
-        applyTransform: function(element, rotateX, rotateY) {
-            element.style.transform = `
+            // Aplica la transformación 3D
+            card.style.transform = `
+                perspective(1000px)
                 scale(1.03)
                 rotateX(${rotateX}deg)
                 rotateY(${rotateY}deg)
             `;
-        },
-
-        resetTransform: function(element) {
-            this.state.isTransitioning = true;
-            element.style.transform = 'scale(1) rotateX(0) rotateY(0)';
-            
-            setTimeout(() => {
-                this.state.isTransitioning = false;
-            }, this.config.transformDuration);
         }
-    };
 
-    // Inicializar la aplicación cuando el DOM esté listo
+        /**
+         * Maneja el inicio del toque en dispositivos táctiles
+         * Añade una clase para efectos táctiles específicos
+         */
+        handleTouchStart(e) {
+            const card = e.currentTarget;
+            card.classList.add('touched');
+        }
+
+        /**
+         * Maneja el fin del toque en dispositivos táctiles
+         * Elimina la clase de toque después de un delay
+         */
+        handleTouchEnd(e) {
+            const card = e.currentTarget;
+            setTimeout(() => {
+                card.classList.remove('touched');
+            }, 300);
+        }
+    }
+
+    /**
+     * Inicializa la aplicación cuando el DOM está completamente cargado
+     */
     document.addEventListener('DOMContentLoaded', () => {
-        ZonasVerdesApp.init();
+        new ZonasVerdes();
     });
 })();
