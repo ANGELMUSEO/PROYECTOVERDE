@@ -486,6 +486,13 @@ video {
 	display: block;
 }
 
+.sombraArboreto{
+  box-shadow: 3px 3px 3px rgb(103, 102, 102);
+  border-radius: 10px;
+  border: 2px black;
+}
+
+
 /*cambio zonas verdes NATA*/
 
 /* 1000: Estilos base y contenedores 
@@ -519,7 +526,7 @@ video {
       .zv-1000-bg-azul-oscuro {
           background-color: var(--primary-blue);
           width: 100%;
-          min-height: 50vh;
+         
       }
 
       /**
