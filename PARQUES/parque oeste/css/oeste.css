@@ -74,7 +74,7 @@
     background-size: cover;
 }
 
-.abetos {
+.abetosNew {
     background-image: url("../img/alargadas/oes-a-\ \(17\).jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +89,7 @@
 
 
 /* Efecto parallax */
-.parallax-naturaleza {
+.parallax-naturalezaNew {
     background-image: url(../img/banner/oes-b-\ \(6\).jpg);
     min-height: 1000px;
     background-attachment: fixed;
@@ -128,7 +128,7 @@
 }
     
     
-.parallax2 {
+.parallaxNew2 {
 
     background-image: url('../img/alargadas/oes-a-\ \(25\).jpg');
     min-height: 1000px;
@@ -139,7 +139,7 @@
 
 }
 
-.deportes {
+.deportesNew {
 
     background-image: url(../img/cuadradas/oes-c-\ \(60\).jpg);
     background-size: cover;
