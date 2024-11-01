@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque de Invierno</title>
+    <!-- Ultima Compilación simplificada CSS 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/invierno.css" type="text/css">
+    
+    <link rel="stylesheet" href="../../../css/general.css" type="text/css">
+    <!--Links para video-->
+    
+   
+   <!-- jQuery js -->
+    <script src="../js/invierno.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+    <link rel="icon" type="image/x-icon" href="../../../img/iconos/favicom.ico">
+
+</head>
+
+<body>
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          Barra de navegacion  navbar
+    ---------------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-azul-oscuro navbar-dark sticky-top ">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand ms-3" href="../../../index.html"><img class="p-1" width="210px"
+                        src="../../../img/logos/logo-espacio verde.png" alt="logo ovd"></a>
+            </div>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#minavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="minavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active me-2 fs-5"
+                            href="parque invierno.html">Parque de Invierno</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="inv-historia.html">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="inv-naturaleza.html">Naturaleza</a></li>
+                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="inv-deporte.html">Deportes</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link fs-5 dropdown-toggle" role="button"
+                            data-bs-toggle="dropdown" href="">Descubre</a>
+                        <ul class="dropdown-menu bg-azul-claro ">
+                            <li><a class="dropdown-item text-gris fs-5"
+                                    href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">Vídeo en
+                                    360º</a></li>
+                            <li><a class="dropdown-item text-gris fs-5" href="parque invierno.html#videoprin">Vídeo</a></li>
+                            <li><a class="dropdown-item text-gris fs-5" href="inv-galeria.html">Galería de Fotos</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          Carousel purificación tomas
+    ---------------------------------------------------------------------------------------------------------->
+
+    <div class="carousel slide" data-bs-ride="carousel" id="carousel-purificacion">
+
+        <div class="carousel-indicators">
+            <button type="button" class="active" data-bs-target="#carousel-purificacion" data-bs-slide-to="0"></button>
+            <button type="button" class="" data-bs-target="#carousel-purificacion" data-bs-slide-to="1"></button>
+            <button type="button" class="" data-bs-target="#carousel-purificacion" data-bs-slide-to="2"></button>
+            <button type="button" class="" data-bs-target="#carousel-purificacion" data-bs-slide-to="3"></button>
+            <button type="button" class="" data-bs-target="#carousel-purificacion" data-bs-slide-to="4"></button>
+        </div>
+
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <img class="w-100 " src="../img/alargadas/inv-a-5.jpg"
+                    alt="imagen de la entrada parque san pedro de los arcos">
+
+                <div class="carousel-caption">
+                    <div class="d-md-none bg-azul-oscuro-opacity-75"> <!-- version movil -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="fs-3 fst-italic sombra-letras">Parque de Invierno </p>
+                            <a href="#puri" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> <!-- version ordenador -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="display-5 fw-bold sombra-letras">Parque de Invierno</p>
+                            <p class="fs-3 fst-italic sombra-letras">Un parque que lo tiene todo.</p>
+                            <a href="#puri" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+
+                <img class="w-100 " src="../img/alargadas/inv-a-35.jpg"
+                    alt="imagen de la entrada parque san pedro de los arcos">
+
+                <div class="carousel-caption">
+                    <div class="d-md-none bg-azul-oscuro-opacity-75"> <!-- version movil -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="fs-3 fst-italic sombra-letras">Conoce la Historia. </p>
+                            <a href="inv-historia.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> <!-- version ordenador -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="display-5 fw-bold sombra-letras">Parque de Invierno</p>
+                            <p class="fs-3 fst-italic sombra-letras">Un parque con HISTORIA. </p>
+                            <a href="inv-historia.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <img class="w-100 " src="../img/alargadas/inv-a-11.jpg"
+                    alt="imagen de la entrada parque san pedro de los arcos">
+
+                <div class="carousel-caption">
+                    <div class="d-md-none bg-azul-oscuro-opacity-75"> <!-- version movil -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="fs-3 fst-italic sombra-letras">Ver su Naturaleza. </p>
+                            <a href="inv-naturaleza.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> <!-- version ordenador -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="display-5 fw-bold sombra-letras">Parque de Invierno</p>
+                            <p class="fs-3 fst-italic sombra-letras">Un parque con NATURALEZA. </p>
+                            <a href="inv-naturaleza.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+
+                <img class="w-100 " src="../img/alargadas/inv-a-20.jpg"
+                    alt="imagen de la entrada parque san pedro de los arcos">
+
+                <div class="carousel-caption">
+                    <div class="d-md-none bg-azul-oscuro-opacity-75"> <!-- version movil -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="fs-3 fst-italic sombra-letras">Practicar Deporte. </p>
+                            <a href="inv-deporte.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> <!-- version ordenador -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="display-5 fw-bold sombra-letras">Parque de Invierno</p>
+                            <p class="fs-3 fst-italic sombra-letras">Un parque para practicar DEPORTE. </p>
+                            <a href="inv-deporte.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+
+                <img class="w-100 " src="../img/alargadas/inv-a-14.jpg"
+                    alt="imagen de la entrada parque san pedro de los arcos">
+
+                <div class="carousel-caption">
+                    <div class="d-md-none bg-azul-oscuro-opacity-75"> <!-- version movil -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="fs-3 fst-italic sombra-letras">Galería de Fotografías. </p>
+                            <a href="inv-galeria.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> <!-- version ordenador -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="display-5 fw-bold sombra-letras">Parque de Invierno</p>
+                            <p class="fs-3 fst-italic sombra-letras">Descubre sus Fotografías. </p>
+                            <a href="inv-galeria.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button type="button" class="carousel-control-prev" data-bs-target="#carousel-purificacion"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button type="button" class="carousel-control-next" data-bs-target="#carousel-purificacion"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          Banner pequeño gris - debajo del carousel
+    ---------------------------------------------------------------------------------------------------------->
+    <div class="bg-gris">
+
+        <!-- version ordenador-->
+        <a class=" d-none d-lg-block d-block a-hover  nav-link text-center fs-5"
+            href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">
+            <p>Vídeo del parque que ofrece una vista panorámica de 360º desde el punto de grabación.</p>
+        </a>
+
+        <!-- version movil-->
+        <a class="d-block d-sm-block d-lg-none a-hover  nav-link text-center fs-5"
+            href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">
+            <p>Vídeo del parque con vista en 360º</p>
+        </a>
+
+    </div>
+
+
+
+    <!----------------------------------------------------------------------------------
+    boton + info de la imagen presente carousel que indica el parque en el que estamos
+    ------------------------------------------------------------------------------------>
+    <a name="puri"></a>
+
+<!---------------------------------------------------------------------------------------------------------
+                                         Contenido principal
+    ---------------------------------------------------------------------------------------------------------->
+
+
+    <div class="container mt-5">
+        <p class="fs-4 fw-bold text-azul-oscuro text-center">El parque del sur de la ciudad de Oviedo.</p>
+        <p class="display-5 text-center"> <img src="../../../img/iconos/logo-n-1.png" width="70px" alt="logo de un arbol">
+            Parque de Invierno</p>
+
+        <p class="text-secondary text-center fs-5">
+            <p class="text-secondary text-center fs-5"> Tiene una superficie de 171.368 metros cuadrados, situado en el barrio de San Lázaro de Oviedo.
+               <br> Donde encontrarás <strong> Naturaleza | Deporte | Bienestar.</strong> <br>Los visitantes disfrutarán de su esplendor.
+
+               </p>
+    
+            
+
+    </div>
+
+
+
+
+
+    
+    <!---------------------------------------------------------------------------------------------------------
+                                         Banner con imagen
+    ---------------------------------------------------------------------------------------------------------->
+    
+    <div class="container mt-5 ">
+        <div class="row bg-gris mt-5   ">
+            <div class="col-12 col-md-12 col-lg-6 cardEspecial1">
+                <p class="bg-gris"> <img src="../img/cuadradas/inv-c-59.jpg" alt="panera" class=" ms-4 mt-4 mb-3 bordepuri" width="90%">
+                </p>
+            </div>
+            
+            <div class="col-12 col-md-12 col-lg-6 cardEspecial2">
+                <div class="row  mt-4">
+                    <p class="display-6 text-center text-azul-oscuro">Parque de Invierno</p>
+                </div>
+
+                <div class="row mt-3 ps-4">
+                    <div class="col-6 col-md-6 col-lg-6">
+                        <img src="../../../img/iconos/icono (21).png" alt="" width="35px"> 
+                        <p class="text-azul-oscuro fw-bold fs-4">Historia</p>
+                        <p class="fs-5 text-secondary">La idea fue propuesta en 1952.</p>
+                        <p class="fs-5 text-secondary">La construcción fue aprobada por el Ayuntamiento de Oviedo en 1988.</p>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <img src="../../../img/iconos/icono (8).png" alt="arbol" width="35px">
+                        <p class="text-azul-oscuro fw-bold fs-4">Naturaleza</p>
+                        <p class="fs-5 text-secondary" > Con vistas a la Sierra del Aramo.</p>
+                        <p class="fs-5 text-secondary"> El parque al sur de la ciudad.</p>
+                    </div>
+
+                </div>
+
+                <div class="row mt-3 ps-4">
+                    <div class="col-6 col-md-6">
+                        <img src="../../../img/iconos/icono (3).png" alt="corredor" width="42px">
+                        <p class="text-azul-oscuro fw-bold fs-4">Deporte</p>
+                        <p class="fs-5 text-secondary">Actividades al aire libre. </p>
+                        <p class="fs-5 text-secondary">Gimnasio, Rocódromo, Skate, Circuito de Disc-Golf. </p>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <img src="../../../img/iconos/icono (26).png" alt="planton" width="35px">
+                        <p class="text-azul-oscuro fw-bold fs-4">Rutas</p>
+                        <p class="fs-5 text-secondary">Desde aquí parte la ruta de Fuso de la Reina.</p>
+                        <p class="fs-5 text-secondary">Podemos encontrar varios caminos para pasear.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<!---------------------------------------------------------------------------------------------------------------
+                                         Banner sin imagen
+ --------------------------------------------------------------------------------------------------------------->
+
+<div class="container-fluid mt-5 bg-azul-oscuro-b ">        
+    <div class="container">
+        <div class="row p-5"> <!--llevaba un p-5-->                               
+            <div class="col-12 col-md-12 col-lg-4 mt-2">                
+                <p class="text-gris text-center display-6 mt-3 sombra-text"> <a href="../paginas/inv-historia.html" class="text-decoration-none text-white fw-bold "> <img src="../../../img/iconos/icono (21).png" width="60px" alt="logo de un arbol"> Historia</a> </p>
+                <p class="text-gris display-6 text-center mt-4 mb-5  sombra-text"> Con la ampliación se añadió el túnel del ferrocarril Vasco-Asturiano. 
+            </div>
+            <div class=" d-none d-lg-block col-lg-3 mt-2  me-5">
+                <p class="text-gris text-justify mt-5 mb-5 fs-5"> 
+                    El Ayuntamiento de Oviedo amplió el Parque de Invierno incorporando varias parcelas. Estas incluyen diez fincas de la zona de Campiello, siete de permutas anteriores y una parcela donde está la boca oeste del túnel del ferrocarril Vasco-Asturiano, sumando un total de 40.224 metros cuadrados.  </p> 
+            </div>
+            <div class="d-none d-lg-block col-lg-3 mt-2 ms-3">
+                <p class="text-gris text-justify mt-5 mb-5 fs-5">
+                    Con la ampliación del Parque, se han creado tres áreas distintas: la zona del túnel, la zona de la casona y la zona boscosa. El parque cuenta con una red de caminos que respetan el arbolado existente y una zona de descanso en los claros. Además, conecta directamente con la senda peatonal Fuso de la Reina.  
+                </p>
+            </div> 
+       </div>
+    </div>
+</div>
+
+
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------
+                                    1 FOTO CON TEXTO
+--------------------------------------------------------------------------------------------------------------------->
+
+<div class="container mt-5 bg-ligth">
+    <div class="row mb-5 ">
+        <div class="col-12 col-lg-6 cardEspecial4">
+            <p class="text-center">
+            <a href="../paginas/inv-naturaleza.html">                
+            <img src="../img/cuadradas/inv-c-28.jpg" alt="inicio del laberinto" class="w-75 bordepuri">
+            </a>
+            </p>
+        </div>
+        <div class="col-12 col-lg-6 cardEspecial4">  
+            <p class="fs-4 fw-bold text-azul-oscuro text-center">En estado puro.</p>
+            <p class="display-6 text-center"> <img src="../../../img/iconos/icono (28).png" width="60px" alt="logo de un arbol">
+                Naturaleza</p> 
+                            
+            <p class="fs-5 text-secondary text-justify">
+                Disfrutaremos de <strong>la naturaleza y los espacios verdes</strong>, ideal para pasar un día perfecto al aire libre, en compañía de la familia o amigos. <br>
+                <br>
+                Alberga una diversidad de <strong>especies botánicas</strong>  como: Pinos, Robles, Olmos, Abedules, Castaños de Indias, Magnolios, Chopos... <br>
+                <br>
+
+                
+            </p>
+        </div>
+    </div>         
+</div>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------
+                        CONTAINER ANTES DEL PARALLAX GRIS
+-------------------------------------------------------------------------------------------------------------------->
+<div class="container-fluid bg-gris mt-5">
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col-12 col-md-6 p-2">
+                <p class="fs-4 fw-bold text-azul-oscuro text-center">Aprendemos </p>
+                <p class="display-6 text-center pb-1"> <img src="../../../img/iconos/icono (34).png" width="50px"
+                        alt="logo de planton" > 
+                        La Vaca Biológica
+                    </p>
+                <div class="row">
+                    <div class="col-6">
+                        <p class="text-secondary fs-5 text-justify p-2">
+
+                             La escultura,<strong> hecha con fibra óptica y metacrilato</strong>, ​es obra de Cuco Suárez, y está datada en 2003. Bien del Patrimonio Cultural del Ayuntamiento de Oviedo. </p>
+                    </div> 
+                    <div class="col-6">
+                        <p class=" text-secondary fs-5 text-justify p-2">Podemos ver <strong>la alimentación, la respiración y la forma biológica</strong> de una vaca.
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-12 col-md-6 p-2">
+                <p class="fs-4 fw-bold text-azul-oscuro text-center"> Descubre</p>
+                <p class="display-6 text-center text-justify"> <img src="../../../img/iconos/icono (32).png" width="50px"
+                        alt="logo de planton">
+                    El Túnel del Vasco</p>
+                <div class="row">
+                    <div class="col-6">
+                        <p class="text-secondary text-justify fs-5 p-2">El ferrocarril Vasco-Asturiano se inauguró el 2 de agosto de 1904, con la ruta <strong> Oviedo-San Esteban de Pravia</strong>. Dejó de estar en funcionamiento en 1999.
+                             </p>
+                    </div>
+                    <div class="col-6">
+                        <p class="text-secondary text-justify fs-5 p-2"> Una actividad ferroviaria para dar paso a una senda orientada al <strong>deporte, el recreo y el esparcimiento</strong>. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--------------------------------------------------------------------------------------------------------
+                                            PARALLAX COVI
+--------------------------------------------------------------------------------------------------------------------->
+<div class="parallaxcovi2"></div>
+
+
+  
+ <!---------------------------------------------------------------------------------------------------------
+                                          bloque zonas verdes Nata
+    ---------------------------------------------------------------------------------------------------------->
+    <div class="zv-1000-bg-azul-oscuro py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <p class="fs-4 fw-bold text-white mb-3">
+                        Explora las Otras Zonas Verdes de Oviedo
+                    </p>
+                    <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                        <img src="../../../img/verdes/12.png" width="70" height="70" alt="logo de un árbol" class="img-fluid">
+                        <h1 class="display-5 text-white mb-0">Zonas Verdes</h1>
+                    </div>
+                    <p class="text-white-50 fs-5">
+                        Descubre tu refugio natural en Oviedo, explora los diversos oasis y remansos de paz que la ciudad tiene para ofrecer.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Campillín -->
+                <div class=" col-6 col-lg-4 col-xl-2">
+                    <div class="zv-2000-zona-verde fondoCampillin cardEspecial3 "  >
+                        <div class="zv-3000-content">
+                            <h3 class="zv-4000-title">Campillín</h3>
+                            <a href="../../campillin/paginas/campillin.html" class="btn btn-outline-light zv-5000-btn">Descubrir</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- La Rodriga -->
+                <div class="col-6 col-lg-4 col-xl-2">
+                    <div class="zv-2000-zona-verde fondoRodriga cardEspecial3" >
+                        <div class="zv-3000-content">
+                            <h3 class="zv-4000-title">La Rodriga</h3>
+                            <a href="../../rodriga/paginas/rodriga.html" class="btn btn-outline-light zv-5000-btn">Explorar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Santullano -->
+                <div class="col-6 col-lg-4 col-xl-2">
+                    <div class="zv-2000-zona-verde fondoSantullano cardEspecial4" >
+                        <div class="zv-3000-content">
+                            <h3 class="zv-4000-title">Santullano</h3>
+                            <a href="../../Santullano/paginas/Santullano.html" class="btn btn-outline-light zv-5000-btn">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- San Pedro -->
+                <div class="col-6 col-lg-4 col-xl-2">
+                    <div class="zv-2000-zona-verde fondoSanPedroArco cardEspecial4" >
+                        <div class="zv-3000-content">
+                            <h3 class="zv-4000-title">San Pedro</h3>
+                            <a href="../../sanpedroarco/paginas/sanpedroArco.html" class="btn btn-outline-light zv-5000-btn">Recorrer</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finlandesa -->
+                <div class="col-6 col-lg-4 col-xl-2">
+                    <div class="zv-2000-zona-verde fondoPistaFilandesa cardEspecial3" >
+                        <div class="zv-3000-content">
+                            <h3 class="zv-4000-title">Finlandesa</h3>
+                            <a href="../../Pista Finlandesa/paginas/pista finlandesa.html" class="btn btn-outline-light zv-5000-btn">Aventurarse</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Río Nora -->
+                <div class="col-6 col-lg-4 col-xl-2">
+                    <div class="zv-2000-zona-verde fondoRioNora cardEspecial3" >
+                        <div class="zv-3000-content">
+                            <h3 class="zv-4000-title">Río Nora</h3>
+                            <a href="../../rio nora/paginas/rio nora.html" class="btn btn-outline-light zv-5000-btn">Sumergirse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="text-white-50 fs-5 mb-0">
+                        Al igual que en los parques, en estas zonas verdes podrás encontrar 
+                        <strong>Naturaleza | Deporte | Bienestar.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------
+                                        2 FOTO CON TEXTO
+--------------------------------------------------------------------------------------------------------------------->
+
+
+<div class="container mt-5 bg-ligth">
+    <div class="row">   
+        <div class="col-12 col-lg-6 mt-5 "> 
+             <p class="fs-4 fw-bold text-azul-oscuro text-center">Bienestar </p>
+            <p class="display-6 text-center text-azul-oscuro"> <img src="../../../img/iconos/logo-d-3.png" width="70px" alt="logo de un arbol">
+                Deporte</p>             
+            <p class="fs-5 text-secondary ms-4 text-justify">
+                Este parque ofrece una variedad de instalaciones y actividades para todas las edades. <br>
+                <br>
+                <strong><span class="mingcute--settings-5-fill"></span> Skate</strong> para que se diviertan los más jóvenes. <br>
+                <br>
+                <strong><span class="mingcute--settings-5-fill"></span> Gimnasio al aire libre</strong> para practicar deporte los más mayores. <br>
+                <br>
+                <strong><span class="mingcute--settings-5-fill"></span> Rocódromo</strong> para los más atrevidos.
+            </p>
+        </div>
+        <div class="col-12 col-lg-6">
+            <p class="text-center">
+            <a href="../paginas/inv-deporte.html">
+            <img src="../img/cuadradas/inv-c-36.jpg" alt="aparatos de gimnasia" class="w-75 bordepuri">
+            </a>
+            </p>
+        </div>           
+    </div>
+</div>
+
+
+<!--------------------------------------------------------------------------------------------------------------------
+                                            VIDEO
+--------------------------------------------------------------------------------------------------------------------->
+<a name="videoprin"></a>
+
+<div class="container-fluid">
+        
+
+    <header>
+        <h1 class="zv-1000-bg-azul-oscuro text-center text-white alert alert-info display-3">PARQUE INVIERNO</h1>
+    </header>
+    
+    
+</div>
+
+<div class="container py-5">
+    <div class="row align-items-center">
+        <!-- Video Column -->
+        <div class="col-lg-6 mb-4 mb-lg-0 ">
+            <div class="video-container shadow">
+                <img src="../../../img/logos/logo-ovd-footer.png" alt="Video thumbnail" class="img-fluid w-25"> 
+                <button class="custom-play-button" onclick="playVideo(this)">
+                    <div class="play-icon"></div>
+                </button>
+                <video controls class="w-100" poster="../img/cuadradas/inv-c-25.jpg">
+                    <source src="../../../video/video-san-francisco.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+        </div>
+        
+        <!-- Content Column -->
+        <div class="col-lg-6">
+            
+            <div class="content-section ps-lg-4 fs-5 text-justify">
+                <h3 class="text-center text-azul-oscuro fw-bold">VISITA VIRTUAL PARQUE INVIERNO</h3>
+                <p>El Parque de Invierno, situado en Oviedo, es un espacio verde que combina a la perfección naturaleza y recreo, convirtiéndose en uno de los lugares más apreciados tanto por los habitantes como por los visitantes de la ciudad. Este extenso parque ofrece amplias áreas de paseo, deportes y descanso, todo ello rodeado de una frondosa vegetación que cambia con el paso de las estaciones.</p><br />
+    
+                <p class="d-none d-lg-block col-md-12">En nuestro video, te invitamos a explorar la tranquilidad y la belleza de este parque, un verdadero pulmón verde en el corazón de Oviedo. A lo largo del recorrido, descubrirás cómo el Parque de Invierno es más que un simple lugar de esparcimiento: es un espacio de encuentro, un refugio para quienes buscan desconectar del ajetreo urbano, y un rincón de bienestar para toda la comunidad. </p>
+                <br>
+            
+                <div class="d-flex align-items-center mb-4">
+                    <div class="border-end pe-3 me-3">
+                        <small class="text-muted">Duración</small>
+                        <p class="mb-0 fw-bold">3:45</p>
+                    </div>
+                    <div class="border-end pe-3 me-3">
+                        <small class="text-muted">Vistas</small>
+                        <p class="mb-0 fw-bold">1.2K</p>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <small class="text-muted">Calidad</small>
+                        <p class="mb-0 fw-bold">HD</p>
+                        
+                    </div>
+                    <div class="ms-5 d-none d-md-block">
+                        <a href="https://www.youtube.com/@NaturalezaDeporteYBienestar" target="_blank"><button class="btn btn-primary px-4 py-2 btn-lg ">  Más Vídeos</button></a>
+                        
+                    </div>
+                    <div class="ms-5  d-md-none">
+                        <a href="https://www.youtube.com/@NaturalezaDeporteYBienestar" target="_blank"><button class="btn btn-primary px-4 py-2 btn-lg ">   Vídeos</button></a>
+                        
+                    </div>
+
+                </div>
+               
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------
+                                            BANER CON FONDO GRIS
+--------------------------------------------------------------------------------------------------------------------->
+<div class="container-fluid bg-gris mt-5">
+    <div class="row ">
+        <div class="col-12 col-md-12 col-lg-3 mt-4 cardEspecial4 "><br><br>
+            <a href="#">
+            <img src="../img/cuadradas/inv-c-55.jpg" alt="senda fuso de la reina" class="img-fluid mt-5 bordepuri">
+            </a>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 mt-3"><br><br>
+            <p class="fs-4 fw-bold text-azul-oscuro text-center">La Ruta</p>
+            <p class="display-6 text-center mt-2"><img src="../../../img/iconos/logo-d-2.png" width="40px" alt="logo de un arbol"> <span class=" text-azul-oscuro ">Fuso de la Reina 
+                </span></p>                
+            <p class="text-center text-secondary fs-5 p-1 ">
+                Desde el parque sale la ruta que en 7.5 kms cambiando de lo urbano a lo rural.<br>Hacia la mitad, se pasa por la antigua estación de La Manjoya.<br>Una ruta fácil para hacer con la familia.
+                
+            </p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-5 mt-3 mb-5 cardEspecial4 ">
+            <img src="../img/alargadas/inv-a-34.jpg" alt="puente" class="img-fluid bordepuri mt-5 ms-4" width="90%">
+            <br><br>
+            <img src="../img/alargadas/inv-a-35.jpg" alt="vista" class="img-fluid bordepuri mt-5 ms-4 "  width="90%">
+        </div>
+    </div>
+</div>
+<!------------------------------------------------
+        CONTAINER CON FONDO GRIS E ICONOS
+---------------------------------------------------->
+<div class="container bg-gris mt-5 mb-5">
+    <div class="row mt-5">
+        <p class=" fs-1 fw-bold text-azul-oscuro-b text-center  mt-3">Datos de Interés</p>
+    </div>
+    <div class="row  mb-5">
+        <div class="col-6 col-md-3 mt-5">
+            <p class=" text-center">
+            <img src="../../../img/iconos/logo-h-1.png" alt="horario del parque" class="img-fluid " width="25%">
+            </p>
+            <p class=" fs-4 fw-bold text-azul-oscuro-b text-center">L-D: Parque</p>               
+            <p class="fs-5 text-center mt-2"> 24 horas<br> <span class=" fs-4 fw-bold text-azul-oscuro-b text-center">Disc Golf </span> <br>24 horas</p>              
+        </div>
+        <div class="col-6 col-md-3 mt-5">
+            <p class=" text-center">
+                <img src="../../../img/iconos/logo-ubicacion-1.png" alt="ubicacion del parque" class="img-fluid" width="25%">
+            </p>
+            <p class=" fs-4 fw-bold text-azul-oscuro-b text-center">Ubicación</p>
+            <P class="fs-5 text-center mt-2">43º 21' 09"N <br>  05º 51' 00"O</P>               
+        </div>
+        <div class="col-6 col-md-3 mt-5">
+            <p class=" text-center">
+            <img src="../../../img/iconos/logo-noperro-1.png" alt="mascotas no permitido" class="img-fluid" width="25%">
+            </p>
+            <P class=" fs-4 fw-bold text-azul-oscuro-b text-center">Mascotas </P>               
+            <p class="fs-5 text-center mt-2">Sueltas <br> No Permitidas</p>
+        </div>
+        <div class="col-6 col-md-3 mt-5">
+            <p class=" text-center">
+                <img src="../../../img/iconos/logo-wc-1.png" alt="logowc" class="img-fluid " width="25%">
+            </p>
+            <P class=" fs-4 fw-bold text-azul-oscuro-b text-center ">Servicios</P>
+            <P class="fs-5 text-center mt-2"> Disponibles</P>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!----------------------------------------------------------------------------------
+                        seccion video de la pagina principal del parque
+    ------------------------------------------------------------------------------------>
+    
+
+
+
+
+    <!----------------------------------------------------------------------------------
+                               Banner google mpas en el antes del footer
+------------------------------------------------------------------------------------>
+    <div class="embed-responsive mt-5">
+        <iframe class="mx-auto d-block embed-responsive-item ratio" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1461.220934520056!2d-5.850030021376353!3d43.35205213854181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368cddc3f780c7%3A0x7bfa328aaf2daeb4!2sParque%20de%20Invierno!5e1!3m2!1ses!2ses!4v1728553406747!5m2!1ses!2ses" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          footer
+    ---------------------------------------------------------------------------------------------------------->
+
+    <div class="container-fluid bg-azul-oscuro text-gris">
+        <div class="container pt-5">
+            <div class="row">
+                <div class=" col-12 col-md-3">
+                    <p class="fw-bold fs-5 text-center">Sobre Nosotros</p>
+                    <p class="text-justify">
+                        Somos un equipo de desarrolladores web dedicados a crear experiencias únicas. <br> Nos
+                        esforzamos por transformar la visita a los parques por excelencia de Oviedo en experiencias
+                        digitales visualmente atractivas, intuitivas y fáciles de usar.
+                    </p>
+                    <p class="mb-4"></p>
+                </div>
+                <div class=" col-12 col-md-3 text-center">
+                    <p class="fw-bold fs-5 mb-4">Sobre Parque de Invierno</p>
+                    <a class="nav-link mb-4" href="inv-historia.html">Historia</a>
+                    <a class="nav-link mb-4" href="inv-naturaleza.html">Naturaleza</a>
+                    <a class="nav-link mb-4" href="inv-deporte.html">Deportes</a>
+                    
+                </div>
+                <div class=" col-12 col-md-3 text-center">
+                    <p class="fw-bold fs-5">Redes Sociales</p>
+                    <a href="https://www.youtube.com/@naturalezadeporteybienestar" target="_blank">
+                        <img class="me-3" src="../../../img/iconos/youtube.png" alt="logotipo de youtube"
+                            width="52px"></a>
+                    <a href="https://www.facebook.com/empleoayuntamientodeoviedo" target="_blank">
+                        <img class="me-3" src="../../../img/iconos/facebook.png" alt="logotipo de facebook"
+                            width="55px"></a>
+                    <a href="mailto:naturalezadeporteybienestar.info@correo.com">
+                        <img class="me-3" src="../../../img/iconos/correo.png" alt="logotipo de facebook"
+                            width="55px"></a>
+                    <br><br>
+                    <p class="fw-bold fs-5">Descubre</p>
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">Vídeo
+                        360º</a>
+                    <a class="nav-link" href="parque invierno.html#videoprin">Vídeo</a>
+                    <a class="mb-1 nav-link" href="inv-galeria.html">Galería de Fotos</a>
+                </div>
+                <div class=" col-12 col-md-3">
+                    <img class=" logo-ovd-pie-md img-fluid d-none d-md-block " src="../../../img/logos/logo-ovd-footer.png"
+                        alt="logo de los desarrolladores"> <!-- para tablet  ordenador-->
+                    <img class="d-sm-block d-md-none mx-auto d-block logo-ovd-pie my-2"
+                        src="../../../img/logos/logo-ovd-footer.png" alt="logo de los desarrolladores"> <!-- para movil-->
+                </div>
+            </div>
+            <div class="row ">
+                <hr>
+                <div class="col-6 ">
+                    <p class="text-politica"> © Copyright 2024. <br> Todos los derechos reservados.</p>
+                </div>
+                <div class="col-6">
+                    <p class="text-end">
+                        <a class="text-gris text-decoration-none text-end text-politica"
+                            href="../../politicas/mapa web.html" target="_blank">Mapa Web.</a>
+                        <br>
+                        <a class="text-gris text-decoration-none text-end text-politica"
+                            href="../../politicas/politica privacidad.html" target="_blank">Política de
+                            Privacidad.</a> <br>
+                        <a class="text-gris text-decoration-none text-end text-politica"
+                            href="../../politicas/accesibilidad web.html" target="_blank">Accesibilidad Web.</a> <br>
+
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-12 pb-3">
+                <img class=" w-pie d-none d-md-block img-fluid mx-auto d-block" src="../../../img/logos/Banner WEB.png" alt=""> <!--ordenador-->
+                <img class=" w-100d-sm-block d-md-none img-fluid mx-auto d-block" src="../../../img/logos/Banner WEB.png" alt="" style="height:35px"> <!--movil-->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Boton flotante  -->
+
+    <div class="floating-button-container" id="floatingButtonContainer">
+        <button class="main-button" id="mainButton"></button>
+        <button class="scroll-top-button" id="scrollTopButton">&#9650;</button>
+        <a href="../../san francisco/paginas/san francisco.html" class="option-button">
+            <img src="../../../img/iconos/1.png" alt="Parque San Francisco">
+            <span class="tooltip">Parque San Francisco</span>
+        </a>
+        <a href="../../Purificacion Tomas/paginas/purificacion tomas.html" class="option-button">
+            <img src="../../../img/iconos/2.png" alt="Purificación Tomás">
+            <span class="tooltip">Purificación Tomás</span>
+        </a>
+        <a href="../../Parque Invierno/paginas/parque invierno.html" class="option-button">
+            <img src="../../../img/iconos/3.png" alt="Parque de Invierno">
+            <span class="tooltip">Parque de Invierno</span>
+        </a>
+        <a href="../../parque oeste/paginas/parque oeste.html" class="option-button">
+            <img src="../../../img/iconos/4.png" alt="Parque del Oeste">
+            <span class="tooltip">Parque del Oeste</span>
+        </a>
+        <a href="../../naranco/paginas/Naranco.html" class="option-button">
+            <img src="../../../img/iconos/5.png" alt="NARANCO">
+            <span class="tooltip">Naranco</span>
+        </a>
+    </div>
+    <script src="../../../js/botones.js"></script>
+    <script src="../../../js/scroll.js"></script>
+<!-- Fin Botones Flotantes -->
+
+
+
+
+
+</body>
+
+</html>

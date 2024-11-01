@@ -1,0 +1,4 @@
+Cambios Naranco
+- iconos
+-tarjetas leer más en movil
+-acortar textos
