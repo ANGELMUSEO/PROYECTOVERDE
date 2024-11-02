@@ -495,183 +495,205 @@ video {
 
 /*cambio zonas verdes NATA*/
 
-/* 1000: Estilos base y contenedores 
-.zv-1000-bg-azul-oscuro {
-  background-color: #1e3a8a;
-}*/
- /**
-         * Reset CSS y Variables Globales
-         * Establece valores predeterminados y variables CSS personalizadas para todo el componente
+/**
+         * Variables Globales
          */
-         *, *::before, *::after {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box; /* Incluye padding y border en el ancho total */
-      }
-
-      :root {
-          /* Variables CSS globales para fácil mantenimiento y consistencia */
-          --primary-blue: #1e3a8a;     /* Color principal del fondo */
-          --card-height: 250px;         /* Altura predeterminada de las tarjetas */
-          --card-max-height: 300px;     /* Altura máxima de las tarjetas */
-          --card-border-radius: 0.75rem; /* Radio de borde de las tarjetas */
-          --transition-duration: 0.5s;   /* Duración de las transiciones */
-          --hover-scale: 1.03;          /* Escala de ampliación al hover */
-      }
-
-      /**
-       * Contenedor Principal
-       * Define el fondo y estructura base del componente
-       */
-      .zv-1000-bg-azul-oscuro {
-          background-color: var(--primary-blue);
-          width: 100%;
-         
-      }
-
-      /**
-       * Contenedor de Tarjeta
-       * Establece la estructura base de cada tarjeta de zona verde
-       */
-      .zv-2000-zona-verde {
-          position: relative;              /* Para posicionamiento absoluto de elementos hijos */
-          height: var(--card-height);      /* Altura definida por variable CSS */
-          max-height: var(--card-max-height);
-          width: 100%;
-          border-radius: var(--card-border-radius);
-          overflow: hidden;                /* Oculta contenido que sobresale */
-          transform-style: preserve-3d;    /* Habilita transformaciones 3D */
-          transform: perspective(1000px);  /* Añade perspectiva para efecto 3D */
-          transition: transform var(--transition-duration) ease;
-          will-change: transform;          /* Optimiza rendimiento de animaciones */
-      }
-
-      /**
-       * Fondo de Tarjeta
-       * Crea el fondo de imagen de cada tarjeta usando pseudo-elemento
-       */
-      .zv-2000-zona-verde::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-image: var(--bg-image); /* Imagen definida inline por tarjeta */
-          background-size: cover;
-          background-position: center;
-          transition: transform var(--transition-duration) ease;
-          z-index: 1;                      /* Asegura que esté detrás del contenido */
-      }
-
-      /**
-       * Contenedor del Contenido
-       * Establece el área para título y botón con fondo degradado
-       */
-      .zv-3000-content {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          padding: 1.5rem;
-          /* Gradiente para mejor legibilidad del texto */
-          background: linear-gradient(
+         :root {
+          --primary-blue: #1e3a8a;
+          --card-height-desktop: 250px;
+          --card-height-mobile: 200px;
+          --transition-time: 0.3s;
+          --hover-scale: 1.05;
+          --active-scale: 0.98;
+          --content-bg: linear-gradient(
               to top,
               rgba(0, 0, 0, 0.8) 0%,
               rgba(0, 0, 0, 0.7) 50%,
               transparent 100%
           );
-          color: white;
-          visibility: hidden;              /* Inicio oculto */
-          opacity: 0;
-          transform: translateY(20px);     /* Posición inicial para animación */
-          transition: all var(--transition-duration) ease;
-          z-index: 2;                      /* Sobre la imagen de fondo */
       }
 
       /**
-       * Estilo del Título
-       * Define la apariencia del título de cada zona verde
+       * Optimizaciones Base
+       */
+      .zv-2000-zona-verde,
+      .zv-3000-content,
+      .zv-5000-btn {
+          will-change: transform;
+          backface-visibility: hidden;
+          transform: translateZ(0);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      /**
+       * Contenedor Principal
+       */
+      .zv-1000-bg-azul-oscuro {
+          background-color: var(--primary-blue);
+      }
+
+      /**
+       * Tarjetas Base
+       */
+      .zv-2000-zona-verde {
+          position: relative;
+          height: var(--card-height-desktop);
+          border-radius: 0.75rem;
+          overflow: hidden;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: transform var(--transition-time);
+      }
+
+      /**
+       * Imagen de Fondo
+       */
+      .zv-2000-zona-verde::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background-image: var(--bg-image);
+          background-size: cover;
+          background-position: center;
+          transition: transform var(--transition-time);
+      }
+
+      /**
+       * Contenido
+       */
+      .zv-3000-content {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 1.5rem;
+          background: var(--content-bg);
+          color: white;
+          opacity: 0;
+          transform: translateY(1rem);
+          transition: all var(--transition-time);
+          z-index: 1;
+      }
+
+      /**
+       * Título
        */
       .zv-4000-title {
           font-size: 1.25rem;
           font-weight: 600;
-          margin-bottom: 1rem;
-          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Mejora legibilidad */
+          margin-bottom: 0.75rem;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
 
       /**
-       * Estilo del Botón
-       * Define la apariencia y comportamiento del botón de acción
+       * Botón
        */
       .zv-5000-btn {
           display: inline-block;
           padding: 0.5rem 1rem;
-          color: white !important;         /* Fuerza color blanco */
+          color: white !important;
           text-decoration: none;
           border: 1px solid white;
           border-radius: 0.25rem;
           transition: all 0.3s ease;
-          backdrop-filter: blur(5px);      /* Efecto de desenfoque detrás del botón */
+          backdrop-filter: blur(5px);
           -webkit-backdrop-filter: blur(5px);
       }
 
-      .zv-5000-btn:hover {
-          background: rgba(255, 255, 255, 0.2);
-          transform: translateY(-2px);     /* Efecto de elevación al hover */
-      }
-
       /**
-       * Estados de Hover
-       * Define comportamiento en dispositivos con capacidad de hover
+       * Estados Hover (Desktop)
        */
       @media (hover: hover) {
           .zv-2000-zona-verde:hover {
-              transform: perspective(1000px) scale(var(--hover-scale)) rotateY(-5deg);
+              transform: scale(var(--hover-scale));
           }
 
           .zv-2000-zona-verde:hover::before {
-              transform: scale(1.1);       /* Zoom suave en la imagen */
+              transform: scale(1.1);
           }
 
           .zv-2000-zona-verde:hover .zv-3000-content {
-              visibility: visible;
-              opacity: 1;
-              transform: translateY(0);    /* Animación de entrada */
-          }
-      }
-
-      /**
-       * Estados Táctiles
-       * Define comportamiento en dispositivos táctiles
-       */
-      @media (hover: none) {
-          .zv-3000-content {
-              visibility: visible;
-              opacity: 0;
-              transform: translateY(100%);
-          }
-
-          .zv-2000-zona-verde:active .zv-3000-content {
               opacity: 1;
               transform: translateY(0);
           }
+
+          .zv-5000-btn:hover {
+              background: rgba(255, 255, 255, 0.2);
+              transform: translateY(-2px);
+          }
       }
 
       /**
-       * Ajustes Responsivos
-       * Adapta dimensiones según el tamaño de pantalla
+       * Estados Active (Táctil)
        */
-      @media (max-width: 576px) {
-          :root {
-              --card-height: 200px;        /* Menor altura en móviles */
+      .zv-2000-zona-verde:active {
+          transform: scale(var(--active-scale));
+          transition: transform 0.1s;
+      }
+
+      .zv-2000-zona-verde:active .zv-3000-content {
+          opacity: 1;
+          transform: translateY(0);
+          transition-duration: 0.1s;
+      }
+
+      .zv-5000-btn:active {
+          background: rgba(255, 255, 255, 0.3);
+          transform: translateY(1px);
+          transition: all 0.1s;
+      }
+
+      /**
+       * Estados Focus (Accesibilidad)
+       */
+      .zv-2000-zona-verde:focus-within {
+          outline: 2px solid white;
+          outline-offset: 2px;
+      }
+
+      .zv-5000-btn:focus {
+          outline: 2px solid white;
+          outline-offset: 2px;
+          box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+      }
+
+      /**
+       * Dispositivos Táctiles
+       */
+      @media (hover: none) {
+          .zv-3000-content {
+              opacity: 0.95;
+              transform: translateY(0);
+          }
+
+          .zv-5000-btn {
+              background: rgba(255, 255, 255, 0.1);
           }
       }
 
-      @media (min-width: 992px) {
-          :root {
-              --card-height: 280px;        /* Mayor altura en desktop */
+      /**
+       * Responsive
+       */
+      @media (max-width: 576px) {
+          .zv-2000-zona-verde {
+              height: var(--card-height-mobile);
           }
+      }
+
+      /**
+       * Optimización DevTools
+       */
+      @media screen and (min-resolution: 2dppx) {
+          .zv-2000-zona-verde {
+              transform: translateZ(0);
+          }
+      }
+
+      /**
+       * Reset Estados
+       */
+      .zv-2000-zona-verde:not(:hover):not(:active) .zv-3000-content {
+          opacity: 0;
+          transform: translateY(1rem);
       }
 
 .fondoCampillin{
@@ -707,3 +729,4 @@ video {
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+

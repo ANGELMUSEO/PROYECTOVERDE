@@ -56,14 +56,12 @@ document.addEventListener('DOMContentLoaded', function () {
     video.play();
   }
 
+  
   /* zonas verdes*/
   /**
-         * IIFE para encapsular el código y evitar contaminación del scope global
-         */
+         
    (() => {
-    /**
-     * Clase principal para manejar la interactividad de las zonas verdes
-     */
+    
     class ZonasVerdes {
         constructor() {
             // Selecciona todas las tarjetas de zonas verdes
@@ -71,9 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.init();
         }
 
-        /**
-         * Inicializa los event listeners para cada tarjeta
-         */
+      
         init() {
             this.cards.forEach(card => {
                 card.addEventListener('mouseenter', this.handleMouseEnter.bind(this));
@@ -84,29 +80,20 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
 
-        /**
-         * Maneja el evento de entrada del mouse
-         * Elimina la transición para movimiento suave
-         */
+        
         handleMouseEnter(e) {
             const card = e.currentTarget;
             card.style.transition = 'none';
         }
 
-        /**
-         * Maneja el evento de salida del mouse
-         * Restaura la transición y resetea la transformación
-         */
+        
         handleMouseLeave(e) {
             const card = e.currentTarget;
             card.style.transition = 'all 0.5s ease';
             card.style.transform = 'perspective(1000px) scale(1)';
         }
 
-        /**
-         * Maneja el movimiento del mouse
-         * Calcula y aplica la rotación 3D basada en la posición del cursor
-         */
+        
         handleMouseMove(e) {
             const card = e.currentTarget;
             const rect = card.getBoundingClientRect();
@@ -116,11 +103,11 @@ document.addEventListener('DOMContentLoaded', function () {
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
 
-            // Calcula la rotación basada en la distancia desde el centro
+            
             const rotateX = ((y - centerY) / 20) * -1;
             const rotateY = (x - centerX) / 20;
             
-            // Aplica la transformación 3D
+          
             card.style.transform = `
                 perspective(1000px)
                 scale(1.03)
@@ -129,19 +116,13 @@ document.addEventListener('DOMContentLoaded', function () {
             `;
         }
 
-        /**
-         * Maneja el inicio del toque en dispositivos táctiles
-         * Añade una clase para efectos táctiles específicos
-         */
+        
         handleTouchStart(e) {
             const card = e.currentTarget;
             card.classList.add('touched');
         }
 
-        /**
-         * Maneja el fin del toque en dispositivos táctiles
-         * Elimina la clase de toque después de un delay
-         */
+       
         handleTouchEnd(e) {
             const card = e.currentTarget;
             setTimeout(() => {
@@ -150,10 +131,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    /**
-     * Inicializa la aplicación cuando el DOM está completamente cargado
-     */
+    
     document.addEventListener('DOMContentLoaded', () => {
         new ZonasVerdes();
     });
 })();
+
+*/
