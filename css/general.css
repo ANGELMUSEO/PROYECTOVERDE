@@ -645,7 +645,7 @@ video {
        * Estados Táctiles
        * Define comportamiento en dispositivos táctiles
        */
-      @media (hover: hover) {
+      @media (hover: none) {
           .zv-3000-content {
               visibility: visible;
               opacity: 0;
