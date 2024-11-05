@@ -1,0 +1,58 @@
+/*  HISTORIA */ 
+.bg-rodriga1{
+    background-image: url("../img/banner/rod-b-\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.parallax-rodriga1 {
+
+    background-image: url(../img/alargadas/rod-a-\ \(7\).jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bg-rodriga2{
+    background-image: url("../img/banner/rod-b-\ \(5\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid 2px grey;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+
+/*  NATURALEZA */ 
+.bg-rodriga3{
+    background-image: url("../img/banner/rod-b-\ \(11).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid 2px grey;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+/*  DEPORTE */ 
+
+
+
+
+
+
+/* OTROS */ 
