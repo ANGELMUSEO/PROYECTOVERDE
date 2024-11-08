@@ -1,0 +1,35 @@
+rodriga
+=========
+
+carrusel: 1-19   3-18 **
+
+navbar: separación del descubre**
+
+bloque con encanto: quitar bordes. dejar uno solido 1px negro. sobra queda **
+
+container-fluid con fondo gris, dejar el borde con 1px gris **
+
+bloque que habla de la entrada al principio de la pagina.**
+también lleva dos iconos y quitar las imágenes. poner un borde de 1px negro y sombra **
+
+
+video entre el encima del banner y debajo del minicarusel **
+
+corregir el margin encima del mapa del footer ?? **
+
+revisar marcador de naturaleza que se situe bien **
+
+
+bloque primero bajar el tamaño un poco al icono del libro **
+
+
+versión móvil
+================
+arreglar los párrafos dueles
+
+
+bloque modo naturaleza resumir líneas
+
+
+comprobar errores de ortografia
+
