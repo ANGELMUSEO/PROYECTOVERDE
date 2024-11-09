@@ -10,7 +10,7 @@ $(document).ready(function () {
 
         $(".parrafopicu2").hide();
         $(".parrafopicu3").hide();
-        $(".parrafopicu1").toggle();
+        $(".parrafopicu1").toggle(1000);
 
     });
 
@@ -18,14 +18,14 @@ $(document).ready(function () {
         $(".parrafopicu1").hide();
 
         $(".parrafopicu3").hide();
-        $(".parrafopicu2").toggle();
+        $(".parrafopicu2").toggle(1000);
 
     });
 
     $(".botonpicu3").click(function () {
         $(".parrafopicu1").hide();
         $(".parrafopicu2").hide();
-        $(".parrafopicu3").toggle();
+        $(".parrafopicu3").toggle(1000);
 
 
 
