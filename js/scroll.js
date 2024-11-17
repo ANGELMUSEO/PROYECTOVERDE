@@ -138,3 +138,136 @@ document.addEventListener('DOMContentLoaded', function () {
 })();
 
 */
+
+// Script Carousel Esculturas
+
+(function() {
+  const NatanaelCarousel = {
+      config: {
+          intervalTime: 5000,
+          totalSlides: 10,
+          prefix: 'natanael14'
+      },
+
+      elements: {
+          imageCarousel: null,
+          infoCarousel: null,
+          mainWrapper: null
+      },
+
+      init: function() {
+          this.elements.imageCarousel = document.getElementById(this.config.prefix + 'ImageCarousel');
+          this.elements.infoCarousel = document.getElementById(this.config.prefix + 'InfoCarousel');
+          this.elements.mainWrapper = document.querySelector('.nat14-main-wrapper');
+
+          if (!this.elements.imageCarousel || !this.elements.infoCarousel) return;
+
+          this.initCarousels();
+          this.bindEvents();
+          this.initAnimation();
+      },
+
+      initCarousels: function() {
+          const options = { interval: this.config.intervalTime, wrap: true };
+          this.elements.bsImageCarousel = new bootstrap.Carousel(this.elements.imageCarousel, options);
+          this.elements.bsInfoCarousel = new bootstrap.Carousel(this.elements.infoCarousel, options);
+      },
+
+      bindEvents: function() {
+          this.syncCarousels();
+          this.bindNavButtons();
+      },
+
+      syncCarousels: function() {
+          let isTransitioning = false;
+
+          const syncHandler = (source, target) => {
+              source.addEventListener('slide.bs.carousel', event => {
+                  if (!isTransitioning) {
+                      isTransitioning = true;
+                      bootstrap.Carousel.getInstance(target).to(event.to);
+                  }
+              });
+
+              source.addEventListener('slid.bs.carousel', () => {
+                  isTransitioning = false;
+              });
+          };
+
+          syncHandler(this.elements.imageCarousel, this.elements.infoCarousel);
+          syncHandler(this.elements.infoCarousel, this.elements.imageCarousel);
+      },
+
+      bindNavButtons: function() {
+          document.querySelectorAll('.nael-nav-button').forEach(button => {
+              button.addEventListener('click', e => {
+                  e.preventDefault();
+                  const direction = button.getAttribute('data-bs-slide');
+                  const carousel = bootstrap.Carousel.getInstance(this.elements.imageCarousel);
+                  carousel[direction]();
+              });
+          });
+      },
+
+      initAnimation: function() {
+          setTimeout(() => {
+              this.elements.mainWrapper?.classList.add('nat14-visible');
+          }, 100);
+      }
+  };
+
+  document.addEventListener('DOMContentLoaded', () => NatanaelCarousel.init());
+})();
+
+
+// Fin Script Esculturas
+
+
+
+// Script Otoño
+
+(function() {
+  const NatanaelAutumnCarousel = {
+      init: function() {
+          this.initAnimation();
+          this.createLeaves();
+          this.initCarousel();
+      },
+
+      initAnimation: function() {
+          setTimeout(() => {
+              document.querySelector('.natanael-autumn-wrapper').classList.add('natanael-visible');
+          }, 100);
+      },
+
+      createLeaves: function() {
+          const createLeaf = () => {
+              const leaf = document.createElement('div');
+              leaf.className = 'natanael-autumn-leaf';
+              leaf.style.left = Math.random() * window.innerWidth + 'px';
+              leaf.style.animationDuration = Math.random() * 3 + 2 + 's';
+              document.body.appendChild(leaf);
+
+              leaf.addEventListener('animationend', () => {
+                  leaf.remove();
+              });
+          };
+
+          setInterval(createLeaf, 2000);
+          for(let i = 0; i < 5; i++) {
+              setTimeout(createLeaf, i * 300);
+          }
+      },
+
+      initCarousel: function() {
+          new bootstrap.Carousel(document.querySelector('#natanaelAutumnCarousel'), {
+              interval: 5000,
+              wrap: true
+          });
+      }
+  };
+
+  document.addEventListener('DOMContentLoaded', () => NatanaelAutumnCarousel.init());
+})();
+
+// Fin Script Otoño

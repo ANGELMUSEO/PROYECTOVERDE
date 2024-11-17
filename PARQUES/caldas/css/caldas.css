@@ -6,8 +6,8 @@
 }
 
 /* Efecto parallax */
-.parallax-naturaleza {
-    background-image: url(../img/alargadas/pur-a-6.jpg);
+.parallax-caldas{
+    background-image: url(../img/alargadas/cal-a-\ \(23\).jpg);
     min-height: 1000px;
     background-attachment: fixed;
     background-position: center;
@@ -21,3 +21,12 @@
     background-position: center;
     background-size: cover;
 }
+
+.caldeporte{
+
+    background-image: url(../img/alargadas/cal-a-\ \(24\).jpg);
+    background-size: cover;
+    
+    }
+    
+ 

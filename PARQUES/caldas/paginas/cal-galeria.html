@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Las Caldas - Galería</title>
+
+
     <!-- Ultima Compilación simplificada CSS 5.3.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/finlandesa.css" type="text/css">
+    <link rel="stylesheet" href="../css/caldas.css" type="text/css">
     
     <link rel="stylesheet" href="../../../css/general.css">
+
    <!-- jQuery js -->
-    <script src="../js/purificacion.js"></script>
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="../js/caldas.js"></script>
+
     <link rel="icon" type="image/x-icon" href="../../../img/iconos/favicom.ico">
 
 </head>
@@ -28,7 +34,7 @@
         <div class="container-fluid">
              <!-- version ordenador lg-->
             <div class="">
-                <a class="navbar-brand" href="../../../index.html"><img class="" width="190px"
+                <a class="navbar-brand" href="../../../index.html"><img class="p-1" width="210px"
                         src="../../../img/logos/logo-espacio verde.png" alt="logo ovd"></a>
             </div>
 
@@ -38,13 +44,13 @@
 
             <div class="navbar-collapse collapse" id="minavbar">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link active me-2 fs-5"
-                            href="pista finlandesa.html">Pista Finlandesa</a>
+                    <li class="nav-item"><a class="nav-link me-2 fs-5"
+                            href="caldas.html">Las Caldas</a>
                     </li>
                     
-                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="pista finlandesa.html#historia">Historia</a></li>
-                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="pista finlandesa.html#naturaleza">Naturaleza</a></li>
-                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="pista finlandesa.html#deporte">Deportes</a></li>
+                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="caldas.html#historia">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="caldas.html#naturaleza">Naturaleza</a></li>
+                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="caldas.html#deporte">Deportes</a></li>
                     
                     <li class="nav-item dropdown"><a class="nav-link fs-5 dropdown-toggle" role="button"
                             data-bs-toggle="dropdown" href="">Descubre</a>
@@ -52,8 +58,8 @@
                             <li><a class="dropdown-item text-gris fs-5"
                                     href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">Vídeo en
                                     360º</a></li>
-                            <li><a class="dropdown-item text-gris fs-5" href="fin-video">Vídeo</a></li>
-                            <li><a class="dropdown-item text-gris fs-5" href="fin-galeria.html">Galería de Fotos</a>
+                            <li><a class="dropdown-item text-gris fs-5" href="#videocal">Vídeo</a></li>
+                            <li><a class="dropdown-item text-gris fs-5 active" href="cal-galeria.html">Galería de Fotos</a>
                             </li>
                         </ul>
                     </li>
@@ -69,164 +75,44 @@
 
 
     <!---------------------------------------------------------------------------------------------------------
-                                          Carousel Pista Finlandesa
+                                          Carousel Las Caldas
     ---------------------------------------------------------------------------------------------------------->
-    <a name="pista finlandesa.html"></a>
+    <a name="caldas.html"></a>
 
 
-    <div class="carousel slide" data-bs-ride="carousel" id="carousel-finlandesa">
+    <div class="carousel slide" data-bs-ride="carousel" id="carousel-caldas">
 
         <div class="carousel-indicators">
-            <button type="button" class="active" data-bs-target="#carousel-finlandesa" data-bs-slide-to="0"></button>
-            <button type="button" class="" data-bs-target="#carousel-finlandesa" data-bs-slide-to="1"></button>
-            <button type="button" class="" data-bs-target="#carousel-finlandesa" data-bs-slide-to="2"></button>
-            <button type="button" class="" data-bs-target="#carousel-finlandesa" data-bs-slide-to="3"></button>
-            <button type="button" class="" data-bs-target="#carousel-finlandesa" data-bs-slide-to="4"></button>
-        </div>
-
-        <!-- este es otro carousel de fotos de la pista finlandesa
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-
-                <img class="w-100 " src="../img/alargadas/fin-a-1.jpg"
-                    alt="imagen de la entrada parque san pedro de los arcos">
-
-                <div class="carousel-caption">
-                    <div class="d-md-none bg-azul-oscuro-opacity-75"> !-- version movil --
-                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                            <p class="fs-3 fst-italic sombra-letras">Pista Finlandesa. </p>
-                            <a href="#pista" role="button" class="btn btn-lg btn-outline-light">+Info</a>
-                        </div>
-                    </div>
-
-                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> !-- version ordenador --
-                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                            <p class="display-5 fw-bold sombra-letras">Pista Finlandesa.</p>
-                            <p class="fs-3 fst-italic sombra-letras">Un parque que lo tiene todo.</p>
-                            <a href="#pista" role="button" class="btn btn-lg btn-outline-light">+Info</a>
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item ">
-
-                <img class="w-100 " src="../img/alargadas/fin-a-3.jpg"
-                    alt="imagen de la entrada parque san pedro de los arcos">
-
-                <div class="carousel-caption">
-                    <div class="d-md-none bg-azul-oscuro-opacity-75"> !-- version movil --
-                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                            <p class="fs-3 fst-italic sombra-letras">Conoce la Historia. </p>
-                            <a href="fin-historia.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
-                        </div>
-                    </div>
-
-                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> !-- version ordenador --
-                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                            <p class="display-5 fw-bold sombra-letras">Pista Finlandesa.</p>
-                            <p class="fs-3 fst-italic sombra-letras">Un parque para practicar DEPORTE. </p>
-                            <a href="fin-historia.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-
-                <img class="w-100 " src="../img/alargadas/fin-a-5.jpg"
-                    alt="imagen de la entrada parque san pedro de los arcos">
-
-                <div class="carousel-caption">
-                    <div class="d-md-none bg-azul-oscuro-opacity-75"> !-- version movil --
-                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                            <p class="fs-3 fst-italic sombra-letras">Ver su Naturaleza. </p>
-                            <a href="fin-naturaleza.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
-                        </div>
-                    </div>
-
-                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> !-- version ordenador --
-                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                            <p class="display-5 fw-bold sombra-letras">Pista Finlandesa.</p>
-                            <p class="fs-3 fst-italic sombra-letras">Un parque con NATURALEZA. </p>
-                            <a href="fin-naturaleza.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item ">
-
-                <img class="w-100 " src="../img/alargadas/fin-a-2.jpg"
-                    alt="imagen de la entrada parque san pedro de los arcos">
-
-                <div class="carousel-caption">
-                    <div class="d-md-none bg-azul-oscuro-opacity-75"> !-- version movil --
-                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                            <p class="fs-3 fst-italic sombra-letras">Practicar Deporte. </p>
-                            <a href="fin-deporte.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
-                        </div>
-                    </div>
-
-                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> !-- version ordenador --
-                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                            <p class="display-5 fw-bold sombra-letras">Pista Finlandesa.</p>
-                            <p class="fs-3 fst-italic sombra-letras">Un parque con HISTORIA. </p>
-                            <a href="fin-deporte.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item ">
-
-                <img class="w-100 " src="../img/alargadas/fin-a-8.jpg"
-                    alt="imagen de la entrada parque san pedro de los arcos">
-
-                <div class="carousel-caption">
-                    <div class="d-md-none bg-azul-oscuro-opacity-75"> !-- version movil --
-                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                            <p class="fs-3 fst-italic sombra-letras">vista Panóramica. </p>
-                            <a href="fin-video.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
-                        </div>
-                    </div>
-
-                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> !-- version ordenador --
-                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                            <p class="display-5 fw-bold sombra-letras">Pista Finlandesa.</p>
-                            <p class="fs-3 fst-italic sombra-letras">Vista Panóramica  de OVIEDO. </p>
-                            <a href="fin-video.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    -->
-
-
+            <button type="button" class="" data-bs-target="#carousel-caldas" data-bs-slide-to="0"></button>
+            <button type="button" class="" data-bs-target="#carousel-caldas" data-bs-slide-to="1"></button>
+            <button type="button" class="" data-bs-target="#carousel-caldas" data-bs-slide-to="2"></button>
+            <button type="button" class="" data-bs-target="#carousel-caldas" data-bs-slide-to="3"></button>
+            <button type="button" class="active" data-bs-target="#carousel-caldas" data-bs-slide-to="4"></button>
+        </div>      
+                  
+                 
+                
     <div class="carousel-inner">
         <div class="carousel-item">
 
-            <img class="w-100 " src="../img/alargadas/fin-a-2.jpg"
-                alt="imagen de la entrada parque san pedro de los arcos">
+            <img class="w-100 " src="../img/alargadas/cal-a- (18).jpg"
+                alt="imagen de las caldas">
 
             <div class="carousel-caption">
                 <div class="d-md-none bg-azul-oscuro-opacity-75">
                     <!-- version movil -->
                     <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                        <p class="fs-3 fst-italic sombra-letras">Pista Finlandesa</p>
-                        <a href="pista finlandesa.html#pista" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        <p class="fs-3 fst-italic sombra-letras">Las Caldas</p>
+                        <a href="caldas.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
                     </div>
                 </div>
 
                 <div class="d-none d-md-block bg-azul-oscuro-opacity-75">
                     <!-- version ordenador -->
                     <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                        <p class="display-5 fw-bold sombra-letras">Pista Finlandesa</p>
-                        <p class="fs-3 fst-italic sombra-letras">Encontrarás todo lo necesario para desconectar </p>
-                        <a href="pista finlandesa.html#pista" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        <p class="display-5 fw-bold sombra-letras">Las Caldas</p>
+                        <p class="fs-3 fst-italic sombra-letras">Baños terapéuticos y descanso</p>
+                        <a href="caldas.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
                         <br>
                     </div>
                 </div>
@@ -234,24 +120,24 @@
         </div>
         <div class="carousel-item ">
 
-            <img class="w-100 " src="../img/alargadas/fin-a-6.jpg"
-                alt="imagen de la entrada parque san pedro de los arcos">
+            <img class="w-100 " src="../img/alargadas/cal-a- (24).jpg"
+                alt="imagen de las caldas">
 
             <div class="carousel-caption">
                 <div class="d-md-none bg-azul-oscuro-opacity-75">
                     <!-- version movil -->
                     <div class="mx-auto d-block rounded-5" style="width: 75%;">
                         <p class="fs-3 fst-italic sombra-letras">HISTORIA </p>
-                        <a href="pista finlandesa.html#historia" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        <a href="caldas.html#historia" role="button" class="btn btn-lg btn-outline-light">+Info</a>
                     </div>
                 </div>
 
                 <div class="d-none d-md-block bg-azul-oscuro-opacity-75">
                     <!-- version ordenador -->
                     <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                        <p class="display-5 fw-bold sombra-letras">Pista Finlandesa</p>
-                        <p class="fs-3 fst-italic sombra-letras">Descubre su HISTORIA </p>
-                        <a href="pista finlandesa.html#historia" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        <p class="display-5 fw-bold sombra-letras">Las Caldas</p>
+                        <p class="fs-3 fst-italic sombra-letras">Historia con leyenda </p>
+                        <a href="caldas.html#historia" role="button" class="btn btn-lg btn-outline-light">+Info</a>
                         <br><br>
                     </div>
                 </div>
@@ -259,24 +145,24 @@
         </div>
         <div class="carousel-item ">
 
-            <img class="w-100 " src="../img/alargadas/fin-a-8.jpg"
-                alt="imagen de la entrada parque san pedro de los arcos">
+            <img class="w-100 " src="../img/alargadas/cal-a- (22).jpg"
+                alt="imagen de las caldas">
 
             <div class="carousel-caption">
                 <div class="d-md-none bg-azul-oscuro-opacity-75">
                     <!-- version movil -->
                     <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                        <p class="fs-3 fst-italic sombra-letras">NATURALEZA en Vivo</p>
-                        <a href="pista finlandesa.html#naturaleza" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        <p class="fs-3 fst-italic sombra-letras">Naturaleza con vistas</p>
+                        <a href="caldas.html#naturaleza" role="button" class="btn btn-lg btn-outline-light">+Info</a>
                     </div>
                 </div>
 
                 <div class="d-none d-md-block bg-azul-oscuro-opacity-75">
                     <!-- version ordenador -->
                     <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                        <p class="display-5 fw-bold sombra-letras">Pista Finlandesa</p>
-                        <p class="fs-3 fst-italic sombra-letras">Rodéate de Naturaleza y sus Paisajes </p>
-                        <a href="pista finlandesa.html#naturaleza" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        <p class="display-5 fw-bold sombra-letras">Las Casldas</p>
+                        <p class="fs-3 fst-italic sombra-letras">Naturaleza con vistas</p>
+                        <a href="caldas.html#naturaleza" role="button" class="btn btn-lg btn-outline-light">+Info</a>
                         <br><br>
                     </div>
                 </div>
@@ -284,24 +170,24 @@
         </div>
         <div class="carousel-item ">
 
-            <img class="w-100 " src="../img/alargadas/fin-a-3.jpg"
-                alt="imagen de la entrada parque san pedro de los arcos">
+            <img class="w-100 " src="../img/alargadas/cal-a- (32).jpg"
+                alt="imagen de las caldas">
 
             <div class="carousel-caption">
                 <div class="d-md-none bg-azul-oscuro-opacity-75">
                     <!-- version movil -->
                     <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                        <p class="fs-3 fst-italic sombra-letras">Practicar DEPORTE </p>
-                        <a href="pista finlandesa.html#deporte" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        <p class="fs-3 fst-italic sombra-letras">Deporte y Bienestar </p>
+                        <a href="caldas.html#deporte" role="button" class="btn btn-lg btn-outline-light">+Info</a>
                     </div>
                 </div>
 
                 <div class="d-none d-md-block bg-azul-oscuro-opacity-75">
                     <!-- version ordenador -->
                     <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                        <p class="display-5 fw-bold sombra-letras">Pista Finlandesa</p>
-                        <p class="fs-3 fst-italic sombra-letras">Un parque para practicar DEPORTE </p>
-                        <a href="pista finlandesa.html#deporte" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        <p class="display-5 fw-bold sombra-letras">Las Caldas</p>
+                        <p class="fs-3 fst-italic sombra-letras">Un lugar para el Deporte y Bienestar</p>
+                        <a href="caldas.html#deporte" role="button" class="btn btn-lg btn-outline-light">+Info</a>
                         <br><br>
                     </div>
                 </div>
@@ -309,24 +195,24 @@
         </div>
         <div class="carousel-item active ">
 
-            <img class="w-100 " src="../img/alargadas/fin-a-5.jpg"
-                alt="imagen de la entrada parque san pedro de los arcos">
+            <img class="w-100 " src="../img/alargadas/cal-a- (17).jpg"
+                alt="imagen de las caldas">
 
             <div class="carousel-caption">
                 <div class="d-md-none bg-azul-oscuro-opacity-75">
                     <!-- version movil -->
                     <div class="mx-auto d-block rounded-5" style="width: 75%;">
                         <p class="fs-3 fst-italic sombra-letras">Galería de Fotos </p>
-                        <a href="fin-galeria.html#pista" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        <a href="cal-galeria.html#calda" role="button" class="btn btn-lg btn-outline-light">+Info</a>
                     </div>
                 </div>
 
                 <div class="d-none d-md-block bg-azul-oscuro-opacity-75">
                     <!-- version ordenador -->
                     <div class="mx-auto d-block rounded-5" style="width: 75%;">
-                        <p class="display-5 fw-bold sombra-letras">Pista Finlandesa</p>
-                        <p class="fs-3 fst-italic sombra-letras">Galería de Fotos y Vistas Panorámicas </p>
-                        <a href="fin-galeria.html#pista" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        <p class="display-5 fw-bold sombra-letras">Las Caldas</p>
+                        <p class="fs-3 fst-italic sombra-letras">Galería de Fotos</p>
+                        <a href="caldas.html#calda" role="button" class="btn btn-lg btn-outline-light">+Info</a>
                         <br><br>
                     </div>
                 </div>
@@ -335,12 +221,12 @@
     </div>
 
 
-        <button type="button" class="carousel-control-prev" data-bs-target="#carousel-finlandesa"
+        <button type="button" class="carousel-control-prev" data-bs-target="#carousel-caldas"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </button>
 
-        <button type="button" class="carousel-control-next" data-bs-target="#carousel-finlandesa"
+        <button type="button" class="carousel-control-next" data-bs-target="#carousel-caldas"
             data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
         </button>
@@ -362,13 +248,13 @@
         <!-- version ordenador-->
         <a class=" d-none d-lg-block d-block a-hover  nav-link text-center fs-5"
             href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">
-            <p>Vídeo de la Pista Finlandesa que ofrece una vista panorámica de 360º desde el punto de grabación.</p>
+            <p>Vídeo de Las Caldas que ofrece una vista panorámica de 360º desde el punto de grabación.</p>
         </a>
 
         <!-- version movil-->
         <a class="d-block d-sm-block d-lg-none a-hover  nav-link text-center fs-5"
             href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">
-            <p>Vídeo de la Pista Finlandesa con vista en 360º</p>
+            <p>Vídeo de Las Caldas con vista en 360º</p>
         </a>
 
     </div>
@@ -378,7 +264,7 @@
     <!----------------------------------------------------------------------------------
 boton + info de la imagen presente carousel que indica el parque en el que estamos
 ------------------------------------------------------------------------------------>
-    <a name="pista"></a>
+    <a name="calda"></a>
 
  
 
@@ -391,14 +277,14 @@ boton + info de la imagen presente carousel que indica el parque en el que estam
 
     <div class="container mt-3">
 
-        <p class="fs-4 fw-bold text-azul-oscuro text-center">Paseo de Valdeflora: senda peatonal y ciclista </p>
-        <p class="display-5 text-center"> <img src="../../../img/iconos/logo-n-1.png" width="145px" alt="banco" class="me-4">
-            Pista Finlandesa <img src="../../../img/iconos/logo-d-1.png" width="70px" alt="fotógrafo" class="ms-4">
+        <p class="fs-4 fw-bold text-azul-oscuro text-center">Parroquia de <strong> San Juan de Priorio </strong> </p>
+        <p class="display-5 text-center"> <img src="../../../img/iconos/icon  (65).png" width="145px" alt="banco" class="me-4">
+            Las Caldas 
         </p>
 
-        <p class="text-secondary text-center fs-5">¡<strong>Siéntate, asómate, mira </strong> a la Pista Finlandesa!<br>
-            Disfruta de la ciudad desde la ladera sur del <strong>Monte Naranco.</strong>
-            <br>Rodéate de<strong> naturaleza y sonidos</strong> mientras te relajas.<br>
+        <p class="text-secondary text-center fs-5">Historia del Balneario unido a la salud y al ocio burgués. <br>
+            Cuna de intelectuales, leyendas románticas y sobre todo lugar privilegiado de descanso. <br>
+            Las <strong> aguas termales </strong> sirven para la <strong> salud</strong> y la <strong> belleza </strong> corporal gracias a sus propiedades.<br>
         </p>
 
     </div>
@@ -416,23 +302,23 @@ boton + info de la imagen presente carousel que indica el parque en el que estam
     -----------------------------------------------------------------------------------------------´------>
     <div class="container-fluid">
         <div class="row mt-5">
-            <img src="../img/banner/fin-b-1.jpg" alt="vista general de la pista" class="img-fluid">
+            <img src="../img/banner/cal-b- (9).jpg" alt="las caldas" class="img-fluid">
         </div>
         <div class="row mt-3 ">
             <div class=" col-12 col-md-4">
-                <div class="card">
-                    <img class="img-fluid ps-" src="../img/cuadradas/fin-c-14.jpg" alt="vista puente">
+                <div class="card mt-2">
+                    <img class="img-fluid ps-" src="../img/cuadradas/cal-c- (60).jpg" alt="vista puente">
     
                 </div>
             </div>
             <div class="col-12 col-md-4">
-                <div class="card">
-                    <img class="img-fluid" src="../img/cuadradas/fin-c-27.jpg" alt="vista de oviedo">
+                <div class="card mt-2">
+                    <img class="img-fluid" src="../img/cuadradas/cal-c- (48).jpg" alt="las caldas">
                 </div>
             </div>
             <div class="col-12 col-md-4">
-                <div class="card">
-                    <img class="img-fluid" src="../img/cuadradas/fin-c-6.jpg" alt="pista">
+                <div class="card mt-2">
+                    <img class="img-fluid" src="../img/cuadradas/cal-c- (50).jpg" alt="castillo">
                 </div>
             </div>
     
@@ -452,33 +338,33 @@ boton + info de la imagen presente carousel que indica el parque en el que estam
         <div class="collapse" id="galeria">
     
     
-            <img src="../img/banner/fin-b-3.jpg" alt="aparatos" class="img-fluid">
+            <img src="../img/banner/cal-b- (7).jpg" alt="aparatos" class="img-fluid">
     
             <div class="row mt-3  ">
                 <div class=" col-12 col-md-4">
-                    <div class="card">
-                        <img class="img-fluid" src="../img/cuadradas/fin-c-8.jpg" alt="vistas">
+                    <div class="card mt-2">
+                        <img class="img-fluid" src="../img/cuadradas/cal-c- (57).jpg" alt="vistas">
                        
                     </div>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-2 mt-2">
                     
-                    <img class="img-fluid" src="../img/cuadradas/fin-c-9.jpg" alt="cartel">
-                    <img class="img-fluid mt-4" src="../img/cuadradas/fin-c-10.jpg" alt=" aparatos">
+                    <img class="img-fluid" src="../img/cuadradas/cal-c- (56).jpg" alt="cartel">
+                    <img class="img-fluid mt-4" src="../img/cuadradas/cal-c- (59).jpg" alt=" aparatos">
     
                     
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img class="img-fluid" src="../img/cuadradas/fin-c-18.jpg" alt="vistas">
+                    <div class="card mt-2">
+                        <img class="img-fluid" src="../img/cuadradas/cal-c- (64).jpg" alt="vistas">
     
                         
                     </div>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-2 mt-2">
                     
-                    <img class="img-fluid w-100" src="../img/cuadradas/fin-c-4.jpg" alt="vistas">
-                    <img class="img-fluid w-100 mt-4" src="../img/cuadradas/fin-c-12.jpg" alt=" vistas">
+                    <img class="img-fluid w-100" src="../img/cuadradas/cal-c- (52).jpg" alt="vistas">
+                    <img class="img-fluid w-100 mt-4" src="../img/cuadradas/cal-c- (55).jpg" alt=" vistas">
                     
                 </div>
                 <div class="row mt-3 mb-2">
@@ -497,31 +383,31 @@ boton + info de la imagen presente carousel que indica el parque en el que estam
         <div class="collapse" id="galeria1">
             <div class="row mb-3">
     
-                <img src="../img/banner/fin-b-4.jpg" alt="aparatos" class="img-fluid">
+                <img src="../img/banner/cal-b- (11).jpg" alt="aparatos" class="img-fluid">
     
             </div>
             <div class="row mt-3">
-                <div class=" col-12 col-md-2">
+                <div class=" col-12 col-md-2 mt-2">
                     
-                    <img class="img-fluid" src="../img/cuadradas/fin-c-3.jpg" alt="cartel">
-                    <img class="img-fluid mt-4" src="../img/cuadradas/fin-c-20.jpg" alt="cobertizo">
+                    <img class="img-fluid" src="../img/cuadradas/cal-c- (36).jpg" alt="cartel">
+                    <img class="img-fluid mt-4" src="../img/cuadradas/cal-c- (54).jpg" alt="cobertizo">
                     
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img class="img-fluid" src="../img/cuadradas/fin-c-17.jpg" alt="pista">
+                    <div class="card mt-2">
+                        <img class="img-fluid" src="../img/cuadradas/cal-c- (35).jpg" alt="pista">
                     </div>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-2 mt-2">
                     
-                    <img class="img-fluid" src="../img/cuadradas/fin-c-7.jpg" alt="pistas">
+                    <img class="img-fluid" src="../img/cuadradas/cal-c- (37).jpg" alt="pistas">
 
-                    <img class="img-fluid mt-4" src="../img/cuadradas/fin-c-17.jpg" alt="pistas">
+                    <img class="img-fluid mt-4" src="../img/cuadradas/cal-c- (53).jpg" alt="pistas">
                    
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img class="img-fluid" src="../img/cuadradas/fin-c-22.jpg" alt="pista">
+                    <div class="card mt-2">
+                        <img class="img-fluid" src="../img/cuadradas/cal-c- (39).jpg" alt="pista">
                     </div>
                 </div>
 
@@ -531,7 +417,7 @@ boton + info de la imagen presente carousel que indica el parque en el que estam
                 <div class="row mt-3 mb-2">
                     <div class="col-12  ">
                         <button type="button" class="btn btn-primary text-white" data-bs-target="#galeria2"
-                            data-bs-toggle="collapse"> Ver mas...</button>
+                            data-bs-toggle="collapse"> Ver más...</button>
                     </div>
                 </div>
             </div>
@@ -546,36 +432,36 @@ boton + info de la imagen presente carousel que indica el parque en el que estam
         <div class="collapse" id="galeria2">       
     
             <div class="row">
-                <img src="../img/banner/fin-b-8.jpg" alt="vistas" class="img-fluid">
+                <img src="../img/banner/cal-b- (13).jpg" alt="vistas" class="img-fluid">
             </div>
             <div class="row mt-3">
                 <div class=" col-12 col-md-4">
                     <div class="card">
-                        <img class="img-fluid" src="../img/cuadradas/fin-c-5.jpg" alt="árboles">
+                        <img class="img-fluid" src="../img/cuadradas/cal-c- (1).jpg" alt="árboles">
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img class="img-fluid" src="../img/cuadradas/fin-c-27.jpg" alt="fuente">
+                    <div class="card mt-2">
+                        <img class="img-fluid" src="../img/cuadradas/cal-c- (29).jpg" alt="fuente">
                     </div>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-2 mt-2">
                     
-                    <img class="img-fluid" src="../img/cuadradas/fin-c-15.jpg" alt="vistas">
+                    <img class="img-fluid" src="../img/cuadradas/cal-c- (40).jpg" alt="vistas">
 
-                    <img class="img-fluid mt-4" src="../img/cuadradas/fin-c-16.jpg" alt="puente">
+                    <img class="img-fluid mt-4" src="../img/cuadradas/cal-c- (31).jpg" alt="puente">
                     
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-2 mt-2">
                     
-                    <img class="img-fluid" src="../img/cuadradas/fin-c-26.jpg" alt="vistas">
-                    <img class="img-fluid mt-4" src="../img/cuadradas/fin-c-13.jpg" alt="vistas">
+                    <img class="img-fluid" src="../img/cuadradas/cal-c- (41).jpg" alt="vistas">
+                    <img class="img-fluid mt-4" src="../img/cuadradas/cal-c- (49).jpg" alt="vistas">
                     
                 </div>
                 <div class="row mt-3 mb-2">
                     <div class="col-12  ">
                         <button type="button" class="btn btn-primary text-white" data-bs-target="#galeria3"
-                            data-bs-toggle="collapse"> Ver mas...</button>
+                            data-bs-toggle="collapse"> Ver más...</button>
                     </div>
                 </div>
                 
@@ -588,36 +474,36 @@ boton + info de la imagen presente carousel que indica el parque en el que estam
         <div class="collapse" id="galeria3">       
     
             <div class="row">
-                <img src="../img/banner/fin-b-7.jpg" alt="arbolado" class="img-fluid">
+                <img src="../img/banner/cal-b- (8).jpg" alt="arbolado" class="img-fluid">
             </div>
             <div class="row mt-3">
-                <div class=" col-12 col-md-2">
+                <div class=" col-12 col-md-2 mt-2">
                     
-                    <img class="img-fluid" src="../img/cuadradas/fin-c-19.jpg" alt="cubo inteligente">
-                    <img class="img-fluid mt-4" src="../img/cuadradas/fin-c-11.jpg" alt="máquina">
+                    <img class="img-fluid" src="../img/cuadradas/cal-c- (46).jpg" alt="cubo inteligente">
+                    <img class="img-fluid mt-4" src="../img/cuadradas/cal-c- (64).jpg" alt="máquina">
                     
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img class="img-fluid" src="../img/cuadradas/fin-c-17.jpg" alt="vistas">
+                    <div class="card mt-2">
+                        <img class="img-fluid" src="../img/cuadradas/cal-c- (43).jpg" alt="vistas">
                     </div>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-2 mt-2">
                     
-                    <img class="img-fluid" src="../img/cuadradas/fin-c-1.jpg" alt="cartel">
+                    <img class="img-fluid" src="../img/cuadradas/cal-c- (38).jpg" alt="cartel">
 
-                    <img class="img-fluid mt-4" src="../img/cuadradas/fin-c-2.jpg" alt="entrada">
+                    <img class="img-fluid mt-4" src="../img/cuadradas/cal-c- (42).jpg" alt="entrada">
                    
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img class="img-fluid" src="../img/cuadradas/fin-c-25.jpg" alt="fuente">
+                    <div class="card mt-2">
+                        <img class="img-fluid" src="../img/cuadradas/cal-c- (44).jpg" alt="fuente">
                                             
                     </div>
                        
                 </div>
                 <div class="container-fluid mt-4 mb-4">
-                    <img src="../img/banner/fin-b-5.jpg" alt="arbolado" class="img-fluid">
+                    <img src="../img/banner/cal-b- (12).jpg" alt="arbolado" class="img-fluid">
                 </div>
                                              
             </div>
@@ -635,8 +521,8 @@ boton + info de la imagen presente carousel que indica el parque en el que estam
     ---------------------------------------------------------------------------------------------------------->
     <div class="embed-responsive mt-5">
         
-
-        <iframe class="mx-auto d-block embed-responsive-item ratio" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2039.0887617455053!2d-5.862571989736689!3d43.37624307099612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368da93957d39b%3A0x456b1b5ba637a976!2sPista%20Finlandesa!5e1!3m2!1ses!2ses!4v1728932748979!5m2!1ses!2ses" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="mx-auto d-block embed-responsive-item ratio"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.679148877967!2d-5.924749607388862!3d43.33181474747553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3692cacd2f6c5b%3A0x852dd19f47629ba!2sLas%20Caldas%2C%2033174%20Oviedo%2C%20Asturias!5e1!3m2!1ses!2ses!4v1731011719059!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
     </div>
 
 
@@ -665,49 +551,49 @@ boton + info de la imagen presente carousel que indica el parque en el que estam
                     <p class="mb-4"></p>
                 </div>
                 <div class=" col-12 col-md-3 text-center">
-                    <p class="fw-bold fs-5 mb-4">Sobre Pista Finlandesa</p>
-                    <a class="nav-link mb-4" href="Plantilla-Pista-Finlandesa.html">Historia</a>
-                    <a class="nav-link mb-4" href="Plantilla-Pista-Finlandesa.html">Naturaleza</a>
-                    <a class="nav-link mb-4" href="Plantilla-Pista-Finlandesa.html">Deportes</a>
+                    <p class="fw-bold fs-5 mb-4">Las Caldas</p>
+                    <a class="nav-link mb-4" href="caldas.html#historia">Historia</a>
+                    <a class="nav-link mb-4" href="caldas.html#naturaleza">Naturaleza</a>
+                    <a class="nav-link mb-4" href="caldas.html#deporte">Deportes</a>
                     
                 </div>
                 <div class=" col-12 col-md-3 text-center">
                     <p class="fw-bold fs-5">Redes Sociales</p>
                     <a href="https://www.youtube.com/@naturalezadeporteybienestar" target="_blank">
-                        <img class="me-3" src="../img/logos/youtube.png" alt="logotipo de youtube" width="52px"></a>
+                        <img class="me-3" src="../../../img/iconos/youtube.png" alt="logotipo de youtube" width="52px"></a>
                     <a href="https://www.facebook.com/empleoayuntamientodeoviedo" target="_blank">
-                        <img class="me-3" src="../img/logos/facebook.png" alt="logotipo de facebook" width="55px"></a>
+                        <img class="me-3" src="../../../img/iconos/facebook.png" alt="logotipo de facebook" width="55px"></a>
                     <a href="mailto:naturalezadeporteybienestar.info@correo.com">
-                        <img class="me-3" src="../img/logos/correo.png" alt="logotipo de facebook" width="55px"></a>
+                        <img class="me-3" src="../../../img/iconos/correo.png" alt="logotipo de facebook" width="55px"></a>
                     <br><br>
                     <p class="fw-bold fs-5">Descubre</p>
                     <a class="nav-link" href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">Vídeo
                         360º</a>
-                    <a class="nav-link" href="fin-video.html">Vídeo</a>
-                    <a class="nav-link" href="Plantilla-Galeria-Pista-Finlandesa.html">Galería de Fotos</a>
+                    <a class="nav-link" href="#videocal">Vídeo</a>
+                    <a class="nav-link" href="cal-galeria.html">Galería de Fotos</a>
                 </div>
                 <div class=" col-12 col-md-3">
-                    <img class=" logo-ovd-pie-md img-fluid d-none d-md-block " src="../img/logos/logo-ovd-footer.png"
+                    <img class=" logo-ovd-pie-md img-fluid d-none d-md-block " src="../../../img/logos/logo-ovd-footer.png"
                         alt="logo de los desarrolladores"> <!-- para tablet  ordenador-->
                     <img class="d-sm-block d-md-none mx-auto d-block logo-ovd-pie my-2"
-                        src="../img/logos/logo-ovd-footer.png" alt="logo de los desarrolladores"> <!-- para movil-->
+                        src="../../../img/logos/logo-ovd-footer.png" alt="logo de los desarrolladores"> <!-- para movil-->
                 </div>
             </div>
             <div class="row "> 
                 <hr>
                 <div class="col-6 ">
-                    <p class="text-politica"> © Copyright 2024. <br> Todos los derechos reservados.</p>
+                    <p class="text-politica"> © Copyright 2025. <br> Todos los derechos reservados.</p>
                 </div>
                 <div class="col-6">
                     <p class="text-end">
                         <a class="text-gris text-decoration-none text-end text-politica"
-                            href="../../../derechos/centro privacidad.html" target="_blank">Centro de Privacidad.</a>
+                            href="../../politicas/mapa web.html" target="_blank">Mapa Web.</a>
                         <br>
                         <a class="text-gris text-decoration-none text-end text-politica"
-                            href="../../../derechos/politica privacidad.html" target="_blank">Política de
+                            href="../../politicas/politica privacidad.html" target="_blank">Política de
                             Privacidad.</a> <br>
                         <a class="text-gris text-decoration-none text-end text-politica"
-                            href="../../../derechos/accesibilidad web.html" target="_blank">Accesibilidad Web.</a> <br>
+                            href="../../politicas/accesibilidad web.html" target="_blank">Accesibilidad Web.</a> <br>
 
                     </p>
                 </div>
@@ -719,8 +605,8 @@ boton + info de la imagen presente carousel que indica el parque en el que estam
 
         <div class="row">
             <div class="col-12 pb-3">
-                <img class=" w-pie d-none d-md-block img-fluid mx-auto d-block" src="../img/logos/Banner WEB.png" alt=""> <!--ordenador-->
-                <img class=" w-100d-sm-block d-md-none img-fluid mx-auto d-block" src="../img/logos/Banner WEB.png" alt="" style="height:35px"> <!--movil-->
+                <img class=" w-pie d-none d-md-block img-fluid mx-auto d-block" src="../../../img/logos/Banner WEB.png" alt=""> <!--ordenador-->
+                <img class=" w-100d-sm-block d-md-none img-fluid mx-auto d-block" src="../../../img/logos/Banner WEB.png" alt="" style="height:35px"> <!--movil-->
             </div>
         </div>
     </div>

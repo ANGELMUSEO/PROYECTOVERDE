@@ -81,7 +81,7 @@ background-color: rgba(11, 43, 86, 0.5);
 .video-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    padding-top: 36.25%; /* 16:9 Aspect Ratio */
     overflow: hidden;
 }
 .video-container video {
@@ -760,3 +760,339 @@ video {
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
+/* CSS Carousel Esculturas */
+
+
+:root {
+  --nat-primary: #4a90e2;
+  --nat-secondary: #2c3e50;
+  --nat-text: #34495e;
+  --nat-bg-start: #f5f7fa;
+  --nat-bg-end: #c3cfe2;
+  --nat-white: rgba(255, 255, 255, 0.9);
+  --nat-shadow: rgba(31, 38, 135, 0.37);
+}
+
+body.nat14-body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, var(--nat-bg-start) 0%, var(--nat-bg-end) 100%);
+}
+
+.nat14-main-wrapper {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 var(--nat-shadow);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.nat14-main-wrapper.nat14-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nael-carousel-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.nael-carousel {
+  transition: transform 0.5s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nael-carousel-item {
+  position: relative;
+}
+
+.nael-carousel-item img {
+  filter: grayscale(25%);
+  transition: all 0.5s ease;
+  height: 400px;
+  object-fit: cover;
+}
+
+.nael-carousel:hover .nael-carousel-item img {
+  filter: grayscale(0%);
+}
+
+.nael-nav-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.nael-nav-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--nat-primary);
+  cursor: pointer;
+  padding: 0.5rem;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nael-nav-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--nat-primary);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.nael-nav-button:hover::before {
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+  background: rgba(74, 144, 226, 0.1);
+}
+
+.nael-btn-custom {
+  background-color: var(--nat-primary);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.nael-btn-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+  color: #fff;
+  text-decoration: none;
+}
+
+.nael-content {
+  padding: 2rem;
+}
+
+.nael-title {
+  color: var(--nat-secondary);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nael-text {
+  color: var(--nat-text);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .nat14-main-wrapper {
+      margin: 1rem;
+      padding: 1rem;
+  }
+
+  .nael-carousel-item img {
+      height: 300px;
+  }
+}
+
+
+/* Final CSS Carousel Esculturas */
+
+/* CSS Carousel Otoño */
+
+
+:root {
+  --natanael-autumn-primary: #CD853F;
+  --natanael-autumn-secondary: #8B4513;
+  --natanael-autumn-accent: #D2691E;
+  --natanael-autumn-light: #DEB887;
+  --natanael-autumn-dark: #654321;
+  --natanael-autumn-bg-start: #FFF8DC;
+  --natanael-autumn-bg-end: #FFE4B5;
+  --natanael-autumn-text: #3E2723;
+  --natanael-autumn-shadow: rgba(139, 69, 19, 0.3);
+}
+
+
+.natanael-autumn-wrapper {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px var(--natanael-autumn-shadow);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(222, 184, 135, 0.3);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.natanael-autumn-wrapper.natanael-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.natanael-autumn-title {
+  text-align: center;
+  color: var(--natanael-autumn-secondary);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px var(--natanael-autumn-shadow);
+  position: relative;
+}
+
+.natanael-autumn-title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: var(--natanael-autumn-accent);
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+.natanael-carousel-container {
+  perspective: 1000px;
+  position: relative;
+}
+
+.natanael-carousel {
+  transition: transform 0.6s ease;
+  box-shadow: 0 10px 20px var(--natanael-autumn-shadow);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.natanael-carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  filter: sepia(20%) contrast(110%);
+  transition: all 0.5s ease;
+}
+
+.natanael-carousel:hover .natanael-carousel-item img {
+  filter: sepia(0%) contrast(100%);
+}
+
+.natanael-content-section {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+
+.natanael-content-title {
+  color: var(--natanael-autumn-secondary);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.natanael-content-text {
+  color: var(--natanael-autumn-text);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.natanael-autumn-btn {
+  background: var(--natanael-autumn-primary);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.natanael-autumn-btn:hover {
+  background: var(--natanael-autumn-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px var(--natanael-autumn-shadow);
+  color: white;
+}
+
+.natanael-nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.natanael-nav-btn {
+  background: none;
+  border: none;
+  color: var(--natanael-autumn-secondary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.natanael-nav-btn:hover {
+  background: rgba(139, 69, 19, 0.1);
+  transform: scale(1.1);
+}
+
+
+
+@keyframes natanael-falling {
+  0% {
+      transform: translate(0, -10vh) rotate(0deg);
+      opacity: 0;
+  }
+  10% {
+      opacity: 1;
+  }
+  100% {
+      transform: translate(100px, 100vh) rotate(360deg);
+      opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .natanael-autumn-wrapper {
+      margin: 1rem;
+      padding: 1rem;
+  }
+
+  .natanael-carousel-item img {
+      height: 300px;
+  }
+
+  .natanael-autumn-title {
+      font-size: 2rem;
+  }
+}
+
+
+
+/* Final Carousel Otoño */

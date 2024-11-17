@@ -25,10 +25,10 @@
 <body>
 
     <!--Barra de navegacion  navbar -->
-    <nav class="navbar navbar-expand-md bg-azul-oscuro navbar-dark sticky-top ">
+    <nav class="navbar navbar-expand-lg bg-azul-oscuro navbar-dark sticky-top ">
         <div class="container-fluid">
             <div>
-                <a class="navbar-brand" href="../../../index.html"><img class="border-4" width="190px"
+                <a class="navbar-brand" href="../../../index.html"><img class="border-4" width="210px"
                         src="../img/logos/logo-ovd.jpg" alt="logo ovd"></a>
             </div>
 
@@ -42,8 +42,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link me-2 fs-5" href="#historia">Historia</a></li>
                     <li class="nav-item"><a class="nav-link me-2 fs-5" href="#naturaleza">Naturaleza</a></li>
-                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="#esculturas">Esculturas</a></li>
-                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="#otros">Otros</a></li>
+                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="#esculturas">Esculturas y arte</a></li>
                     <li class="nav-item dropdown"><a class="nav-link fs-5 dropdown-toggle" role="button"
                             data-bs-toggle="dropdown" href="">Descubre</a>
                         <ul class="dropdown-menu bg-azul-claro ">
@@ -91,7 +90,8 @@
                         <div class="mx-auto d-block rounded-5" style="width: 75%;">
                             <p class="display-5 fw-bold sombra-letras">San Pedro de los Arcos</p>
                             <p class="fs-3 fst-italic sombra-letras">Un parque que lo tiene TODO </p>
-                            <br>
+                            <a href="#sanpedro" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                            <br><br>
                         </div>
                     </div>
                 </div>
@@ -181,10 +181,16 @@
     </div>
     <div class="bg-gris">
 
-        <a class=" a-hover  nav-link text-center fs-5" href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s"
-            target="_blank">
-            <p>Vídeo del parque Purificación Tomás que permite una vista
-                completa de 360º a partir del punto donde se graba el vídeo.</p>
+        <!-- version ordenador-->
+        <a class=" d-none d-lg-block d-block a-hover  nav-link text-center fs-5"
+            href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">
+            <p>Vídeo del parque que ofrece una vista panorámica de 360º desde el punto de grabación.</p>
+        </a>
+
+        <!-- version movil-->
+        <a class="d-block d-sm-block d-lg-none a-hover  nav-link text-center fs-5"
+            href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">
+            <p>Vídeo del parque con vista en 360º</p>
         </a>
 
     </div>
@@ -196,9 +202,11 @@
 
     <!-- Introduccion -->
 
-    <div class="container mt-5 cardEspecial4">
+    <a name="sanpedro"></a>
+
+    <div class="container mt-5">
         <p class="fs-4 fw-bold text-azul-oscuro text-center">Un refugio verde para el descanso urbano.</p>
-        <p class="display-5 text-center"> <img src="../img/logos/logo-arbol-1.png" width="70px" alt="logo de un arbol">
+        <p class="display-5 text-center"> <img src="../img/Logos/logo-arbol-1.png" width="70px" alt="logo de un arbol">
             San Pedro de los Arcos</p>
 
             <p class="text-secondary text-center fs-5">El parque de San Pedro de los Arcos en Oviedo es un oasis urbano de amplias zonas verdes con serpenteantes senderos, áreas de juegos infantiles y acogedores bancos.<br>
@@ -214,7 +222,7 @@
 
             <div class="d-none d-md-block col-md-6">
 
-                <img src="../img/cuadradas/arc-c- (26).jpg" class="img-fluid borde sombra1 "
+                <img src="../img/cuadradas/arc-c- (26).jpg" class="img-fluid borde sombra1 cardEspecial4"
                     alt="Parque">
 
             </div>
@@ -222,7 +230,7 @@
             <div class="col-12 col-md-6">
 
                 <img src="../img/cuadradas/arc-c- (14).jpg" class="img-fluid
-                borde sombra1 " alt="Parque">
+                borde sombra1 cardEspecial4" alt="Parque">
 
             </div>
 
@@ -236,21 +244,27 @@
 
         <div class="row">
 
-            <div class="col-12 col-md-6 mt-5 ">
+            <div class="col-12 col-md-6 mt-5 cardEspecial4">
 
                 <p class="fs-4 fw-bold text-azul-oscuro text-center">Un rincón de tranquilidad en el corazón de Oviedo</p>
 
-                <p class="display-5 text-justify"> <img src="../img/logos/logo-arbol-2.png" width="30px"
+                <p class="display-5 text-justify"> <img src="../img/Logos/logo-arbol-2.png" width="30px"
                         alt="logo de un arbol">
                         Donde la naturaleza y el bienestar se entrelazan, ofreciendo a sus visitantes un espacio tranquilo para caminar y relajarse.</p>
 
             </div>
 
-            <div class="col-12 col-md-6 ">
+            <div class="col-12 col-md-6 cardEspecial4">
 
-                <p class="bg-gris text-azul-claro p-3 fs-4 text-justify borde mt-3">
+                <p class="bg-gris text-azul-claro p-3 fs-4 text-justify borde mt-3 d-none d-md-block">
 
                     El Parque de San Pedro de los Arcos en Oviedo es un oasis urbano que combina áreas verdes extensas con instalaciones recreativas. Entre sus senderos serpenteantes y zonas arboladas, ofrece un ambiente tranquilo ideal para pasear o relajarse. Equipado con áreas de juegos infantiles y bancos, es perfecto para familias y aquellos que buscan un respiro del bullicio de la ciudad. Su atmósfera acogedora y bien cuidada lo convierte en un lugar muy querido por los residentes locales.
+
+                </p>
+
+                <p class="bg-gris text-azul-claro p-3 fs-4 text-justify borde mt-3 d-block d-md-none">
+
+                    El Parque de San Pedro de los Arcos en Oviedo es un oasis urbano con amplias áreas verdes e instalaciones recreativas. Sus senderos y zonas arboladas crean un ambiente ideal para el paseo y la relajación. Equipado con áreas de juegos infantiles y bancos, es perfecto para familias y quienes buscan un respiro del bullicio. Su atmósfera acogedora lo hace muy apreciado por los residentes locales.
 
                 </p>
 
@@ -285,20 +299,20 @@
             </div>
         </div>
 
-        <div class="container-fluid mt-5 mb-5 border-banner-f d-block d-lg-none"><!--banner-g-->
-            <div class="row banner-historia-2 borde">
+        <div class="container-fluid mt-5 mb-5 border-banner-f d-block d-lg-none">
+            <div class="row banner-historia-2 borde"> <!--VERSION MOVIL-->
                 
                 <div class="col-md-7">
 
                     <br>
 
-                    <h1 class="text-s text-white display-3 sombra-letras fw-bold">San Pedro de los Arcos</h1>
+                    <h1 class="text-s text-white display-3 sombra-letras fw-bold">San Pedro <br> de los Arcos</h1>
     
                     <br>
                     <br>
                     <br>
                     <br>
-                    <h2 class="text-white mb-5 text-s sombra-letras ">Un viaje a través de siglos de historia y encanto natural</h2>
+                    <h2 class="text-white mb-5 text-s sombra-letras ">Un viaje a través de siglos <br> de historia y encanto natural</h2>
                    
                 </div>
                 <div class="col-5"></div>
@@ -311,34 +325,21 @@
 
         <!--Bloque Historia-->
 
-        <div class="container mt-5 text-center fw-bold fs-2">
-
-            <div class="row">
-    
-                <div class="col-12 col-md-12">
-    
-                    <img src="../img/Logos/logo-h-2.png" class="img-fluid" width="70px" alt="">
-    
-                </div>
-    
-                <div class="col-12 col-md-12">
-    
-                    <h2 class="text-azul-oscuro">HISTORIA</h2>
-    
-                </div>
-    
-            </div>
-    
-        </div>
-
         <div class="container mt-5">
 
             <div class="row">
             
-                <div class="col-12 col-md-4 ">
-                    <img src="../img/cuadradas/arc-c- (45).png" alt="naturaleza" class="img-fluid borde1 m-2">
+                <div class="col-12 col-md-4 cardEspecial4 d-block d-md-none d-lg-block">
+                    <img src="../img/cuadradas/arc-c- (45).png" alt="naturaleza" class="img-fluid borde1 ">
         
                 </div>
+
+                <div class="col-12 col-md-4 cardEspecial4 d-none d-md-block d-lg-none mt-5">
+                    <img src="../img/cuadradas/arc-c- (45).png" alt="naturaleza" class="img-fluid borde1 ">
+        
+                </div>
+
+
                 <div class="col-12 col-md-8 text-center">
         
                     <!-- <hr class="text-info">-->
@@ -352,9 +353,15 @@
                     <h2> <img class="me-2" src="../../../img/iconos/icono (21).png" alt="" width="50px">El Parque
                        </h2>
                         
-                    <p class="text-secondary text-center fs-5 "> 
-                        Este parque se encuentra en una ubicación histórica que remonta sus orígenes a la <strong>época visigótica</strong>, cuando existía una capilla conocida como <strong>San Pedro del Otero</strong>, situada en la falda del Monte Naranco. En el siglo XVIII, el nombre cambió a San Pedro de los Arcos debido al cercano acueducto de los Arcos. Durante la Revolución asturiana de 1934, la iglesia sufrió daños significativos y sus archivos fueron destruidos. Sin embargo, a lo largo de los años, el parque ha evolucionado hasta convertirse en un oasis urbano que no solo ofrece un espacio de relajación y ocio, sino que también preserva <strong>elementos históricos y culturales</strong>, como los cañones del siglo XVIII y diversas esculturas. Es un testimonio del rico pasado de Oviedo, integrando <strong>historia, naturaleza y arte</strong> en un entorno único y acogedor.
-        
+                    <p class="text-secondary text-justify d-none d-md-none d-lg-block  fs-5 "> 
+                        Este parque tiene una historia fascinante que se remonta a la <strong>época visigótica</strong>, cuando una capilla conocida como San Pedro del Otero se erigía en la falda del Monte Naranco. En el siglo XVIII, la presencia del <strong>acueducto de los Arcos</strong> le dio su nombre actual. A pesar de los daños sufridos durante la <strong>Revolución asturiana de 1934</strong>, con el tiempo se ha transformado en un oasis urbano que combina la relajación con la preservación de elementos históricos y culturales como los cañones del siglo XVIII y diversas esculturas. Es un verdadero testimonio del rico pasado de Oviedo, ofreciendo un espacio único que integra historia, naturaleza y arte.
+                    </p>
+
+                    <p class="text-secondary text-justify d-block d-md-block d-lg-none fs-5">
+
+                        Este parque tiene sus orígenes en la época visigótica con la capilla de San Pedro del Otero. En el siglo XVIII, cambió su nombre debido al cercano <strong>acueducto de los Arcos</strong>. A pesar de los daños sufridos durante la <strong>Revolución asturiana de 1934</strong>, se ha convertido en un oasis urbano que combina relajación y conservación de elementos históricos y culturales. Hoy en día, es un testimonio del pasado de Oviedo, integrando historia, naturaleza y arte.
+
+
                     </p>
                      
                     <p class="text-secondary text-justify ms-3 fs-5"> 
@@ -382,7 +389,7 @@
 
         <!--Banner Naturaleza-->
 
-        <div class="container-fluid mt-5 mb-5 border-banner-f d-none d-md-none d-lg-block "><!--banner-g-->
+        <div class="container-fluid mt-5 mb-5 border-banner-f d-none d-md-none d-lg-block"><!--banner-g-->
             <div class="row banner-naturaleza-3 borde">
                 
                 <div class="col-md-7">
@@ -402,55 +409,36 @@
             </div>
         </div>
     
-        <div class="container-fluid mt-5 mb-5 border-banner-f d-block d-lg-none"><!--banner-g-->
-            <div class="row banner-naturaleza-4 borde">
+        <div class="container-fluid mt-5 mb-5 border-banner-f d-block d-lg-none">
+            <div class="row banner-naturaleza-4 borde"> <!--VERSION MOVIL-->
                 
                 <div class="col-md-7">
 
                     <br>
 
-                    <h1 class="text-s text-white display-3 sombra-letras fw-bold">San Pedro de los Arcos</h1>
+                    <h1 class="text-s text-white display-3 sombra-letras fw-bold">San Pedro <br> de los Arcos</h1>
     
                     <br>
                     <br>
                     <br>
                     <br>
-                    <h2 class="text-white mb-5 text-s sombra-letras ">Un rincón donde la naturaleza inspira y el arte florece</h2>
+                    <h2 class="text-white mb-5 text-s sombra-letras ">Un rincón donde la naturaleza <br> inspira y el arte florece</h2>
                    
                 </div>
                 <div class="col-5"></div>
             </div>
-        </div>
+        </div> 
     
         <!--BLOQUE NATURALEZA-->
     
-        <div class="container mt-5 text-center fw-bold fs-2">
-    
-            <div class="row">
-    
-                <div class="col-12 col-md-12">
-    
-                    <img src="../img/Logos/logo-arbol-5.png" class="img-fluid" width="70px" alt="">
-    
-                </div>
-    
-                <div class="col-12 col-md-12">
-    
-                    <h2 class="text-azul-oscuro">NATURALEZA</h2>
-    
-                </div>
-    
-            </div>
-    
-        </div>
-    
         <div class="container mt-5"> <!--info-->
             <div class="row">
-                <div class="col-12 col-md-4 ">
-                    <img src="../img/cuadradas/arc-c- (38).png" alt="naturaleza" class="img-fluid borde1 m-2">
+                <div class="col-12 col-md-4 cardEspecial4">
+                    <img src="../img/cuadradas/arc-c- (38).png" alt="naturaleza" class="img-fluid borde1 m-2 d-block d-md-none d-lg-block">
+                    <img src="../img/cuadradas/arc-c- (38).png" alt="naturaleza" class="img-fluid borde1 m-2 d-none d-md-block d-lg-none mt-5">
         
                 </div>
-                <div class="col-12 col-md-8 text-center">
+                <div class="col-12 col-md-8 text-center cardEspecial4">
         
                     <!-- <hr class="text-info">-->
                     <br><br>
@@ -460,10 +448,11 @@
                        
                     </h5>
                     <!-- <hr class="text-info">-->
-                    <h2> <img class="me-2" src="../../../img/iconos/icono (21).png" alt="" width="50px">Los Magnolios
+                    <h2> <img class="me-2" src="../../../img/iconos/icono (21).png" alt="" width="50px">
+                        Los Magnolios
                        </h2>
                         
-                    <p class="text-secondary text-center fs-5 "> Podemos ver los magnolios que rodean a la <strong>Iglesia de San Pedro de los Arcos</strong>. <br> Son árboles de gran tamaño, muy frondosos y sus hojas son del <strong>color verde oscuro y brillante</strong>, con unas flores blancas que dan paso a sus semillas con forma de piña.
+                    <p class="text-secondary text-justify fs-5 "> Podemos ver los magnolios que rodean a la <strong>Iglesia de San Pedro de los Arcos</strong>. <br> Son árboles de gran tamaño, muy frondosos y sus hojas son del <strong>color verde oscuro y brillante</strong>, con unas flores blancas que dan paso a sus semillas con forma de piña.
                         
         
                     </p>
@@ -482,7 +471,7 @@
         
                 <div class="row">
         
-                    <div class="col-12 col-md-8 text-center  ">
+                    <div class="col-12 col-md-8 text-center cardEspecial4">
                         <br><br><br>
                         <h5 class="fs-4 fw-bold text-azul-oscuro text-center">Árbol autóctono</h5>
         
@@ -507,8 +496,10 @@
         
         
                     </div>
-                    <div class="col-12 col-md-4 ">
-                        <img src="../img/cuadradas/arc-c-(39).png" alt="refugio" class="img-fluid borde1 m-2">
+                    <div class="col-12 col-md-4 cardEspecial4">
+                        <img src="../img/cuadradas/arc-c-(39).png" alt="refugio" class="img-fluid borde1 m-2 d-block d-md-none d-lg-block">
+
+                        <img src="../img/cuadradas/arc-c-(39).png" alt="refugio" class="img-fluid borde1 m-2 d-none d-md-block d-lg-none mt-5">
         
                     </div>
         
@@ -524,7 +515,7 @@
 
     <!-- Banner Esculturas-->
 
-    <div class="container-fluid mt-5 mb-5 border-banner-f d-none d-md-none d-lg-block cardEspecial4"><!--banner-g-->
+    <div class="container-fluid mt-5 mb-5 border-banner-f d-none d-md-none d-lg-block"><!--banner-g-->
         <div class="row banner-sanpedro borde">
 
             <!--ORDENADOR-->
@@ -546,22 +537,22 @@
         </div>
     </div>
 
-    <div class="container-fluid mt-5 mb-5 border-banner-f d-block d-lg-none"><!--banner-g-->
-        <div class="row banner-sanpedro-2 borde">
+    <div class="container-fluid mt-5 mb-5 border-banner-f d-block d-lg-none">
+        <div class="row banner-sanpedro-2 borde"> <!--VERSION MOVIL-->
 
-            <!--MOVIL-->
+            
             
             <div class="col-md-7">
 
                 <br>
                
-                <h1 class="text-s text-white display-3 sombra-letras fw-bold">San Pedro de los Arcos</h1>
+                <h1 class="text-s text-white display-3 sombra-letras fw-bold">San Pedro <br> de los Arcos</h1>
 
                 <br>
                 <br>
                 <br>
                 <br>
-                <h2 class="text-white mb-5 text-s sombra-letras fw-bold">Descubre la serenidad entre arte y naturaleza</h2>
+                <h2 class="text-white mb-5 text-s sombra-letras fw-bold">Descubre la serenidad <br> entre arte y naturaleza</h2>
                
             </div>
             <div class="col-5"></div>
@@ -641,10 +632,16 @@
                 <div class="card border border-dark border-1 card imagen mt-4 sombra-card">
                     <img src="../img/cuadradas/arc-c- (8).jpg" alt="escultura" class="card-img-top">
                     <div class="card-body">
-                        <div class="card-title">
+                        <div class="card-title d-block d-md-none d-lg-block">
                             <h3>Cañones</h3>
                             <p class="fs-6 p"></p>
                         </div>
+                        <div class="card-title d-none d-md-block d-lg-none">
+                            <h3>Cañones</h3>
+                            <br><br>
+                            <p class="fs-6 p"></p>
+                        </div>
+
                         <div class="card-footer">
     
                             <button class="btn btn-outline-secondary" id="boton2">
@@ -674,7 +671,7 @@
                     <img src="../img/cuadradas/arc-c- (35).png" alt="Pista de Skate" class="card-img-top ">
                     <div class="card-body">
                         <div class="card-title">
-                            <h3>Placa homenaje a La Cofradía</h3>
+                            <h3>Placa de La Cofradía</h3>
                             <p class="fs-6 p"></p>
                         </div>
                         <div class="card-footer">
@@ -713,15 +710,35 @@
 
     <!-- "Banner Fuente"-->
 
-    <a name="otros"></a>
+    <!--VERSION ORDENADOR-->
 
 
-    <div class="container-fluid bg-azul-claro borde p-4 mt-5 cardEspecial4">
+    <div class="container-fluid bg-azul-claro borde p-4 mt-5 d-none d-md-none d-lg-block">
         <div class="container mt-1">
             <div class="row">
                 <div class="d-none d-md-block col-md-6">
                     <p>
                         <img src="../img/cuadradas/arc-c- (36).png" class="img-fluid border w-50 mt-3" alt="Fuente">
+                                    
+
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 text-white">
+                    <p class="pt-4 display-6 text-center fst-italic sombra-text">FUENTE DE <br> SAN PEDRO DE LOS ARCOS</p>
+                    <p class="text-justify fst-italic mx-auto d-block fs-5 sombra-text">La fuente del Parque de San Pedro de los Arcos en Oviedo es una escultura ornamental de piedra, con una forma circular de aproximadamente 6 metros de diámetro. Está cerrada con piedra labrada en curva y en el centro, un surtidor proyecta agua a unos dos metros de altura, creando un ambiente relajante y agradable para los visitantes del parque.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--VERSION TABLET-->
+
+    <div class="container-fluid bg-azul-claro borde p-4 mt-5 d-none d-md-block d-lg-none">
+        <div class="container mt-1">
+            <div class="row">
+                <div class="d-none d-md-block d-lg-none col-md-6">
+                    <p>
+                        <img src="../img/cuadradas/arc-c- (36).png" class="img-fluid border w-100 mt-5" alt="Fuente">
                                     
 
                     </p>
@@ -792,8 +809,51 @@
     </div>
 
 
+    <div class="natanael-content container-fluid">
+        <main>
+            <div class="natanael-autumn-wrapper">
+                <h1 class="natanael-autumn-title display-5"><img src="../../../img/iconos/icon (105).png" width="140px" alt="logo de un arbol">  Otoño en Luz y Sombra</h1>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div id="natanaelAutumnCarousel" class="carousel slide natanael-carousel-container" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item natanael-carousel-item active">
+                                    <img src="../img/otoño/arc-c-(39).png" class="d-block w-100" alt="Paisaje otoñal 1">
+                                </div>
+                                <div class="carousel-item natanael-carousel-item">
+                                    <img src="../img/otoño/arc-c- (46).png" class="d-block w-100" alt="Paisaje otoñal 2">
+                                </div>
+                                <div class="carousel-item natanael-carousel-item">
+                                    <img src="../img/otoño/arc-c- (47).png" class="d-block w-100" alt="Paisaje otoñal 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="natanael-content-section">
+                            <h2 class="natanael-content-title fs-4 fw-bold ">La Magia del Otoño</h2>
+                            <p class="natanael-content-text">
+                                Descubre la calidez y el encanto de la temporada otoñal a través de nuestra colección de diseños de iluminación. Cada proyecto de Natanael captura la esencia única de esta estación mágica, donde los tonos dorados y cobrizos se entrelazan con la luz para crear ambientes acogedores y sofisticados.
+                            </p>
+                            <button class="natanael-autumn-btn">Explorar Colección</button>
+                        </div>
+                        <div class="natanael-nav-buttons">
+                            <button class="natanael-nav-btn" type="button" data-bs-target="#natanaelAutumnCarousel" data-bs-slide="prev">
+                                <i class="fas fa-chevron-left"></i>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="natanael-nav-btn" type="button" data-bs-target="#natanaelAutumnCarousel" data-bs-slide="next">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 
-    <!--Zonas verdes NATA-V2-->
+    <!--Cards enlaces a otras páginas-->
 
     <div class="zv-1000-bg-azul-oscuro py-5">
         <div class="container">
@@ -889,25 +949,24 @@
 
         <div class="row">
 
-            <div class="col-12 col-md-6 mt-5 pt-5 ">
+            <div class="col-12 col-md-12 col-lg-6 mt-5 pt-5 ">
 
                 <div class="">
-                    <div class=" bg-gris ms-3 p-4 pt-5  fs-5 text-azul-oscuro border-banner borde ">
+                    <div class=" bg-gris ms-3 p-4 pt-5  fs-5 text-azul-oscuro border-banner borde cardEspecial4">
                         <p class="fs-4 fw-bold text-azul-oscuro text-center">
                             Explora y Disfruta
                         </p>
 
-                        <p class="display-5 text-center">
-                            <img src="../img/logos/logo-v-2.png" width="40px"
+                        <p class="display-5 text-center"><img src="../img/logos/logo-v-2.png" width="40px"
                                 alt="logo de una flor">
                             Iglesia de San Pedro de los Arcos
                         </p>
 
-                        <p class="d-none d-md-none d-lg-block">
+                        <p class="d-none d-md-none d-lg-block text-justify">
                             <span class="text-azul-oscuro fs-5"> Templo neorrománico construido en 1910 <strong>por el arquitecto Luis Bellido</strong>. Sin embargo, la historia de este lugar se remonta a la época visigótica, con indicios de una capilla en la zona desde los <strong>siglos V y VII</strong>. Originalmente conocida como San Pedro del Otero, debido a su ubicación en una loma en la falda del <strong>Monte Naranco</strong>, el templo ha sufrido varias remodelaciones a lo largo de los siglos. En el siglo XVIII, el nombre cambió a San Pedro de los Arcos debido a la presencia del acueducto de los Arcos en sus inmediaciones. La iglesia fue seriamente dañada durante la <strong>Revolución asturiana de 1934</strong> y sus archivos incendiados. Hoy en día, la iglesia sigue siendo un lugar de culto y un testimonio de la rica historia de Oviedo.
                         </p>
 
-                        <p class="d-block d-md-none d-lg-none">
+                        <p class="d-block d-md-block d-lg-none text-justify">
                             <span class="text-azul-oscuro fs-5"> Templo neorrománico construido en 1910 <strong>por el arquitecto Luis Bellido</strong>. Sin embargo, la historia de este lugar se remonta a la época visigótica, con indicios de una capilla en la zona desde los <strong>siglos V y VII</strong>. Originalmente conocida como San Pedro del Otero, debido a su ubicación en una loma en la falda del <strong>Monte Naranco</strong>, el templo ha sufrido varias remodelaciones a lo largo de los siglos.
                         </p>
 
@@ -915,10 +974,10 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 mt-5 pt-5 ">
+            <div class="col-12 col-md-12 col-lg-6 mt-5 pt-5 ">
 
 
-                <img src="../img/cuadradas/arc-c- (1).jpg" class="img-fluid borde " alt="iglesia">
+                <img src="../img/cuadradas/arc-c- (1).jpg" class="img-fluid borde cardEspecial4" alt="iglesia">
 
 
             </div>
@@ -930,24 +989,16 @@
 
     <a name="video"></a>
 
-    <div class="container mt-5 text-center fw-bold fs-2">
-    
-        <div class="row">
+    <!--VIDEO-->
 
-            <div class="col-12 col-md-12">
+    <div class="container-fluid mt-5">
+        
 
-                <img src="../img/Logos/logo-d-1.png" class="img-fluid" width="70px" alt="">
-
-            </div>
-
-            <div class="col-12 col-md-12">
-
-                <h2 class="text-azul-oscuro">VIDEO</h2>
-
-            </div>
-
-        </div>
-
+        <header>
+            <h1 class="zv-1000-bg-azul-oscuro text-center text-white alert alert-info display-3">SAN PEDRO DE LOS ARCOS</h1>
+        </header>
+        
+        
     </div>
 
 
@@ -955,7 +1006,7 @@
 
         <div class="row">
 
-            <div class="col-12 col-md-6 ">
+            <div class="col-12 col-md-12 col-lg-6 mt-5">
 
                 <div class="">
                     <div class="video-container shadow">
@@ -964,7 +1015,7 @@
                             <div class="play-icon"></div>
                         </button>
                         <video controls class="w-100" poster="../img/cuadradas/inv-c-25.jpg">
-                            <source src="../../../video/video-san-francisco.mp4" type="video/mp4">
+                            <source src="../../../video/1017.mp4" type="video/mp4">
                             
                         </video>
                     </div>
@@ -972,7 +1023,7 @@
 
             </div>
 
-            <div class="col-12 col-md-6 mt-5">
+            <div class="col-12 col-md-12 col-lg-6 mt-5">
 
                 <p class="bg-gris text-azul-claro p-3 fs-4 text-justify borde">
 
@@ -1010,65 +1061,74 @@
         <div class="container pt-5">
             <div class="row">
                 <div class=" col-12 col-md-3">
-                    <p class="fw-bold fs-5">Sobre Nosotros</p>
+                    <p class="fw-bold fs-5 text-center">Sobre Nosotros</p>
                     <p class="text-justify">
-                        Somos un equipo apasionado de desarrolladores y diseñadores dedicados a crear experiencias web
-                        únicas. <br> Nuestra misión es transformar la experiencia de visitar los parques por excelencia
-                        de Oviedo
-                        en realidades digitales que sean visualmente atractivas, intuitivas y fáciles de ver.
+                        Somos un equipo de desarrolladores web dedicados a crear experiencias únicas. <br> Nos
+                        esforzamos por transformar la visita a los parques por excelencia de Oviedo en experiencias
+                        digitales visualmente atractivas, intuitivas y fáciles de usar.
                     </p>
                     <p class="mb-4"></p>
                 </div>
                 <div class=" col-12 col-md-3 text-center">
-                    <p class="fw-bold fs-5 mb-4">San Pedro de los Arcos</p>
+                    <p class="fw-bold fs-5 mb-4">Sobre Parque del Oeste</p>
                     <a class="nav-link mb-4" href="#historia">Historia</a>
                     <a class="nav-link mb-4" href="#naturaleza">Naturaleza</a>
-                    <a class="nav-link mb-4" href="#esculturas">Esculturas</a>
-                    <a class="nav-link mb-4" href="#otros">Otros</a>
+                    <a class="nav-link mb-4" href="#esculturas">Esculturas y arte</a> 
+       
                 </div>
                 <div class=" col-12 col-md-3 text-center">
                     <p class="fw-bold fs-5">Redes Sociales</p>
                     <a href="https://www.youtube.com/@naturalezadeporteybienestar" target="_blank">
-                        <img class="me-3" src="../img/logos/youtube.png" alt="logotipo de youtube" width="52px"></a>
+                        <img class="me-3" src="../../../img/iconos/youtube.png" alt="logotipo de youtube" width="52px"></a>
                     <a href="https://www.facebook.com/empleoayuntamientodeoviedo" target="_blank">
-                        <img class="me-3" src="../img/logos/facebook.png" alt="logotipo de facebook" width="55px"></a>
+                        <img class="me-3" src="../../../img/iconos/facebook.png" alt="logotipo de facebook" width="55px"></a>
                     <a href="mailto:naturalezadeporteybienestar.info@correo.com">
-                        <img class="me-3" src="../img/logos/correo.png" alt="logotipo de facebook" width="55px"></a>
+                        <img class="me-3" src="../../../img/iconos/correo.png" alt="logotipo de facebook" width="55px"></a>
                     <br><br>
                     <p class="fw-bold fs-5">Descubre</p>
                     <a class="nav-link" href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">Vídeo
                         360º</a>
-                    <a class="nav-link" href="pur-video.html">Vídeo</a>
+                    <a class="nav-link" href="#video">Vídeo</a>
                     <a class="nav-link" href="arc-galeria.html">Galería de Fotos</a>
                 </div>
                 <div class=" col-12 col-md-3">
-                    <img class="w-100 img-fluid" src="../img/logos/logo-ovd-footer.png" alt="logo de los desarrolladores">
+                    <img class=" logo-ovd-pie-md img-fluid d-none d-md-block " src="../../../img/logos/logo-ovd-footer.png"
+                        alt="logo de los desarrolladores"> <!-- para tablet  ordenador-->
+                    <img class="d-sm-block d-md-none mx-auto d-block logo-ovd-pie my-2"
+                        src="../../../img/logos/logo-ovd-footer.png" alt="logo de los desarrolladores"> <!-- para movil-->
                 </div>
             </div>
-            <div class="row">
+            <div class="row "> 
                 <hr>
-                <div class="col-6">
-                    <p> © 2024 San Pedro de los Arcos. Todos los derechos reservados. </p>
+                <div class="col-6 ">
+                    <p class="text-politica"> © Copyright 2024. <br> Todos los derechos reservados.</p>
                 </div>
                 <div class="col-6">
                     <p class="text-end">
-                        <a class="text-gris text-decoration-none" href="#">Politica de privacidad</a>&nbsp;&nbsp;&nbsp;
-                        <a class="text-gris text-decoration-none" href="#">Términos de uso</a>&nbsp;&nbsp;&nbsp;
-                        <a class="text-gris text-decoration-none" href="#">Mapa del sitio</a>&nbsp;&nbsp;&nbsp;
+                        <a class="text-gris text-decoration-none text-end text-politica"
+                            href="../../politicas/mapa web.html" target="_blank">Mapa Web.</a>
+                        <br>
+                        <a class="text-gris text-decoration-none text-end text-politica"
+                            href="../../politicas/politica privacidad.html" target="_blank">Política de
+                            Privacidad.</a> <br>
+                        <a class="text-gris text-decoration-none text-end text-politica"
+                            href="../../politicas/accesibilidad web.html" target="_blank">Accesibilidad Web.</a> <br>
 
                     </p>
                 </div>
             </div>
+
+
 
         </div>
 
         <div class="row">
             <div class="col-12 pb-3">
-                <img class=" d-none d-md-block img-fluid mx-auto d-block" src="../img/logos/Banner WEB.png" alt="">
-                <img class=" d-sm-block d-md-none img-fluid mx-auto d-block" src="../img/logos/Banner WEB.png" alt="" style="height: 40px;">
+                <img class=" w-pie d-none d-md-block img-fluid mx-auto d-block" src="../../../img/logos/Banner WEB.png" alt=""> <!--ordenador-->
+                <img class=" w-100 d-sm-block d-md-none img-fluid mx-auto d-block" src="../../../img/logos/Banner WEB.png" alt="" style="height:35px"> <!--movil-->
             </div>
         </div>
-    </div>
+    </div> 
     
 
 

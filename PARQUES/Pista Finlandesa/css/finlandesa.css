@@ -13,6 +13,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 20px;
 }
 
 
@@ -55,8 +56,14 @@
 
 .deporte{
 
-    background-image: url(../img/cuadradas/fin-c-14.jpg);
+    background-image: url(../img/banner/fin-b-10.png);
     background-size: cover;
+    
+    }
+    .deporte2{
+        background-image: url(../img/banner/fin-b-8.jpg);
+    background-size: cover;
+    border-radius: 20px;
     
     }
     
