@@ -101,6 +101,18 @@ background-repeat: no-repeat;
         background-size: cover;
 
     }
+
+    .parallax3 {
+
+      background-image: url('../img/alargadas/nar-a-16.jpg');
+      min-height: 1000px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+  }
+
     .banner-sanmiguel{
 
         background-image: url(../img/alargadas/nar-a-9.jpg);
