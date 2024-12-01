@@ -14,10 +14,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/caldas.css" type="text/css">
     <link rel="stylesheet" href="../../../css/general.css" type="text/css">
+    <link rel="stylesheet" href="../../../css/lecturaoff.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
    <script src="../js/caldas.js"></script>
+
+   <link rel="stylesheet" href="../../../css/lecturaoff-v11.css">
+
 
     <link rel="icon" type="image/x-icon" href="../../../img/iconos/favicom.ico">
   
@@ -64,9 +68,53 @@
                             </li>
                         </ul>
                     </li>
+
                 </ul>
+                <!-- Añadir el div del Navbar justo despues del ultimo </ul> del nav    -->
+                <div class="modo-cortesia ms-auto me-3">
+                    <button class="modo-cortesia-toggle btn btn-outline-light d-flex align-items-center gap-2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M12 2V4M12 20V22M2 12H4M20 12H22M4.93 4.93L6.34 6.34M17.66 17.66L19.07 19.07M19.07 4.93L17.66 6.34M6.34 17.66L4.93 19.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="d-none d-sm-inline">Modo Lectura</span>
+                    </button>
+                    <div class="modo-cortesia-panel">
+                        <div class="panel-header mb-3">
+                            <span class="panel-title fw-medium">Ajustar visualización</span>
+                            <span class="modo-cortesia-value px-2 py-1 rounded-pill">0%</span>
+                        </div>
+                        <div class="slider-container mb-3">
+                            <input type="range" id="modoCortesiaSlider" min="0" max="100" value="0">
+                        </div>
+                        <div class="panel-header mb-3">
+                            <span class="panel-title fw-medium">Ajustar brillo</span>
+                            <span class="brillo-value px-2 py-1 rounded-pill">100%</span>
+                        </div>
+                        <div class="slider-container mb-3">
+                            <input type="range" id="brilloSlider" min="50" max="100" value="100">
+                        </div>
+                        <div class="modo-buttons">
+                            <button id="modoClaro" class="modo-button">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="me-2">
+                                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 5V3M12 21V19M5 12H3M21 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                Claro
+                            </button>
+                            <button id="modoOscuro" class="modo-button">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="me-2">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                Oscuro
+                            </button>
+                        </div>
+                    </div>
+                </div>
+             
             </div>
         </div>
+
     </nav>
 
 
@@ -260,11 +308,11 @@
 
 
     <div class="container mt-5">
-        <p class="fs-4 fw-bold text-azul-oscuro text-center">Parroquia de "Les Caldes"</p>
+        <p class="fs-4 fw-bold text-azul-oscuro text-center">En la parroquia de San Juan de Priorio</p>
         <p class="display-5 text-center"> <img src="../../../img/iconos/icon  (79).png" width="70px" alt="logo de un arbol">
             LAS CALDAS </p>
         <p class="text-secondary text-center fs-5">
-            Pueblo de la parroquia de <strong> San Juan de Priorio </strong> de Oviedo.<br>Un lugar emblemático en el que se encuentran  <strong> la iglesia de San Juan de Priorio, el castillo y la villa termal. </strong> <br>Estas aguas ya eran conocidas desde tiempos prerromanos.
+            Las Caldas, situada en la parroquia <strong> San Juan de Priorio </strong>en Oviedo, es un lugar donde la historia se entrelaza con la belleza natural.  <br>Este encantador enclave destaca por su <strong> iglesia histórica, el imponente castillo y su famosa villa termal. </strong> <br>Estas aguas ya eran conocidas desde tiempos prerromanos por sus propiedades curativas.
         </p>
     </div>
 
@@ -305,9 +353,9 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 col-md-4 cardEspecial3">
-                <br class="d-none d-md-block d-xl-none">
-                <br class="d-none  d-md-block d-xl-none">
-                <br class="d-none  d-md-block d-xl-none">
+                <br class="d-none d-md-block d-xl-block">
+                <br class="d-none  d-md-block d-xl-block">
+                <br class="d-none  d-md-block d-xl-block">
                 <br class="d-none  d-md-block d-xl-none">
                 <br class="d-none  d-md-block d-xl-none">
                 <br class="d-none  d-md-block d-xl-none">
@@ -323,13 +371,13 @@
                 <!-- <hr class="text-info">-->
                 <h2>Un conjunto monumental de la pedanía<img src="../../../img/iconos/icono (21).png" alt="astracto" width="70px"></h2>
 
-                <p class="text-secondary text-justify ms-3 fs-5">El Castillo fue edificado en el siglo XIX a partir de las ruinas de un castillo anterior, que había sido erigido en el siglo VIII durante el reinado de Alfonso II, quien levantó un fortín. Se trata de una fortaleza con almenas visibles, con dos grandes torres en los flancos. <br>
+                <p class="text-secondary text-justify ms-3 fs-5">El Castillo fue edificado en el siglo XIX a partir de las ruinas de un castillo anterior, que había sido erigido en el siglo VIII durante el reinado de Alfonso II, quien levantó un fortín. Se trata de una fortaleza con almenas visibles y dos grandes torres en los flancos. <br>
                 
                 
-                Tras la construcción del castillo en su formación actual, pasó a depender del Obispado de Oviedo, siendo parte de la parroquia de San Juan de Priorio, de donde le viene el nombre. Después ha pasado por diferentes manos, hasta llegar a sus dueños actuales. <br>
+                Tras su construcción en la forma actual, pasó a depender del Obispado de Oviedo, siendo parte de la parroquia de San Juan de Priorio, de donde le viene el nombre. Posteriormente, el castillo ha pasado por diferentes manos, hasta llegar a sus dueños actuales, la familia Quijano Morenés.
                 <p class="d-none d-lg-block text-secondary text-justify ms-3 fs-5">
 
-                El castillo es propiedad de la familia Quijano Morenés. Esta mansión familiar, tiene un pequeño bosque en la entrada y cuenta con piscina y una calle para practicar el golf.
+                 Esta mansión familiar cuenta con un pequeño bosque en la entrada, una piscina y una calle para practicar el golf, lo que la convierte en un lugar privado y exclusivo.
                    
                 </p>
                 
@@ -344,10 +392,10 @@
                 <h5 class="fs-4 fw-bold text-azul-oscuro text-center">De torre a torre</h5>
                 <h2> <img src="../../../img/iconos/icon  (65).png" alt="montaña" width="100px" class="ms-3 img-fluid">
                     La Leyenda del Castillo </h2>
-                <p class="text-secondary text-justify me-3 fs-5 ms-3">La leyenda dice que Irene, la hija de Rodrigo, señor de Priorio dueño del castillo tuvo un afaire romántico con un paje, Pablo. Cuando se enteró el padre de lo que ocurria, atacó con su espada a Pablo,  quien, al verse acosado, se defendió y mató a su amo.
+                <p class="text-secondary text-justify me-3 fs-5 ms-3">La leyenda dice que Irene, la hija de Rodrigo, señor de Priorio y dueño del castillo, tuvo un romance con un paje llamado  Pablo. Cuando su padre se enteró de lo que estaba  ocurriendo, atacó  a Pablo con su espada. Pablo viéndose acorralado se defendió y  terminó matando a su amo.
                 </p>
                 <p class="d-none d-lg-block text-secondary text-justify me-3 fs-5 ms-3">
-                 <br> Irene, al enterarse de lo ocurrido, quedó destrozada y lo maldijo por haber matado a su padre. Pablo entristecido por haber perdido el corazón de su amada, se arrojó al río Gafo y murió golpeado con una roca. Según cuentan los más viejos del lugar, una roca todavía aparece manchada con sangre de Rodrigo. </p>
+                 Al conocer la trágica noticia, Irene quedó destrozada y maldijo a Pablo por haber matado a su padre.Desconsolado por haber perdido el amor de Irene, Pablo se arrojó al río Gafo, donde  murió al golpearse con una roca. Según relatan los ancianos del lugar, aún se puede ver una roca manchada con la sangre de Rodrigo. </p>
                 
 
                 <hr class="text-azul-claro me-3">
@@ -379,11 +427,11 @@
                         Las tres muelas</p>
                     <div class="row">
                         <div class="col-6">
-                            <p class="text-secondary  text-justify p-2"> En la orilla izquierda, en el antiguo territorio propiedad del castillo, sobrevive un <strong>molino del siglo XIX</strong>, de planta rectangular y muros levantados con mampostería vista, excepto en los encuadres de los vanos, que son de sillarejo. <br>  </p>
+                            <p class="text-secondary  text-justify p-2 fs-5"> En la orilla izquierda, en el antiguo territorio del castillo, se conserva un <strong>molino del siglo XIX</strong>, de planta rectangular y muros construidos con mampostería vista, excepto los encuadres de los vanos, que están  hechos de sillarejo. <br>  </p>
                         </div>
                         <div class="col-6">
-                            <p class=" text-secondary  text-justify p-2">
-                                 Presenta cubierta a dos aguas, la teja corriente, se apoya en la armadura de madera. Este complejo, que funciona mediante canal y cubo prismático de agua, mantiene los mecanismos de las tres muelas.
+                            <p class=" text-secondary  text-justify p-2 fs-5">
+                                 Presenta una  cubierta a dos aguas, con teja corriente, que se apoya en una armadura de madera. Este complejo, que funciona mediante un canal y un cubo prismático de agua, mantiene en buen estado los mecanismos de las tres muelas.
                             </p>
                         </div>
                     </div>
@@ -393,15 +441,15 @@
                     <p class="fs-4 fw-bold text-azul-oscuro text-center">La cueva de La Lluera</p>
                     <p class="display-5 text-center text-justify"> <img src="../../../img/iconos/7.png" width="70px"
                             alt="logo de planton">
-                        Un guiño al pasado</p>
+                        Eco del pasado</p>
                     <div class="row">
                         <div class="col-6">
-                            <p class="text-secondary text-justify p-2">La Cueva de las Caldas es un importante reclamo. Es un espacio protegido de apenas 600 m. de profundidad, que sirve como hábitat a una colonia de murciélagos catalogados como especie amenazada. Esta caverna, a principios de
+                            <p class="text-secondary text-justify p-2 fs-5"> Es un sitio arqueológico de gran importancia en Asturias, descubierta en la década de los setenta y  conocida por sus impresionantes grabados rupestres del período paleolítico. Estos grabados incluyen representaciones de animales.
                                 </p>
                         </div>
                         <div class="col-6">
-                            <p class="text-secondary text-justify p-2"> 
-                                los años setenta, fue calificada, como uno de los más importantes yacimientos del <strong>Paleolítico Superior</strong>  de toda la región, destacando por una amplia secuencia estratigráfica que va del Solutrense al Magdaleniense.
+                            <p class="text-secondary text-justify p-2 fs-5"> 
+                                 Fue calificada como uno de los más importantes yacimientos del <strong>Paleolítico Superior</strong>  de toda la región, destacando  por su amplia secuencia estratigráfica que abarca desde el Solutrense hasta el Magdaleniense.
                                  </p>
                         </div>
                     </div>
@@ -428,11 +476,11 @@
       <!---------------------------------------------------------------------------------------------------------
                                           Carousel Otoño
     ---------------------------------------------------------------------------------------------------------->  
-<a name="otoño"></a>
+
 <div class="natanael-content container-fluid">
     <main>
         <div class="natanael-autumn-wrapper mt-5 mb-5">
-            <h1 class="natanael-autumn-title display-5"><img src="../../../img/iconos/icon (105).png" width="100px" alt="logo de un arbol">  Otoño y su Colorido</h1>
+            <h1 class="natanael-autumn-title display-5"><img src="../../../img/iconos/icon (105).png" width="70px" alt="logo de un arbol">  Otoño en Luz y Sombra</h1>
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div id="natanaelAutumnCarousel" class="carousel slide natanael-carousel-container" data-bs-ride="carousel">
@@ -456,9 +504,7 @@
                             Descubre la calidez y el encanto de la temporada otoñal a través del impresionante colorido de los árboles y plantas de los distintos  parques que hay en Oviedo, tales como sauces, castaños, abedules, etc.  
                         </p>
                         <a href="#">
-                        <button class="natanael-autumn-btn"><a class="text-decoration-none text-white" href="../../Purificacion Tomas/paginas/pur-naturaleza.html#otoño">Explorar Colección
-                            </a>
-                        </button>
+                        <button class="natanael-autumn-btn">Explorar Colección</button>
                          </a>
                     </div>
                     <div class="natanael-nav-buttons">
@@ -608,23 +654,23 @@
                 <div class="col-12 col-md-4">
                     <br><br>
                    
-                    <h4 class="text-center"> Pórtico y Bapstisterio</h4>
-                    <p class="text-secondary text-justify fs-5 me-3 ">La <strong> iglesia de San Juan de Priorio </strong> data de los siglos XII y XIII. Ampliación de las capillas laterales, en el siglo XVIII. El <strong> pórtico </strong> y el <strong>baptisterio </strong>  en los siglos XIX y XX.
+                    <h4 class="text-center">La Iglesia</h4>
+                    <p class="text-secondary text-justify fs-5 me-3 ">La <strong> iglesia de San Juan de Priorio </strong>, de estilo románico y datada en los siglos XII y XIII, ha experimentado varias ampliaciones y modificaciones entre los siglos XVIII y XX, añadiéndose<strong> capillas laterales, un pórtico, una sacristía, un baptisterio y un campanario</strong> con espadaña.
                     </p>
                 </div>
                 <div class="col-12 col-md-4">
                     <br>
                     <img src="../img/cuadradas/cal-c- (58).jpg" alt="inicio"
-                        class=" img-fluid borde-g borde-circular-g rounded-circle w-75 d-none d-lg-block  my-2">
+                        class=" img-fluid borde-g borde-circular-g rounded-circle w-75 d-none d-lg-block  my-5">
                     <img src="../img/cuadradas/cal-c- (58).jpg" alt="inicio"
-                        class=" img-fluid borde-g borde-circular-g rounded-circle w-100 d-lg-none mt-5">
+                        class=" img-fluid borde-g borde-circular-g rounded-circle w-100 d-lg-none mt-4">
                 </div>
 
                 <div class="col-12 col-md-4">
                     <br><br>
                    
-                    <h4 class="text-center ms-2"> &nbsp &nbsp &nbsp &nbsp Decoración del tímpano</h4>
-                    <P class="text-secondary text-justify fs-5 ms-5">Destaca el tímpano de la portada y su decoración, que representa a Cristo impartiendo la bendición rodeado de tetramorfos. Un elemento muy raro en la arqueitectura <strong> románica de Asturias. </strong>
+                    <h4 class="text-center ms-2"> &nbsp  El tímpano</h4>
+                    <P class="text-secondary text-justify fs-5"><strong>El tímpano de la portada</strong> es un elemento destacado y único en la arquitectura románica de Asturias. En el centro se encuentra el <strong>Pantocrátor</strong>, o Cristo impartiendo la bendición, rodeado por el <strong> Tetramorfos</strong> - la representación simbólica de los cuatro evangelistas- y dos angeles.  
 
 
                     </P><br><br>
@@ -658,7 +704,7 @@
                             alt="" width="50px"> &nbsp;El Pórtico </h6>
 
                     <h4 class="text-center">La ampliación</h4>
-                    <p class="text-secondary text-justify fs-5 "> El pórtico presenta cuatro arquivoltas soportadas por columnas finalizadas en capiteles decorados con hojas y el tímpano, sostenido por atlantes, representa al Pantocrátor, que está rodeado por tetramorfos.</p><br>
+                    <p class="text-secondary text-justify fs-5 "> En el pórtico, además del tímpano,  se encuentrán cuatro arquivoltas soportadas por columnas finalizadas en capiteles decoradas con hojas y motivos vegetales que demuestran la destreza artística de la época.</p><br>
                     <h6 class="fs-4 fw-bold text-azul-oscuro text-center "> <img src="../../../img/iconos/icon  (81).png"
                             alt="" width="50px">&nbsp El Palomar</h6>
                     <h4 class="text-center"> Las Palomas</h4>
@@ -736,11 +782,11 @@
     <div class="container mt-5">
         <p class="fs-4 fw-bold text-azul-oscuro text-center">Reserva Natural Parcial</p>
         <p class="display-5 text-center"> <img src="../../../img/iconos/icon  (91).png" width="90px" alt="logo de un arbol">
-            <span class="d-none d-md-block"> </span>    "Las Caldas"</p>
+            <span class="d-none d-md-block"> </span>    Las Caldas</p>
 
-        <p class="text-secondary text-center fs-5">Yacimiento prehistórico, declarado Reserva Natural Parcial, a pocos km. de Oviedo. <br>
-        Ecosistema subterráneo donde destaca su extradordinario yacimiento prehistórico de los periodos solutrense y magdaleniense. <br>
-            En él podrás encontrar | Naturaleza | Deporte | Historia. <br>
+        <p class="text-secondary text-center fs-5"> La  Reserva Natural Parcial de la Cueva de Las Caldas fue declarada como tal el 27 de abril de 1995 mediante un decreto oficial. <br>
+        Ecosistema subterráneo con un extradordinario yacimiento prehistórico de los periodos solutrense y magdaleniense. <br>
+            Un lugar exclusivo que combina: <strong> | Naturaleza | Deporte | Historia.</strong> <br>
         </p>
 
     </div>
@@ -791,11 +837,11 @@
                     <br>
                     <hr class="border border-secondary border-1 mb-4 ms-3 ">
                     <p class="text-justify text-size text-secondary ms-3 fs-5">
-                        La Reserva abarca una zona de protección de 45 hectáreas. La cavidad principal de la Cueva, es de 5 m. de anchura y posee tres entradas.
-                        El desarrollo del complejo es sencillo, desde la entrada principal, un estrecho paso conduce a la galería del río subterráneo. En época de crecidas, parte del caudal rebosa. Aguas arriba, la galería se hace más amplia y con un desarrollo lineal, sin apenas ramificaciones. 
+                        La Reserva abarca una zona de protección de 45 hectáreas. La cavidad principal de la cueva,  tiene una anchura de 5 metros y posee tres entradas.
+                        El desarrollo del complejo es sencillo: desde la entrada principal, un estrecho paso conduce a la galería del río subterráneo. En época de crecidas, parte del caudal rebosa. Aguas arriba, la galería se ensancha y sigue su desarrollo lineal, con pocas ramificaciones. 
                         <br><br>
                         <p class=" d-none d-lg-block text-justify text-size text-secondary ms-3 fs-5">
-                       En su tramo medio aparece la sima de la Figalina, que enlaza con la entrada superior. Siguiendo la galería llegamos a un punto en que se hace impenetrable y solo la corriente de agua accede a la cavidad.
+                       En su tramo medio aparece la sima de la Figalina, que enlaza con la entrada superior. Siguiendo la galería, llegamos a un punto en que se hace impenetrable y solo la corriente de agua accede a la cavidad.
                         <br>
                         En el interior de la cueva destaca la abundante presencia de murciélagos.
                     </p>
@@ -846,16 +892,16 @@
 
                     <p class="display-6 text-center">
                         <img src="../../../img/iconos/icon  (47).png" width="90px" alt="logo de un parque">
-                        Relax <span class="d-none d-md-block">y Salud</span> 
+                        Bienestar <span class="d-none d-md-block"></span> 
                     </p>
                     <br><br>
                     <p class="text-size text-justify text-secondary pe-3 fs-5">
-                        Desde hace miles de años, la zona es un vergel que permitía la adaptación y superviviencia de los primeros pobladores de la Asturias más primitiva. <br>
-                        No sería hasta el siglo XVIII cuando las aguas que brotan de la piedra caliza y se vierten en el río Gafo, fueran descubiertas como  <strong>aguas minero-medicinales</strong> con importantes propiedades. <br>
+                        Desde hace miles de años, la zona ha sido un vergel que permitía la adaptación y superviviencia de los primeros pobladores de la Asturias más primitiva. <br>
+                        No fue hasta el siglo XVIII cuando se descubrieron las propiedades <strong>minero-medicinales</strong> de las aguas que brotan de la piedra caliza y se vierten en el río Gafo. <br>
                     </p>
                     <p class="d-none d-lg-block text-size text-justify text-secondary pe-3 fs-5">
 
-                        Perfectas para combatir enfermedades respiratorias, coronarias, aparatos excretores, reuma o el asma, entre otros. Todo esto lo conseguían estas aguas carbonatadas que brotan del propio manantial.</p>
+                        Estas aguas ricas en minerales como el hierro, el azufre y el calcio son perfectas para combatir enfermedades respiratorias, coronarias, aparato excretor, el reuma y el asma, además de reducir el estrés y promover la relajación de cuerpo y mente.</p>
                         <!--
                       <p class="tex-size text-secondary d-none d-md-block fs-5"></p>  
                         -->
@@ -985,10 +1031,10 @@
             
             <div class="col-12 d-md-block col-md-5  col-lg-5 cardEspecial4">
                 
-                <br class="d-sm-block d-md-block d-xl-none">
-                <br class="d-sm-block d-md-block d-xl-none">
-                <br class="d-sm-block d-md-block d-xl-none">
-                <br class="d-sm-block d-md-block d-xl-none">
+                <br class="d-none d-md-block d-xl-none">
+                <br class="d-none d-md-block d-xl-none">
+                <br class="d-none d-md-block d-xl-none">
+                <br class="d-none d-md-block d-xl-none">
                
 
                 <img class="img-fluid w-75 mx-auto d-block pb-4 mt-5 " src="../img/cuadradas/cal-c- (44).jpg" alt="" >
@@ -996,15 +1042,12 @@
                 
             </div>
             <div class="col-12 col-md-5 col-lg-5">
-                
-                <p class="display-5 text-oviedo text-white ps-3"> 
-                    <br class="d-none d-md-block">
-                    <br class="d-none d-md-block">
-                    
-                    <img src="../../../img/iconos/icon  (91).png" width="90px ">
-                    
-                    Surgencia 
-                    
+                <div class="row pt-3">
+                    <br><br>
+                </div>
+                <p class="display-5 text-oviedo text-white mt-3">
+                    <img src="../../../img/iconos/icon  (91).png" width="90px">
+                    Surgencia
                 </p>
                 <br><br>
                 <p class="fs-5 text-justify text-white">
@@ -1095,10 +1138,10 @@
             <img src="../../../img/iconos/icon  (68).png" width="50px" alt="logo de una corredora">
         </p>
 
-        <p class="text-secondary text-center fs-5">La Ruta Fuso de la Reina, comienza muy cerca de Las Caldas.<br>
-            Se ha convertido en destino de numerosos caminantes y ciclistas que recorren una senda peatonal que aprovecha el antiguo trazado del ferrocarril. Es una vía verde de más de 25 km. que transcurre entre los concejos de Oviedo y de Santo Adriano. <br> 
-            En él podrás encontrar | Descenso en canoa | Actividades al aire libre |<br>
-            Un lugar ideal para caminar al aire libre.
+        <p class="text-secondary text-center fs-5">La Ruta Fuso de la Reina, una senda de aproximadamente 8,8 km que  ofrece un paseo pintoresco, accesible y lleno de interesantes historias.<br>
+            Se ha convertido en destino de caminantes y ciclistas que recorren una senda peatonal sobre el antiguo trazado del ferrocarril. <br> 
+            En él podrás encontrar <strong>| Descenso en canoa | Actividades al aire libre | senderismo.</strong> <br>
+            Un  lugar perfecto para reconectar con la naturaleza.
         </p>
 
     </div>
@@ -1145,7 +1188,7 @@
             <div class="col-12 col-md-6">
 
                 <p class="bg-gris text-azul-claro p-3 fs-4 text-justify borde">
-                    La Ruta Fuso de la Reina para completarla hay que atravesar 8 túneles y 3 puentes. La ruta conecta con la Vía Verde: la Senda del Oso a la altura de Fuso, a través del trazado ferroviario original y una serie de caminos rurales. En diversos puntos han sido instaladas mesas con bancos para poder descansar o pararse a comer/merendar.
+                     Para completar la Ruta Fuso de la Reina, es necesario atravesar 8 túneles y 3 puentes. La ruta conecta con la Vía Verde, la Senda del Oso, a la altura de Fuso, siguiendo el trazado ferroviario original y una serie de caminos rurales. En diversos puntos, se han  instalado mesas con bancos para descansar o disfrutar de una comida o merienda.
                    
                     
                 </p>
@@ -1383,7 +1426,7 @@
                        
                     </p>
                     <br>
-                    <p class="text-justify fst-italic mx-auto d-block fs-5 sombra-text">Caminar al aire libre es bueno para la salud, pero hacerlo rodeados de historia y ver los cambios producidos a lo largo del tiempo en un entorno natural es inigualable. Y sobre todo, después de tanto esfuerzo apetece relajarse en las aguas termales.
+                    <p class="text-justify fst-italic mx-auto d-block fs-5 sombra-text">Caminar al aire libre es excelente para la salud, pero hacerlo rodeados de historia y ver los cambios producidos a lo largo del tiempo en un entorno natural es inigualable. Y sobre todo, después de tanto esfuerzo apetece relajarse en las aguas termales.
                        
                     </p>
                 </div>
@@ -1418,8 +1461,8 @@
                             </p>
 
                             <p class="text-justify">
-                                <span class="text-azul-oscuro fs-5 "> Los trenes ya no recorren el valle, reconvirtiendo  su línea férrea en una <strong>senda verde</strong> que conecta el Parque de Invierno de Oviedo, con los valles del Trubia. <br> </span><br>
-                                Los amantes del deporte de las dos ruedas encuentran en Las Caldas un espacio único donde practicar este deporte en contacto con la naturaleza, con la <strong>sierra del Aramo</strong> y el místico <strong> pico Monsacro.</strong>
+                                <span class="text-azul-oscuro fs-5 "> Los trenes ya no recorren el valle; su línea férrea se ha transformado en una <strong>senda verde</strong> que conecta el Parque de Invierno de Oviedo con los valles del Trubia. <br> </span><br>
+                                Los amantes del ciclismo encuentran en Las Caldas un espacio único donde practicar este deporte en contacto con la naturaleza, con la <strong>sierra del Aramo</strong> y el místico <strong> pico Monsacro como telón de fondo.</strong>
                             </p>
 
                         </div>
@@ -1568,7 +1611,8 @@
     </a>
 </div>
 <script src="../../../js/botones.js"></script>
-<script src="../../../js/scroll.js"></script>
+
+<script src="../../../js/lecturaoff-v11.js"></script>
 <!-- Fin Botones Flotantes -->
 
 
