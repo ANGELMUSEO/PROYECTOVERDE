@@ -1,0 +1,363 @@
+:root {
+    --bg-color: 255, 255, 255;
+    --text-color: 0, 0, 0;
+    --navbar-bg: 27, 51, 88;
+    --navbar-text: 255, 255, 255;
+    --azul-oscuro: #1B3358;
+    --azul-claro: #4F84DB;
+    --gris: #F5F5F5;
+    --gris-oscuro: #050505;
+    --icon-invert: 0;
+    --text-title-color: var(--azul-oscuro);
+    --shadow-strength: 0.1;
+    --border-strength: 0.125;
+    --transition-speed: 0.3s;
+}
+
+[data-dark-mode="true"] {
+    --bg-color: 18, 18, 18;
+    --text-color: 255, 255, 255;
+    --navbar-bg: 13, 17, 23;
+    --azul-oscuro: #4F84DB;
+    --azul-claro: #1B3358;
+    --gris: #2D2D2D;
+    --gris-oscuro: #F5F5F5;
+    --icon-invert: 1;
+    --surface-color: #1E1E1E;
+    --card-bg: #2D2D2D;
+    --hover-bg: #3D3D3D;
+    --text-primary: rgba(255, 255, 255, 0.9);
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --text-muted: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    background-color: rgb(var(--bg-color));
+    color: rgb(var(--text-color));
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Clases de ajuste automático */
+.text-azul-adjust {
+    color: var(--text-title-color);
+    transition: color 0.3s ease;
+}
+
+[data-dark-mode="true"] .text-azul-adjust {
+    color: #ffffff !important;
+}
+
+.icon-adjust {
+    filter: brightness(0) invert(var(--icon-invert));
+    transition: filter 0.3s ease;
+}
+
+/* Panel de modo cortesía */
+.modo-cortesia {
+    position: relative;
+    z-index: 1000;
+}
+
+.modo-cortesia-toggle {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    background: transparent;
+    color: var(--navbar-text);
+    transition: all var(--transition-speed);
+}
+
+.modo-cortesia-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+}
+
+.modo-cortesia-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    transition: transform var(--transition-speed);
+}
+
+.modo-cortesia-toggle:hover .modo-cortesia-icon {
+    transform: rotate(15deg);
+}
+
+.modo-cortesia-panel {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    width: 280px;
+    background: linear-gradient(145deg, var(--azul-oscuro), #2a4573);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, display 0.3s ease;
+    pointer-events: none;
+}
+
+.modo-cortesia-panel.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-title {
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.modo-cortesia-value {
+    font-size: 0.8rem;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+.slider-container {
+    padding: 0.5rem 0;
+}
+
+#modoCortesiaSlider {
+    width: 100%;
+    height: 4px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 2px;
+    -webkit-appearance: none;
+}
+
+#modoCortesiaSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+#modoCortesiaSlider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+.modo-buttons {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.modo-button {
+    flex: 1;
+    padding: 0.7rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.modo-button:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.3);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 576px) {
+    .modo-cortesia-panel {
+        width: 240px;
+        right: -10px;
+    }
+}
+
+[data-dark-mode="true"] .dark-text-white {
+    color: #ffffff !important;
+}[data-theme="dark"] .text-modo-adaptable {
+    color: #ffffff !important;
+}
+
+/* Modo claro */
+[data-theme="light"] .text-modo-adaptable {
+    color: var(--azul-oscuro) !important;
+}
+
+[data-theme="dark"] .texto-sobre-claro {
+    color: var(--texto-oscuro) !important;
+}
+
+/* Preservar fondos claros en modo oscuro */
+[data-dark-mode="true"] .bg-white,
+[data-dark-mode="true"] .bg-gris,
+[data-dark-mode="true"] .bg-light {
+    background-color: inherit !important;
+    color: inherit !important;
+}
+
+/* Preservar textos dentro de fondos claros */
+[data-dark-mode="true"] .bg-white *,
+[data-dark-mode="true"] .bg-gris *,
+[data-dark-mode="true"] .bg-light * {
+    color: inherit !important;
+}
+
+/* Preservar iconos en fondos claros */
+[data-dark-mode="true"] .bg-white img,
+[data-dark-mode="true"] .bg-gris img,
+[data-dark-mode="true"] .bg-light img {
+    filter: none !important;
+}
+
+/* Contenedor para el filtro de brillo */
+.brillo-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    transition: filter 0.3s ease;
+}
+    
+/* Restaurar iconos específicos del footer en modo oscuro */
+[data-dark-mode="true"] img[src*="youtube.png"],
+[data-dark-mode="true"] img[src*="facebook.png"],
+[data-dark-mode="true"] img[src*="correo.png"],
+[data-dark-mode="true"] img[src*="logo-ovd-footer.png"] {
+    filter: none !important;
+    opacity: 1 !important;
+    background-color: transparent !important;
+}
+
+/* Convertir textos azules a blancos en modo oscuro */
+[data-dark-mode="true"] .text-azul-oscuro,
+[data-dark-mode="true"] .text-primary {
+    color: #ffffff !important;
+}
+
+/* Excluir textos en fondos claros */
+[data-dark-mode="true"] .bg-white .text-azul-oscuro,
+[data-dark-mode="true"] .bg-gris .text-azul-oscuro,
+[data-dark-mode="true"] .bg-light .text-azul-oscuro {
+    color: var(--azul-oscuro) !important;
+}
+/* Convertir iconos a blancos en modo oscuro */
+[data-dark-mode="true"] img[src*="logo-d-2.png"] {
+    filter: brightness(0) invert(1) !important;
+}
+/* Convertir textos que acompañan a los iconos a blanco */
+[data-dark-mode="true"] .display-6.text-center {
+    color: #ffffff !important;
+}
+/* Convertir títulos específicos a blanco */
+[data-dark-mode="true"] .fs-4.fw-bold.text-azul-oscuro.text-center {
+    color: #ffffff !important;
+}
+/* Convertir h4 específicos a blanco */
+[data-dark-mode="true"] h4.fw-bold.text-azul-oscuro.text-center {
+    color: #ffffff !important;
+}
+
+/* Nuevos estilos para cards y contenedores */
+[data-dark-mode="true"] .card,
+[data-dark-mode="true"] .alert,
+[data-dark-mode="true"] .modal-content {
+    background-color: var(--card-bg);
+    border-color: rgba(255, 255, 255, var(--border-strength));
+}
+
+/* Selector específico para los iconos en la sección de datos de interés */
+[data-dark-mode="true"] .container.bg-gris .col-md-3 img,
+[data-dark-mode="true"] .container.bg-gris .col-6 img {
+    filter: invert(1) brightness(100%) !important;
+    transition: filter var(--transition-speed);
+}
+
+/* Selectores individuales para cada icono */
+[data-dark-mode="true"] img[src*="logo-h-1.png"],
+[data-dark-mode="true"] img[src*="logo-ubicacion-1.png"],
+[data-dark-mode="true"] img[src*="icono (45).png"],
+[data-dark-mode="true"] img[src*="logo-wc-1.png"] {
+    filter: invert(1) brightness(100%) !important;
+    transition: filter var(--transition-speed);
+}
+
+/* Asegurarnos que no hay otros estilos interfiriendo */
+[data-dark-mode="true"] .bg-gris img {
+    background-color: transparent !important;
+    opacity: 1 !important;
+}
+
+/* Selector general para iconos en modo oscuro */
+[data-dark-mode="true"] img[src*="/iconos/"] {
+    filter: invert(1) brightness(100%) !important;
+    transition: filter var(--transition-speed);
+}
+
+/* Excepciones para iconos que ya son claros o no necesitan inversión */
+[data-dark-mode="true"] img[src*="/iconos/icon-light"],
+[data-dark-mode="true"] img[src*="/iconos/logo-white"] {
+    filter: none !important;
+}
+
+/* Estilos base para el texto del panel de modo lectura */
+.modo-cortesia-panel {
+    color: #FFFFFF !important;
+}
+
+/* Modo claro - opacidad reducida */
+.panel-title,
+.modo-cortesia-value,
+.brillo-value,
+.modo-button {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Modo oscuro - opacidad completa */
+[data-dark-mode="true"] .panel-title,
+[data-dark-mode="true"] .modo-cortesia-value,
+[data-dark-mode="true"] .brillo-value,
+[data-dark-mode="true"] .modo-button {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+/* Asegurar que el texto del botón toggle también sea blanco */
+.modo-cortesia-toggle {
+    color: #FFFFFF !important;
+}
+
+/* Mantener el texto blanco en hover */
+.modo-cortesia-toggle:hover,
+.modo-button:hover {
+    color: #FFFFFF !important;
+}
+/* Estilos base (modo claro) sin depender del modo oscuro */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    /* ... otros colores base ... */
+  }
+  
+  /* Modo oscuro como override */
+  [data-theme='dark'] {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    /* ... override de colores para modo oscuro ... */
+  }

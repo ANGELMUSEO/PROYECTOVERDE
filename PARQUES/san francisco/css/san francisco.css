@@ -1,0 +1,112 @@
+
+
+
+/* puntos de interes san francisco*/
+
+.bg-puntosinteres{
+    background-image: url("../img/banner/sanf-b-\ \(7\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+     
+.parallaxCovi {
+
+    background-image: url(../img/alargadas/sanf-a-41.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.fuentes{
+    background-color:rgb(160, 187, 238);
+    border-radius: 30px;
+    border: 0cm;
+    font-size: 20px;
+}
+
+.mapa1:hover{
+    scale: 1.2;
+}
+.parrafocovi{
+    text-shadow: 3px 3px 5px black;
+}
+.bg-puntosinteres2{
+    background-image: url("../img/banner/sanf-b-\ \(34\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;   
+}
+.bg-puntosinteres3{
+    background-image: url("../img/banner/sanf-b-\ \(16\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;   
+}
+
+/*Clases página principal sfco */
+.parallax-belen-principalsfco  {
+    background-image: url(../img/alargadas/sanf-a-\ \(2\).jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.baner-sfc-principal1 {
+    background-image: url(../img/banner/sanf-b-\ \(10\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fondo1{
+    background-image:url(../img/alargadas/sanf-a-100.jpg) ;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*css Carmen san mateo*/
+.banner-mateo{
+    background-image: url("../img/banner/sanf-b-\ \(20\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.banner-casetas{
+    background-image: url("../img/banner/sanf-b-\ \(22\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+/* Efecto parallax */
+.parallax-sanmateo{
+    background-image: url(../img/alargadas/sanf-a-\ \(29\).jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-sanmateo2{
+    background-image: url(../img/alargadas/sanf-a-\ \(27\).jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
