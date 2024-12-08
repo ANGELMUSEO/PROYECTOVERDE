@@ -9,7 +9,7 @@ $(document).ready(function () {
     $(".parrafo2").hide();
     $(".parrafo3").hide();
 
-    $("#boton1").click(function () {
+    $("#botonCova1").click(function () {
         $(".parrafogranja").toggle(500)
         $(".parrafokiosko").hide()
         $(".parrafoestanque").hide()
@@ -17,14 +17,14 @@ $(document).ready(function () {
 
     })
 
-    $("#boton2").click(function () {
+    $("#botonCova2").click(function () {
         $(".parrafokiosko").toggle(500)
         $(".parrafogranja").hide()
         $(".parrafoestanque").hide()
 
     })
 
-    $("#boton3").click(function () {
+    $("#botonCova3").click(function () {
         $(".parrafoestanque").toggle(500)
         $(".parrafogranja").hide()
         $(".parrafokiosko").hide()
@@ -32,7 +32,7 @@ $(document).ready(function () {
     })
 
     /**jquery eventos belen */
-    $("#boton1").click(function () {
+    $("#botonBelen1").click(function () {
         $(".parrafo1cons").toggle(500)
         $(".parrafo2fue").hide()
         $(".parrafo3escu").hide()
@@ -40,14 +40,14 @@ $(document).ready(function () {
 
     });
 
-    $("#boton2").click(function () {
+    $("#botonBelen2").click(function () {
         $(".parrafo2fue").toggle(500)
         $(".parrafo1cons").hide()
         $(".parrafo3escu").hide()
 
     });
 
-    $("#boton3").click(function () {
+    $("#botonBelen3").click(function () {
         $(".parrafo3escu").toggle(500)
         $(".parrafo1cons").hide()
         $(".parrafo2fue").hide()
