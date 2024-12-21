@@ -492,9 +492,6 @@ video {
   border: 2px black;
 }
 
-
-/*cambio zonas verdes NATA*/
-
 /**
          * Variables Globales
          */
@@ -619,7 +616,6 @@ video {
           .zv-5000-btn:hover {
               background: rgba(255, 255, 255, 0.2);
               transform: translateY(-2px);
-              color:black
           }
       }
 
@@ -638,10 +634,9 @@ video {
       }
 
       .zv-5000-btn:active {
-          background: rgba(255, 255, 255, 0.8);
+          background: rgba(255, 255, 255, 0.3);
           transform: translateY(1px);
           transition: all 0.1s;
-          color:black;
       }
 
       /**
@@ -656,7 +651,6 @@ video {
           outline: 2px solid white;
           outline-offset: 2px;
           box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
-          
       }
 
       /**
@@ -718,6 +712,12 @@ video {
   --bg-image: url(../img/verdes/Meandros-del-Nora-Rañeces.jpg);
 }
 
+.fondoCascada{
+  --bg-image: url(../img/verdes/cascadas.jpg);
+}
+.fondoOlloniego{
+  --bg-image: url(../img/verdes/olloniego.jpg);
+}
 /* iconos iconyfy*/
 .mingcute--settings-5-fill {
   display: inline-block;
@@ -821,6 +821,18 @@ body.nat14-body {
   height: 400px;
   object-fit: cover;
 }
+
+.ama-carousel-item {
+  position: relative;
+}
+
+.ama-carousel-item img {
+  filter: grayscale(25%);
+  transition: all 0.5s ease;
+  height: 520px;
+  object-fit: cover;
+}
+
 
 .nael-carousel:hover .nael-carousel-item img {
   filter: grayscale(0%);
