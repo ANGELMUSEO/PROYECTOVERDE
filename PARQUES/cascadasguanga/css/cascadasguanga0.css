@@ -1,0 +1,28 @@
+.bg-g-11{
+    background-image: url("../img/banner/cas-b-\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.parallaxcas1{
+
+    background-image: url('../img/alargadas/cas-a-\ \(6\).jpg');
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.efecto-picu{
+    opacity: 90%;}
+    
+.efecto-picu:hover{
+    opacity: 100%;
+    transform: scale(1,2 1,2);
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px grey;
+}

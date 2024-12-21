@@ -1,0 +1,82 @@
+.banerolloniego{
+    background-image: url("../img/banner/oll-b-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} .parallaxolloniego {
+
+    background-image: url('../img/alargadas/oll-a-1.jpg');
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.banerolloniego2{
+    background-image: url(../img/banner/oll-b-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.recreativa{
+    background-image: url("../img/alargadas/oll-a\ -6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.banerolloniego3{
+    
+        background-image: url(../img/banner/oll-b-1.jpg);
+         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius:20px;
+    
+}
+/*clases deporte*/
+.deporte{
+    background-image: url(../img/banner/oll-b-1.jpg);
+background-size: cover;
+border-radius: 20px;
+
+}
+.deporte1{
+    background-image: url(../img/banner/oll-b-2.jpg);
+background-size: cover;
+border-radius: 20px;
+
+}
+/* bloque de rutas BTT*/
+.fondorutas{
+    background: linear-gradient(135deg, 
+    rgba(255, 248, 220, 0.9), 
+    rgba(144, 238, 144, 0.7));
+    }
+    
+.olloniego{
+    background-image: url(../img/alargadas/oll-a-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+
+}
+.fondorutas1{
+    background: linear-gradient(135deg, 
+    rgba(237, 235, 227, 0.9), 
+    rgba(173, 149, 17, 0.7));
+    }
+
+    .deporte2{
+        background-image: url(../img/banner/oll-b-7.jpg);
+    background-size: cover;
+    border-radius: 20px;}
+
+    .olloniego1{
+        background-image: url(../img/alargadas/oll-a-4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;  }    
+
+
+ 
+      

@@ -109,3 +109,73 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*clases de rutas BTT La Acebera*/
+.fondorutas{
+    background: linear-gradient(135deg, 
+    rgba(255, 248, 220, 0.9), 
+    rgba(144, 238, 144, 0.7));
+    }
+    
+.acebera{
+    background-image: url(../img/alargadas/acb-a-10.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+/*clases de rutas BTT Colesterol*/
+.fondorutas{
+    background: linear-gradient(135deg, 
+    rgba(255, 248, 220, 0.9), 
+    rgba(144, 238, 144, 0.7));
+    }
+    
+.colesterol{
+    background-image: url(../img/alargadas/col-a-\ \(6\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+/*PRIAÑES*/
+.baner-priañes-charo {
+    background-image: url(../img/banner/col-b-\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-priañes-charo  {
+    background-image: url(../img/alargadas/mea-a-21.jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.castañar{
+
+    background-image: url(../img/cuadradas/priañes-c-3\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 4px 4px 14px rgb(29, 29, 29), -4px -4px 14px rgb(29, 29, 29);
+    border: solid rgb(78, 78, 78) 1px;
+  
+
+    min-height: 650px;
+}
+.pajarinos{
+    background-image: url(../img/cuadradas/priañes-c-14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:solid black 2px;
+    border-radius: 20px;
+   
+
+}
+.imagentorera{
+    box-shadow: 4px 4px 14px rgb(29, 29, 29), -4px -4px 14px rgb(29, 29, 29);
+    border: solid rgb(78, 78, 78) 1px;
+
+  }
+  .border-priañes{
+    border-radius: 20px;
+   
+  }

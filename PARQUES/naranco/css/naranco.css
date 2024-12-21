@@ -259,5 +259,49 @@ background-repeat: no-repeat;
       .sombra-text2 {
           text-shadow: 1px 1px 1px black;
       }
+
+
+      .bannerpicubici{
+        background-image: url("../img/otoño/otoño\ \ \(1\).jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 500px;
+       
+
+    }
+    .bannerpicubicidos{
+      background-image: url("../img/alargadas/nar-a-12.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 400px;
+      }
+
+
+       /* bloque de rutas BTT de la página de las Caldas para integrar en picu paisano*/
+.fondorutas{
+  background: linear-gradient(135deg, 
+  rgba(255, 248, 220, 0.9), 
+  rgba(144, 238, 144, 0.7));
+  }
+  
+.caldas{
+  background-image: url(../img/alargadas/cal-a-\ \(30\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;   
+
+}
+.fondorutas1{
+  background: linear-gradient(135deg, 
+  rgba(237, 235, 227, 0.9), 
+  rgba(173, 149, 17, 0.7));
+  }
+.fondorutas2{
+      background: linear-gradient(135deg, 
+      rgba(212, 215, 220, 0.9), 
+      rgba(69, 162, 174, 0.7));
+      }
+
       /* Galeria  */
       

@@ -113,3 +113,16 @@
     background-size: cover;
 }
 
+.fondorutas{
+background: linear-gradient(135deg, 
+rgba(255, 248, 220, 0.9), 
+rgba(144, 238, 144, 0.7));
+}
+
+
+.fuso{
+    background-image: url(../img/alargadas/inv-a-36.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+
+}

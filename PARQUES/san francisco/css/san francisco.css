@@ -445,6 +445,13 @@ margin-top: 120px;
 
 }
 
+
+.margin-top-10-emiliano{
+
+    margin-top: 2em;
+    
+    }
+
 .sanf-fondo-historia{
 
     background-image: url(../img/alargadas/sanf-a-\ \(41\).jpg); 
@@ -968,7 +975,15 @@ margin-top: 10pt;
     border-radius: 20px;
 }
 
+.banernavidad4{
+    background-image: url("../img/banner/sanf-b-50.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: goldenrod 5px solid;
+    border-radius: 20px;  
+   
 
+}
 /* Estilos nata */
 .carousel-navidad-2023 * {
     box-sizing: border-box;
@@ -1123,6 +1138,12 @@ margin-top: 10pt;
 .carousel-navidad-2023 .cn2023-control-btn:hover i {
     color: white;
 }
+
+.margin-top-20{
+
+    margin-top: 8em;
+    
+    }
 
 /* Media Queries */
 @media (max-width: 768px) {

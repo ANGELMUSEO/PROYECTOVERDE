@@ -105,6 +105,24 @@
 
     }
 
-        
+ /*clases de rutas BTT finlandesa*/
+.fondorutas{
+    background: linear-gradient(135deg, 
+    rgba(255, 248, 220, 0.9), 
+    rgba(144, 238, 144, 0.7));
+    }
+    
+.fondorutas1{
+        background: linear-gradient(135deg, 
+        rgba(237, 235, 227, 0.9), 
+        rgba(173, 149, 17, 0.7));
+        }   
+
+.finlandesa{
+    background-image: url(../img/alargadas/fin-a-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+       
     
  

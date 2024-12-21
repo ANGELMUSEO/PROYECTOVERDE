@@ -8,24 +8,39 @@ $(document).ready(function(){
 $(document).ready(function(){
 
     $("#boton1").click(function(){
-        $(".parrafo1").toggle(1500)
-        $(".parrafo2").hide()
-        $(".parrafo3").hide()
+        $(".parrafo1").toggle(1000)
+
+        if($(".parrafo2").is(":visible")){
+           $(".parrafo2").toggle(1000) 
+        }
+        if($(".parrafo3").is(":visible")){
+            $(".parrafo3").toggle(1000) 
+        }
     
 
     })
 
     $("#boton2").click(function(){
-        $(".parrafo2").toggle(1500)
-        $(".parrafo1").hide()
-        $(".parrafo3").hide()
+        $(".parrafo2").toggle(1000)
+
+        if($(".parrafo1").is(":visible")){
+            $(".parrafo1").toggle(1000) 
+        }
+        if($(".parrafo3").is(":visible")){
+            $(".parrafo3").toggle(1000) 
+        }
     
     })
     
     $("#boton3").click(function(){
-        $(".parrafo3").toggle(1500)
-        $(".parrafo1").hide()
-        $(".parrafo2").hide()
+        $(".parrafo3").toggle(1000)
+
+        if($(".parrafo1").is(":visible")){
+            $(".parrafo1").toggle(1000) 
+        }
+        if($(".parrafo2").is(":visible")){
+            $(".parrafo2").toggle(1000) 
+        }
     
     })
 

@@ -1,0 +1,110 @@
+
+.baner{
+    background-image: url("../img/banner/fin-b-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* clases personalizadas Historia */
+.bg-g-10{
+    background-image: url("../img/banner/fin-b-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+
+
+
+
+.galeria1{
+    background-image: url(../img/cuadradas/fin-c-14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.galeria2{
+    background-image: url(../img/cuadradas/fin-c-8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.galeria3{
+    background-image: url(../img/cuadradas/fin-c-6.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+  }
+.galeria4{
+    background-image: url(../img/cuadradas/fin-c-15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.abetos{
+    background-image: url("../img/alargadas/pur-a-7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+
+
+
+
+/* clases personalizadas Deportes */
+
+.deporte{
+
+    background-image: url(../img/banner/fin-b-10.png);
+    background-size: cover;
+    
+    }
+    .deporte2{
+        background-image: url(../img/banner/fin-b-8.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    
+    }
+    
+
+
+.imagen{
+
+    transition: 0.6s ;
+        
+    }
+        
+    .imagen:hover{
+            transform: scale(1.02,1.02);  
+            transition: 0.6s;  
+    }
+        
+    
+        
+    .parallax {
+
+        background-image: url(../img/baner/foto\ 1900x1200.jpg);
+        min-height: 1000px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+        
+        
+    .parallax2 {
+
+        background-image: url('../img/alargadas/fin-a-7.jpg');
+        min-height: 1000px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+        
+    
+ 

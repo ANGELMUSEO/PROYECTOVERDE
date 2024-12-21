@@ -1,0 +1,32 @@
+.banner-rio{
+    background-image: url("../img/banner/cal-b-\ \(13\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Efecto parallax */
+.parallax-caldas{
+    background-image: url(../img/alargadas/cal-a-\ \(23\).jpg);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.baner-caldas{
+    background-image: url("../img/alargadas/cal-a-\ \(31\).jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.caldeporte{
+
+    background-image: url(../img/alargadas/cal-a-\ \(24\).jpg);
+    background-size: cover;
+    
+    }
+    
+ 

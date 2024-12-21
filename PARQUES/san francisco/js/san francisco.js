@@ -10,114 +10,110 @@ $(document).ready(function () {
     $(".parrafo3").hide();
 
     $("#botonCova1").click(function () {
-        $(".parrafogranja").toggle(500)
-        $(".parrafokiosko").hide()
-        $(".parrafoestanque").hide()
-
+        
+        if ($(".parrafokiosko").is(":visible")) {
+            $(".parrafokiosko").toggle(1500);
+           
+        }
+        if ($(".parrafoestanque").is(":visible")) {
+           
+            $(".parrafoestanque").toggle(1500);
+        }
+        
+        $(".parrafogranja").toggle(1500)
 
     })
 
     $("#botonCova2").click(function () {
-        $(".parrafokiosko").toggle(500)
-        $(".parrafogranja").hide()
-        $(".parrafoestanque").hide()
+        
+        if ($(".parrafogranja").is(":visible")) {
+            $(".parrafogranja").toggle(1500);
+           
+        }
+        if ($(".parrafoestanque").is(":visible")) {
+           
+            $(".parrafoestanque").toggle(1500);
+        }
+        
+        $(".parrafokiosko").toggle(1500)
 
     })
 
     $("#botonCova3").click(function () {
-        $(".parrafoestanque").toggle(500)
-        $(".parrafogranja").hide()
-        $(".parrafokiosko").hide()
+       
+
+        if ($(".parrafogranja").is(":visible")) {
+            $(".parrafogranja").toggle(1500);
+           
+        }
+        if ($(".parrafokiosko").is(":visible")) {
+           
+            $(".parrafokiosko").toggle(1500);
+        }
+        
+        $(".parrafoestanque").toggle(1500)
 
     })
 
     /**jquery eventos belen */
     $("#botonBelen1").click(function () {
-        $(".parrafo1cons").toggle(500)
-        $(".parrafo2fue").hide()
-        $(".parrafo3escu").hide()
+       
+
+        if ($(".parrafo2fue").is(":visible")) {
+            $(".parrafo2fue").toggle(1500);
+           
+        }
+        if ($(".parrafo3escu").is(":visible")) {
+           
+            $(".parrafo3escu").toggle(1500);
+        }
+        
+        $(".parrafo1cons").toggle(1500)
 
 
     });
 
     $("#botonBelen2").click(function () {
-        $(".parrafo2fue").toggle(500)
-        $(".parrafo1cons").hide()
-        $(".parrafo3escu").hide()
+      
+
+        if ($(".parrafo1cons").is(":visible")) {
+            $(".parrafo1cons").toggle(1500);
+           
+        }
+        if ($(".parrafo3escu").is(":visible")) {
+           
+            $(".parrafo3escu").toggle(1500);
+        }
+        
+        $(".parrafo2fue").toggle(1500)
 
     });
 
     $("#botonBelen3").click(function () {
-        $(".parrafo3escu").toggle(500)
-        $(".parrafo1cons").hide()
-        $(".parrafo2fue").hide()
+       
+        if ($(".parrafo1cons").is(":visible")) {
+            $(".parrafo1cons").toggle(1500);
+           
+        }
+        if ($(".parrafo2fue").is(":visible")) {
+           
+            $(".parrafo2fue").toggle(1500);
+        }
+        
+        $(".parrafo3escu").toggle(1500)
+        
 
     });
 
     /**FIN HISTORIA */
 
-    $(".parrafogranja").hide();
-    $(".parrafokiosko").hide();
-    $(".parrafoestanque").hide();
-    /*jquery Belen */
-    $(".parrafo1cons").hide();
-    $(".parrafo2").hide();
-    $(".parrafo3").hide();
-
-    $("#boton1").click(function () {
-        $(".parrafogranja").toggle(500)
-        $(".parrafokiosko").hide()
-        $(".parrafoestanque").hide()
-
-
-    })
-
-    $("#boton2").click(function () {
-        $(".parrafokiosko").toggle(500)
-        $(".parrafogranja").hide()
-        $(".parrafoestanque").hide()
-
-    })
-
-    $("#boton3").click(function () {
-        $(".parrafoestanque").toggle(500)
-        $(".parrafogranja").hide()
-        $(".parrafokiosko").hide()
-
-    })
-
-    /**jquery eventos belen */
-    $("#boton1").click(function () {
-        $(".parrafo1cons").toggle(500)
-        $(".parrafo2fue").hide()
-        $(".parrafo3escu").hide()
-
-
-    });
-
-    $("#boton2").click(function () {
-        $(".parrafo2fue").toggle(500)
-        $(".parrafo1cons").hide()
-        $(".parrafo3escu").hide()
-
-    });
-
-    $("#boton3").click(function () {
-        $(".parrafo3escu").toggle(500)
-        $(".parrafo1cons").hide()
-        $(".parrafo2fue").hide()
-
-    });
 
     // Carga la pagina con los textos ocultos
     $(".textv-1").hide();
     $(".textv-2").hide();
     $(".textv-3").hide();
     $(".textv-4").hide();
-    $(".textv-5").hide();
-    $(".textv-6").hide();
-    $(".textv-7").hide();
-    $(".textv-8").hide();
+  
 
     // al hacer click en los botones muestra los textos y oculta el resto Naturaleza-charo
     $(".botonv-1").click(function () {
@@ -203,25 +199,50 @@ $(document).ready(function () {
 
         $(".ignacio").click(function () {
 
-            $(".parrafoalfonso").hide();
-            $(".parrafovictimas").hide();
-            $(".parrafoignacio").toggle(1000);
+           
+            
+        if ($(".parrafoalfonso").is(":visible")) {
+            $(".parrafoalfonso").toggle(1500);
+           
+        }
+        if ($(".parrafovictimas").is(":visible")) {
+           
+            $(".parrafovictimas").toggle(1500);
+        }
+        
+        $(".parrafoignacio").toggle(1500)
 
         });
 
         $(".alfonso").click(function () {
-            $(".parrafoignacio").hide();
+           
 
-            $(".parrafovictimas").hide();
-            $(".parrafoalfonso").toggle(1000);
+            if ($(".parrafoignacio").is(":visible")) {
+                $(".parrafoignacio").toggle(1500);
+               
+            }
+            if ($(".parrafovictimas").is(":visible")) {
+               
+                $(".parrafovictimas").toggle(1500);
+            }
+            
+            $(".parrafoalfonso").toggle(1500)
 
         });
 
         $(".victimas").click(function () {
-            $(".parrafoignacio").hide();
-            $(".parrafoalfonso").hide();
-            $(".parrafovictimas").toggle(1000);
+           
 
+            if ($(".parrafoignacio").is(":visible")) {
+                $(".parrafoignacio").toggle(1500);
+               
+            }
+            if ($(".parrafoalfonso").is(":visible")) {
+               
+                $(".parrafoalfonso").toggle(1500);
+            }
+            
+            $(".parrafovictimas").toggle(1500)
 
 
         });

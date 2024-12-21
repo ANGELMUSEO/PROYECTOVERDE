@@ -1,0 +1,931 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+ <!-- NO TOCAR 1-NOVIEMBRE -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purificación Tomás</title>
+    <!-- Ultima Compilación simplificada CSS 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/purificacion.css" type="text/css">
+    <link rel="stylesheet" href="../../../css/general.css" type="text/css">
+    <!--libreria iconos bloque otoño esculturas-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   <!-- jQuery js -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/purificacion.js"></script>
+    <script src="../../../js/general.js"></script>
+     <!-- Icono del Title -->
+     <link rel="icon" type="image/x-icon" href="../../../img/iconos/favicom.ico">
+
+</head>
+
+<body>
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          Barra de navegacion  navbar
+    ---------------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-azul-oscuro navbar-dark sticky-top ">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand " href="../../../index.html"><img class="p-1" width="210px"
+                        src="../../../img/logos/logo-espacio verde.png" alt="logo ovd"></a>
+            </div>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#minavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="minavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active me-2 fs-5"
+                            href="purificacion tomas.html">Purificación Tomás</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="pur-historia.html">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="pur-naturaleza.html">Naturaleza</a></li>
+                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="pur-deporte.html">Deportes</a></li>
+                    <li class="nav-item"><a class="nav-link me-2 fs-5" href="pur-vivero.html">Vivero</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link fs-5 dropdown-toggle" role="button"
+                            data-bs-toggle="dropdown" href="">Descubre</a>
+                        <ul class="dropdown-menu bg-azul-claro ">
+                            <li><a class="dropdown-item text-gris fs-5"
+                                    href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">Vídeo en
+                                    360º</a></li>
+                            <li><a class="dropdown-item text-gris fs-5" href="purificacion tomas.html#videoprin">Vídeo</a></li>
+                            <li><a class="dropdown-item text-gris fs-5" href="pur-galeria.html">Galería de Fotos</a>
+                            <li><a class="dropdown-item text-gris fs-5" href="../../ACTIVIDADES/PAGINAS/ACTIVIDADES.html">Actividades</a>
+                                
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          Carousel purificación tomas
+    ---------------------------------------------------------------------------------------------------------->
+
+    <div class="carousel slide" data-bs-ride="carousel" id="carousel-purificacion">
+
+        <div class="carousel-indicators">
+            <button type="button" class="active" data-bs-target="#carousel-purificacion" data-bs-slide-to="0"></button>
+            <button type="button" class="" data-bs-target="#carousel-purificacion" data-bs-slide-to="1"></button>
+            <button type="button" class="" data-bs-target="#carousel-purificacion" data-bs-slide-to="2"></button>
+            <button type="button" class="" data-bs-target="#carousel-purificacion" data-bs-slide-to="3"></button>
+            <button type="button" class="" data-bs-target="#carousel-purificacion" data-bs-slide-to="4"></button>
+        </div>
+
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <img class="w-100 " src="../img/alargadas/pur-a-1.jpg"
+                    alt="imagen de la entrada parque san pedro de los arcos">
+
+                <div class="carousel-caption">
+                    <div class="d-md-none bg-azul-oscuro-opacity-75"> <!-- version movil -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="fs-3 fst-italic sombra-letras">Purificación Tomás</p>
+                            <a href="#puri" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> <!-- version ordenador -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="display-5 fw-bold sombra-letras">Purificación Tomás</p>
+                            <p class="fs-3 fst-italic sombra-letras">Un parque que lo tiene todo</p>
+                            <a href="#puri" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+
+                <img class="w-100 " src="../img/alargadas/pur-a-2.jpg"
+                    alt="imagen de la entrada parque san pedro de los arcos">
+
+                <div class="carousel-caption">
+                    <div class="d-md-none bg-azul-oscuro-opacity-75"> <!-- version movil -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="fs-3 fst-italic sombra-letras">Conoce la Historia </p>
+                            <a href="pur-historia.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> <!-- version ordenador -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="display-5 fw-bold sombra-letras">Purificación Tomás</p>
+                            <p class="fs-3 fst-italic sombra-letras">Un parque con HISTORIA </p>
+                            <a href="pur-historia.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <img class="w-100 " src="../img/alargadas/pur-a-3.jpg"
+                    alt="imagen de la entrada parque san pedro de los arcos">
+
+                <div class="carousel-caption">
+                    <div class="d-md-none bg-azul-oscuro-opacity-75"> <!-- version movil -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="fs-3 fst-italic sombra-letras">Ver su Naturaleza </p>
+                            <a href="pur-naturaleza.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> <!-- version ordenador -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="display-5 fw-bold sombra-letras">Purificación Tomás</p>
+                            <p class="fs-3 fst-italic sombra-letras">Un parque con NATURALEZA </p>
+                            <a href="pur-naturaleza.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+
+                <img class="w-100 " src="../img/alargadas/pur-a-4.jpg"
+                    alt="imagen de la entrada parque san pedro de los arcos">
+
+                <div class="carousel-caption">
+                    <div class="d-md-none bg-azul-oscuro-opacity-75"> <!-- version movil -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="fs-3 fst-italic sombra-letras">Practicar Deporte </p>
+                            <a href="pur-deporte.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> <!-- version ordenador -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="display-5 fw-bold sombra-letras">Purificación Tomás</p>
+                            <p class="fs-3 fst-italic sombra-letras">Un parque para practicar DEPORTE </p>
+                            <a href="pur-deporte.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+
+                <img class="w-100 " src="../img/alargadas/pur-a-5.jpg"
+                    alt="imagen de la entrada parque san pedro de los arcos">
+
+                <div class="carousel-caption">
+                    <div class="d-md-none bg-azul-oscuro-opacity-75"> <!-- version movil -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="fs-3 fst-italic sombra-letras">Vivero municipal </p>
+                            <a href="pur-video.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-md-block bg-azul-oscuro-opacity-75"> <!-- version ordenador -->
+                        <div class="mx-auto d-block rounded-5" style="width: 75%;">
+                            <p class="display-5 fw-bold sombra-letras">Purificación Tomás</p>
+                            <p class="fs-3 fst-italic sombra-letras">Vivero municipal de OVIEDO </p>
+                            <a href="pur-vivero.html" role="button" class="btn btn-lg btn-outline-light">+Info</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button type="button" class="carousel-control-prev" data-bs-target="#carousel-purificacion"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button type="button" class="carousel-control-next" data-bs-target="#carousel-purificacion"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          Banner pequeño gris - debajo del carousel
+    ---------------------------------------------------------------------------------------------------------->
+    <div class="bg-gris">
+
+        <!-- version ordenador-->
+        <a class=" d-none d-lg-block d-block a-hover  nav-link text-center fs-5"
+            href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">
+            <p>Vídeo del parque que ofrece una vista panorámica de 360º desde el punto de grabación.</p>
+        </a>
+
+        <!-- version movil-->
+        <a class="d-block d-sm-block d-lg-none a-hover  nav-link text-center fs-5"
+            href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">
+            <p>Vídeo del parque con vista en 360º</p>
+        </a>
+
+    </div>
+
+
+
+    <!----------------------------------------------------------------------------------
+boton + info de la imagen presente carousel que indica el parque en el que estamos
+------------------------------------------------------------------------------------>
+    <a name="puri"></a>
+
+ <!---------------------------------------------------------------------------------------------------------
+                                          Contenido 1
+    ---------------------------------------------------------------------------------------------------------->
+
+    <div class="container mt-5">
+        <p class="fs-4 fw-bold text-azul-oscuro text-center">El parque más grande de la ciudad de Oviedo</p>
+        <p class="display-5 text-center"> <img src="../../../img/iconos/logo-n-1.png" width="70px" alt="logo de un arbol">
+            Parque Purificación Tomás</p>
+
+        <p class="text-secondary text-center fs-5">Cuenta con 213.667 metros cuadrados y está situado al norte de la ciudad, abarcando desde el Naranco  hasta los barrios de La Florida y Vallobín. <br>Es un extenso oasis verde, rico en biodiversidad, que proporciona un entorno ideal para caminar, correr o simplemente pasear en bicicleta.<br>
+            Nos conecta con la esencia de la : <strong>Naturaleza | Deporte | Bienestar. </strong>  <br>
+            </p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          banner con imagen 080053.jpg
+    ---------------------------------------------------------------------------------------------------------->
+ 
+    <div class="container mt-5 ">
+        <div class="row bg-gris mt-5 ">
+            <div class="col-12 col-md-12 col-lg-6 cardEspecial1">
+                <br> <br>
+
+                <p class="bg-gris"> <img src="../img/cuadradas/pur-c-14.jpg" alt="mesa picnic" class=" ms-4 mt-4 mb-3 bordepuri" width="90%">
+                </p>
+            </div>
+            
+            <div class="col-12 col-md-12 col-lg-6 cardEspecial2">
+                <div class="row  mt-3">
+                    <p class="  display-6 text-center text-azul-oscuro  ">Parque<br>Purificación Tomás</p>
+                </div>
+
+                <div class="row mt-3 ps-4">
+                    <div class="col-6 col-md-6 col-lg-6">
+                        <img src="../../../img/iconos/icono (21).png " alt="tiempo" width="35px"> 
+                        <p class="text-azul-oscuro fw-bold fs-4">Historia</p>
+                        <p class="fs-5">Inaugurado en el año 1991, en la finca conocida como “Monte Altu”. </p>
+                        <p class="fs-5">Honra a una destacada figura socialista comprometida con la juticia social.</p>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <img src="../../../img/iconos/icono (8).png" alt="arbol" width="35px">
+                        <p class="text-azul-oscuro fw-bold fs-4">Naturaleza</p>
+                        <p class="fs-5">El espacio natural más conocido de Oviedo con vastas áreas verdes. </p>
+                        <p class="fs-5" > Los visitantes pueden disfrutar de maravillosas vistas del Naranco.</p>
+                    </div>
+
+                </div>
+
+                <div class="row mt-3 ps-4">
+                    <div class="col-6 col-md-6">
+                        <img src="../../../img/iconos/icono (3).png" alt="corredor" width="45px">
+                        <p class="text-azul-oscuro fw-bold fs-4">Deporte</p>
+                        <p class="fs-5" >Es ideal para actividades al aire libre, cuenta con canchas multifuncionales e instalaciones de Disc-Golf. </p>
+                        <p class="fs-5" > </p>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <img src="../../../img/iconos/logo-arbol-2.png" alt="planton" width="30px">
+                        <p class="text-azul-oscuro fw-bold fs-4">Vivero</p>
+                        <p class="fs-5" >Este vivero es esencial para el mantenimiento y la renovación de las áreas verdes de toda la ciudad.</p>
+                        <p class="fs-5" ></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          banner sin imagen y de fondo azul-oscuro
+    ---------------------------------------------------------------------------------------------------------->
+
+    <div class="container-fluid mt-5 bg-azul-oscuro-b ">        
+        <div class="container">
+            <div class="row p-5">                                
+                <div class="col-12 col-md-12 col-lg-4 mt-2">                
+                    <p class="text-gris text-center display-6 mt-3   sombra-text"> <a href="../paginas/pur-historia.html" class="text-decoration-none text-white fw-bold "><img src="../../../img/iconos/icono (21).png" width="60px" alt="logo de un arbol" > Historia</a> </p> <br>
+                    <p class="text-gris display-6 text-center mt-4 mb-5  sombra-text"> Este parque lleva su nombre
+                        en homenaje a Purificación Tomás</p>
+                </div>
+                <div class=" d-none d-lg-block col-lg-3 mt-2  me-5">
+                    <p class="text-gris text-justify mt-5 mb-5 fs-5">Una histórica socialista, hija y esposa
+                        respectivamente de otros dos socialistas históricos, Belarmino Tomás y Rafael Fernández (primer
+                        presidente autonómico del Principado de Asturias). <span class="d-none d-xxl-block"> Fue concejala del Ayuntamiento de Oviedo
+                        en los años ochenta del pasado siglo XX.</span> Popularmente, el parque se conoce como Parque  de Pura Tomás. </p>
+                </div>
+                <div class="d-none d-lg-block col-lg-3 mt-2 ms-3">
+                    <p class="text-gris text-justify mt-5 mb-5 fs-5">Situado en la finca Monte Alto, al pie del Monte Naranco, este parque se asienta sobre un antiguo castro prerromano, que eran estructuras defensivas ubicadas estratégicamente en  lugares elevados. <span class="d-none d-xxl-block"> <br> Este lugar se convierte en escenario de una de las tradiciones más queridas de Oviedo: el Martes de Campo. </p></span>
+                </div>
+           </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+   
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          contenido A 2 imagenes intercambiadas de posicion
+    ---------------------------------------------------------------------------------------------------------->
+
+    
+    <div class="container mt-5 bg-ligth">
+        <div class="row mb-5">
+            <div class="col-12 col-lg-6 cardEspecial3 ">
+                <p class="text-center">
+                <a href="../paginas/pur-naturaleza.html">                
+                <img src="../img/cuadradas/pur-c-18.jpg" alt="conejo" class="w-75 bordepuri">
+                </a>
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 cardEspecial4">                
+                <p class="fs-4 fw-bold text-azul-oscuro text-center">Espacio de descanso</p>
+                <p class="display-6 text-center"> <img src="../../../img/iconos/icono (28).png" width="60px" alt="logo de un arbol">
+                    En la naturaleza</p> 
+                    <p class="fs-5 text-secondary text-justify">
+                    Es uno de los <strong>espacios verdes</strong>  más populares de Oviedo. Es perfecto para desconectar del bullicio de la
+                    ciudad y disfrutar de la naturaleza. Sus extensas áreas verdes y frondosos árboles ofrecen un ambiente tranquilo y relajante.  <br>
+                    <br>
+                    Este parque es el lugar ideal para recargar energías, ya sea através de un tranquilo paseo, un picnic en familia o simplemente contemplar las marvillosas vistas del Monte Naranco y de la ciudad.
+                </p>
+            </div>
+        </div>         
+    </div>
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------
+                        container antes del parallax gris
+------------------------------------------------------------------------------------------------------------------->
+
+<div class="container-fluid bg-gris">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 p-2">
+                <p class="fs-4 fw-bold text-azul-oscuro text-center">Aprendemos </p>
+                <p class="display-6 text-center pb-1"> <img src="../../../img/iconos/icono (34).png" width="50px"
+                        alt="logo de planton" >
+                         Radio Vetusta
+
+
+                    </p>
+                <div class="row">
+                    <div class="col-6">
+                        <p class="text-secondary fs-5  text-justify p-2">
+                           En el parque se encuentra la antigua sede de <strong>Radio Vetusta</strong>, la emisora municipal de Oviedo que nació en 1995 y fue cerrada en 2008.
+
+                             </p>
+                    </div> 
+                    <div class="col-6">
+                        <p class=" text-secondary fs-5 text-justify p-2">
+                             La remodelación fue realizada por jóvenes de la<strong> Escuela Taller del Ayuntamiento de Oviedo</strong>, beneficiando a la comunidad y destacando estos programas.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-12 col-md-6 p-2">
+                <p class="fs-4 fw-bold text-azul-oscuro text-center"> Descubre</p>
+                <p class="display-6 text-center text-justify"> <img src="../../../img/iconos/icono (32).png" width="50px"
+                        alt="logo de planton"> 
+                        Los conejos en el parque
+                    </p>
+                <div class="row">
+                    <div class="col-6">
+                        <p class="text-secondary fs-5 text-justify p-2"> Es común encontrar conejos en libertad. Todo comenzó cuando se liberaron algunos conejos domésticos, lo que resultó un rápido aumento de su población.
+                            
+                            
+                             </p>
+                    </div>
+                    <div class="col-6">
+                        <p class="text-secondary fs-5 text-justify p-2">A pesar de ser una peculiaridad del parque, los conejos se consideran una plaga, lo que representa un desafío para el equilibrio ecológico del área.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+     <!---------------------------------------------------------------------------------------------------------
+                                          efecto parallax
+    ---------------------------------------------------------------------------------------------------------->
+
+    <div class="parallaxpuri"></div>
+
+    
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--Zonas verdes NATA-V2-->
+
+  <div class="zv-1000-bg-azul-oscuro py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <p class="fs-4 fw-bold text-white mb-3">
+                    Explora las Otras Zonas Verdes de Oviedo
+                </p>
+                <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                    <img src="../../../img/verdes/12.png" width="70" height="70" alt="logo de un árbol" class="img-fluid">
+                    <h1 class="display-5 text-white mb-0">Zonas Verdes</h1>
+                </div>
+                <p class="text-white-50 fs-5">
+                    Descubre tu refugio natural en Oviedo, explora los diversos oasis y remansos de paz que la ciudad tiene para ofrecer.
+                </p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Campilín -->
+            <div class=" col-6 col-lg-4 col-xl-2">
+                <div class="zv-2000-zona-verde fondoCampillin cardEspecial3 ">
+                    <div class="zv-3000-content">
+                        <h3 class="zv-4000-title">Campillín</h3>
+                        <a href="../../parque campillin/paginas/campillin.html"
+                            class="btn btn-outline-light zv-5000-btn">Descubrir</a>
+                    </div>
+                </div>
+            </div>
+            <!-- La Rodriga -->
+            <div class="col-6 col-lg-4 col-xl-2">
+                <div class="zv-2000-zona-verde fondoRodriga cardEspecial3" >
+                    <div class="zv-3000-content">
+                        <h3 class="zv-4000-title">La Rodriga</h3>
+                        <a href="../../rodriga/paginas/rodriga.html" class="btn btn-outline-light zv-5000-btn">Explorar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Santullano -->
+            <div class="col-6 col-lg-4 col-xl-2">
+                <div class="zv-2000-zona-verde fondoSantullano cardEspecial4" >
+                    <div class="zv-3000-content">
+                        <h3 class="zv-4000-title">Santullano</h3>
+                        <a href="../../Santullano/paginas/Santullano.html" class="btn btn-outline-light zv-5000-btn">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- San Pedro -->
+            <div class="col-6 col-lg-4 col-xl-2">
+                <div class="zv-2000-zona-verde fondoSanPedroArco cardEspecial4" >
+                    <div class="zv-3000-content">
+                        <h3 class="zv-4000-title">San Pedro</h3>
+                        <a href="../../sanpedroarcos/paginas/sanpedroArcos.html" class="btn btn-outline-light zv-5000-btn">Recorrer</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Finlandesa -->
+            <div class="col-6 col-lg-4 col-xl-2">
+                <div class="zv-2000-zona-verde fondoPistaFilandesa cardEspecial3" >
+                    <div class="zv-3000-content">
+                        <h3 class="zv-4000-title">Finlandesa</h3>
+                        <a href="../../Pista Finlandesa/paginas/pista finlandesa.html" class="btn btn-outline-light zv-5000-btn">Aventurarse</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Las Caldas -->
+            <div class="col-6 col-lg-4 col-xl-2">
+                <div class="zv-2000-zona-verde fondoRioNora cardEspecial3" >
+                    <div class="zv-3000-content">
+                        <h3 class="zv-4000-title">Las Caldas</h3>
+                        <a href="../../caldas/paginas/caldas.html" class="btn btn-outline-light zv-5000-btn">Sumergirse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <p class="text-white-50 fs-5 mb-0">
+                    Al igual que en los parques, en estas zonas verdes podrás encontrar diferentes
+                    <strong><a href="../../ACTIVIDADES/PAGINAS/ACTIVIDADES.html" class="text-decoration-none text-white">ACTIVIDADES</a> </strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+     <!---------------------------------------------------------------------------------------------------------
+                                          contenido B 2 imagenes intercambiadas de posicion
+    ---------------------------------------------------------------------------------------------------------->
+
+
+    <div class="container mt-5 bg-ligth">
+        <div class="row">   
+            <div class="col-12 col-lg -6">   
+                <p class="fs-4 fw-bold text-azul-oscuro text-center">Bienestar </p>
+                <p class="display-6 text-center"> <img src="../../../img/iconos/logo-d-3.png" width="70px" alt="logo de un arbol">                
+                Deporte</p>              
+                <p class="fs-5 text-secondary ms-2 text-justify">
+                    Este parque ofrece una variedad de actividades para practicar deporte y disfrutar de la naturaleza.  <br>
+                    <br>
+                    <span class="tabler--arrow-big-right-lines-filled"></span><strong> Senderos: </strong>ideales para paseos tranquilos y carreras. <br>
+                    <br>
+                    
+                    <span class="tabler--arrow-big-right-lines-filled"></span><strong> Canchas multifuncionales:</strong> para fútbol, baloncesto y
+                    voleibol. <br>
+                    <br>
+                    <span class="tabler--arrow-big-right-lines-filled"></span><strong> Disc-Golf: </strong>este deporte combina el frisbee con el golf. <br>
+                    <br>
+                    <span class="tabler--arrow-big-right-lines-filled"></span><strong> Pista de bicicletas:</strong> para los amantes del ciclismo.
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 mb-3 ">
+                <p class="text-center">
+                <a href="../paginas/pur-deporte.html">
+                <img src="../img/cuadradas/pur-c-29.jpg" alt="manzano en flor" class="w-75 bordepuri">
+                </a>
+                </p>
+            </div>           
+        </div>
+    </div>
+
+   
+  
+<!--------------------------------------------------------------------------------------------------------------------
+                                            VIDEO
+--------------------------------------------------------------------------------------------------------------------->
+<a name="videoprin"></a> 
+<div class="container-fluid">
+       
+
+    <header>
+        <h1 class="zv-1000-bg-azul-oscuro text-center text-white alert alert-info display-3">PURIFICACIÓN TOMÁS</h1>
+    </header>
+    
+    
+</div>
+
+<div class="container">
+    <div class="row align-items-center">
+        <!-- Video Column -->
+        <div class="col-lg-6 mb-4 mb-lg-0 ">
+            <H1 class=" text-center d-none d-md-block">VISITA VIRTUAL</H1>
+            <div class="video-container shadow">
+                <img src="../../../img/logos/logo-ovd-footer.png" alt="Video thumbnail" class="img-fluid w-25"> 
+                <button class="custom-play-button" onclick="playVideo(this)">
+                    <div class="play-icon"></div>
+                </button>
+                <video controls class="w-100" poster="../img/cuadradas/pur-c-16.jpg">
+                    <source src="../../../video/VIDEOS PARQUES/VIDEO-RESUMEN-PURI.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+        </div>
+        
+        <!-- Content Column -->
+        <div class="col-lg-6">
+            
+            <div class="content-section ps-lg-4 fs-5 text-justify">
+                <p>El Parque de Purificación Tomás, situado en Oviedo, es un espacio verde que combina a la perfección naturaleza y recreo, convirtiéndose en uno de los lugares más apreciados tanto por los habitantes como por los visitantes de la ciudad. Este extenso parque ofrece amplias áreas de paseo, deportes y descanso, todo ello rodeado de una frondosa vegetación que cambia con el paso de las estaciones.</p><br />
+    
+                <p class="d-none d-lg-block col-md-12">En nuestro video, te invitamos a explorar la tranquilidad y la belleza de este parque, un verdadero pulmón verde en el corazón de Oviedo. A lo largo del recorrido, descubrirás cómo el Parque de Purificación Tomás es más que un simple lugar de esparcimiento: es un espacio de encuentro, un refugio para quienes buscan desconectar del ajetreo urbano, y un rincón de bienestar para toda la comunidad. </p>
+                <br>
+            
+                <div class="d-flex align-items-center mb-4">
+                    <div class="border-end pe-3 me-3">
+                        <small class="text-muted">Duración</small>
+                        <p class="mb-0 fw-bold">3:45</p>
+                    </div>
+                    <div class="border-end pe-3 me-3">
+                        <small class="text-muted">Vistas</small>
+                        <p class="mb-0 fw-bold">1.2K</p>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <small class="text-muted">Calidad</small>
+                        <p class="mb-0 fw-bold">HD</p>
+                        
+                    </div>
+                    <div class="ms-5 d-none d-md-block">
+                        <a href="https://www.youtube.com/@NaturalezaDeporteYBienestar" target="_blank"><button class="btn btn-primary px-4 py-2 btn-lg ">  Más Vídeos</button></a>
+                        
+                    </div>
+                    <div class="ms-5  d-md-none">
+                        <a href="https://www.youtube.com/@NaturalezaDeporteYBienestar" target="_blank"><button class="btn btn-primary px-4 py-2 btn-lg ">   Vídeos</button></a>
+                        
+                    </div>
+
+                </div>
+               
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          banner con fondo gris y con flores
+    ---------------------------------------------------------------------------------------------------------->
+
+    <div class="container-fluid bg-gris mt-5">
+        <div class="row ">
+            <div class="col-12 col-md-12 col-lg-3 mt-4 cardEspecial3 "><br><br>
+                <a href="../paginas/pur-vivero.html">
+                <img src="../img/cuadradas/pur-c-26.jpg" alt="foto de la fecha" class="img-fluid mt-5 bordepuri">
+                </a>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 mt-3"><br><br>
+                <p class="fs-3 fw-bold text-azul-oscuro text-center">Los Viveros</p>
+                <p class="display-6  text-azul-oscuro text-center  mt-2">Un refugio para la flora
+                    </p>                
+                <p class="text-center fs-5 p-1 ">
+                    Almacenan y cuidan tanto los árboles urbanos pequeños como los arbustos y las
+                    plantas de temporada que adornan las calles, plazas, jardineras y edificios oficiales de todo el municipio
+                    de Oviedo. <br> <span class="d-none d-xxl-block">Abastecen a toda la ciudad e incluso algunos elementos vegetales vuelven a él
+                    para recuperarse. <br></span><br>
+                    Desde el 25 de
+                    enero del 2012, el césped utilizado para confeccionar "la fecha" del paseo de los Álamos proviene de este vivero, resaltando su importancia en el mantenimiento de la estética urbana de Oviedo. 
+                </p>
+            </div>
+            <div class="col-12 col-md-12 col-lg-5 mt-3 mb-5 cardEspecial4  ">
+                <img src="../img/alargadas/pur-a-14.jpg" alt="la fecha 2" class="img-fluid bordepuri mt-5 ms-4" width="90%">
+                <br><br>
+                <img src="../img/alargadas/pur-a-15.jpg" alt="la fecha" class="img-fluid bordepuri mt-5 ms-4 "  width="90%">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          container con fondo gris e iconos
+    ---------------------------------------------------------------------------------------------------------->
+    <div class="container bg-gris mt-5 mb-5">
+        <div class="row mt-5">
+            <p class=" fs-1 fw-bold text-azul-oscuro-b text-center  mt-3">Datos de Interés</p>
+        </div>
+        <div class="row  mb-5">
+            <div class="col-6 col-md-3 mt-2">
+                <p class=" text-center">
+                <img src="../../../img/logos/logo-h-1.png" alt="horario del parque" class="img-fluid " width="25%">
+                </p>
+                <p class=" fs-4 fw-bold text-azul-oscuro-b text-center">L-D: Parque</p>               
+                <p class="fs-5 text-center mt-2"> 9:00–22:00<br> <span class=" fs-4 fw-bold text-azul-oscuro-b text-center">Disc Golf </span> <br>9:00-21:00</p>              
+            </div>
+            <div class="col-6 col-md-3 mt-2">
+                <p class=" text-center">
+                    <img src="../../../img/iconos/logo-ubicacion-1.png" alt="ubicacion del parque" class="img-fluid" width="25%">
+                </p>
+                <p class=" fs-4 fw-bold text-azul-oscuro-b text-center">Ubicación</p>
+                <P class="fs-5 text-center mt-2">43,37269º <br> -5,87291º</P>               
+            </div>
+            <div class="col-6 col-md-3 mt-2">
+                <p class=" text-center">
+                <img src="../../../img/iconos/logo-noperro-1.png" alt="mascotas no permitido" class="img-fluid" width="25%">
+                </p>
+                <P class=" fs-4 fw-bold text-azul-oscuro-b text-center">Mascotas </P>               
+                <p class="fs-5 text-center mt-2">Sueltas <br> No Permitidas</p>
+            </div>
+            <div class="col-6 col-md-3 mt-2">
+                <p class=" text-center">
+                    <img src="../../../img/iconos/logo-wc-1.png" alt="logowc" class="img-fluid " width="25%">
+                </p>
+                <P class=" fs-4 fw-bold text-azul-oscuro-b text-center ">Servicios</P>
+                <P class="fs-5 text-center mt-2"> Disponibles</P>
+            </div>
+        </div>
+    </div>
+
+
+
+<a name="video-pur"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!----------------------------------------------------------------------------------
+                               Banner google mpas en el antes del footer
+------------------------------------------------------------------------------------>
+    <div class="embed-responsive mt-5">
+        <iframe class="mx-auto d-block embed-responsive-item ratio"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.0264048778467!2d-5.87180073920947!3d43.372364637301516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368da0c030b689%3A0xc4d96fc54ade6490!2sParque%20Purificaci%C3%B3n%20Tom%C3%A1s!5e1!3m2!1ses!2ses!4v1727884905605!5m2!1ses!2ses"
+            width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------
+                                          footer
+    ---------------------------------------------------------------------------------------------------------->
+
+    <div class="container-fluid bg-azul-oscuro text-gris">
+        <div class="container pt-5">
+            <div class="row">
+                <div class=" col-12 col-md-3">
+                    <p class="fw-bold fs-5 text-center">Sobre Nosotros</p>
+                    <p class="text-justify">
+                        Somos un equipo de desarrolladores web dedicados a crear experiencias únicas. <br> Nos
+                        esforzamos por transformar la visita a los parques por excelencia de Oviedo en experiencias
+                        digitales visualmente atractivas, intuitivas y fáciles de usar.
+                    </p>
+                    <p class="mb-4"></p>
+                </div>
+                <div class=" col-12 col-md-3 text-center">
+                    <p class="fw-bold fs-5 mb-4">Sobre Purificación Tomás</p>
+                    <a class="nav-link mb-4" href="pur-historia.html">Historia</a>
+                    <a class="nav-link mb-4" href="pur-naturaleza.html">Naturaleza</a>
+                    <a class="nav-link mb-4" href="pur-deporte.html">Deportes</a>
+                    <a class="nav-link mb-4" href="pur-vivero.html">Vivero Municipal</a>
+                </div>
+                <div class=" col-12 col-md-3 text-center">
+                    <p class="fw-bold fs-5">Redes Sociales</p>
+                    <a href="https://www.youtube.com/@naturalezadeporteybienestar" target="_blank">
+                        <img class="me-3" src="../../../img/iconos/youtube.png" alt="logotipo de youtube" width="52px"></a>
+                    <a href="https://www.facebook.com/empleoayuntamientodeoviedo" target="_blank">
+                        <img class="me-3" src="../../../img/iconos/facebook.png" alt="logotipo de facebook" width="55px"></a>
+                    <a href="mailto:naturalezadeporteybienestar.info@correo.com">
+                        <img class="me-3" src="../../../img/iconos/correo.png" alt="logotipo de facebook" width="55px"></a>
+                   <br> 
+                    <p class="fw-bold fs-5">Descubre</p>
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=V2-BNejdb5U&t=130s" target="_blank">Vídeo
+                        360º</a>
+                    <a class="nav-link" href="purificacion tomas.html#videoprin">Vídeo</a>
+                    <a class="nav-link" href="pur-galeria.html">Galería de Fotos</a>
+                   
+                </div>
+                <div class=" col-12 col-md-3">
+                    <img class=" logo-ovd-pie-md img-fluid d-none d-md-block " src="../../../img/logos/logo-ovd-footer.png"
+                        alt="logo de los desarrolladores"> <!-- para tablet  ordenador-->
+                    <img class="d-sm-block d-md-none mx-auto d-block logo-ovd-pie my-2"
+                        src="../../../img/logos/logo-ovd-footer.png" alt="logo de los desarrolladores"> <!-- para movil-->
+                </div>
+            </div>
+            <div class="row ">
+                <hr>
+                <div class="col-6 ">
+                    <p class="text-politica"> © Copyright 2025. <br> Todos los derechos reservados.</p>
+                </div>
+                <div class="col-6">
+                    <p class="text-end">
+                        <a class="text-gris text-decoration-none text-end text-politica"
+                            href="../../politicas/mapa web.html" target="_blank">Mapa Web.</a>
+                        <br>
+                        <a class="text-gris text-decoration-none text-end text-politica"
+                            href="../../politicas/politica privacidad.html" target="_blank">Política de
+                            Privacidad.</a> <br>
+                        <a class="text-gris text-decoration-none text-end text-politica"
+                            href="../../politicas/accesibilidad web.html" target="_blank">Accesibilidad Web.</a> <br>
+            
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-12 pb-3">
+                <img class=" w-pie d-none d-md-block img-fluid mx-auto d-block" src="../../../img/logos/Banner WEB.png" alt=""> <!--ordenador-->
+                <img class=" w-100d-sm-block d-md-none img-fluid mx-auto d-block" src="../../../img/logos/Banner WEB.png" alt="" style="height:35px"> <!--movil-->
+            </div>
+        </div>
+    </div>
+
+
+
+   <!--Boton flotante  -->
+
+   <div class="floating-button-container" id="floatingButtonContainer">
+    <button class="main-button" id="mainButton"></button>
+    <button class="scroll-top-button" id="scrollTopButton">&#9650;</button>
+    <a href="../../san francisco/paginas/san francisco.html" class="option-button">
+        <img src="../../../img/iconos/1.png" alt="Parque San Francisco">
+        <span class="tooltip">Parque San Francisco</span>
+    </a>
+    <a href="../../Purificacion Tomas/paginas/purificacion tomas.html" class="option-button">
+        <img src="../../../img/iconos/2.png" alt="Purificación Tomás">
+        <span class="tooltip">Purificación Tomás</span>
+    </a>
+    <a href="../../Parque Invierno/paginas/parque invierno.html" class="option-button">
+        <img src="../../../img/iconos/3.png" alt="Parque de Invierno">
+        <span class="tooltip">Parque de Invierno</span>
+    </a>
+    <a href="../../parque oeste/paginas/parque oeste.html" class="option-button">
+        <img src="../../../img/iconos/4.png" alt="Parque del Oeste">
+        <span class="tooltip">Parque del Oeste</span>
+    </a>
+    <a href="../../naranco/paginas/Naranco.html" class="option-button">
+        <img src="../../../img/iconos/5.png" alt="NARANCO">
+        <span class="tooltip">Naranco</span>
+    </a>
+</div>
+<script src="../../../js/botones.js"></script>
+<script src="../../../js/scroll.js"></script>
+<!-- Fin Botones Flotantes -->
+
+   
+
+
+
+</body>
+
+</html>
