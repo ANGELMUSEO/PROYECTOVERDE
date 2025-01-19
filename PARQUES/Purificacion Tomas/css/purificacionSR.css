@@ -136,7 +136,6 @@
     background-image: url(../img/cuadradas/pur-c-24.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 20px;
     
 }
 .parallaxvivero{
@@ -163,13 +162,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.fondorutas2{
-    background: linear-gradient(135deg, 
-    rgba(212, 215, 220, 0.9), 
-    rgba(69, 162, 174, 0.7));
-    }
-    .imagenesazules{
-        box-shadow: 5px 5px 7px rgb(135, 190, 229)
-      }
+
 
     

@@ -13,10 +13,10 @@ $(document).ready(function(){
     $(".botonpuri1").click(function(){
         $(".parrafopuri1").toggle(1000);
         if($(".parrafopuri2").is(":visible")){
-            $(".parrafopuri2").toggle(1000) 
+            $(".parrafopuri2").toggle(1000); 
         };
         if($(".parrafopuri3").is(":visible")){
-            (".parrafopuri3").toggle(1000) 
+            $(".parrafopuri3").toggle(1000) 
         };
        
    
@@ -28,7 +28,7 @@ $(document).ready(function(){
             $(".parrafopuri1").toggle(1000) 
         };
         if($(".parrafopuri3").is(":visible")){
-            (".parrafopuri3").toggle(1000) 
+            $(".parrafopuri3").toggle(1000) 
         };
         
        
