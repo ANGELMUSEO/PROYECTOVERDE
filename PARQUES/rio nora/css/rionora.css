@@ -136,7 +136,7 @@
 
 /*PRIAÑES*/
 .baner-priañes-charo {
-    background-image: url(../img/banner/col-b-\ \(2\).jpg);
+    background-image: url(../img/banner/priañes-b-10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -179,3 +179,210 @@
     border-radius: 20px;
    
   }
+  /*caruosel  de aves*/
+
+.carousel-navidad-2023 * {
+    box-sizing: border-box;
+}
+
+.carousel-navidad-2023 {
+    --cn2023-primary: #c41e3a;
+    --cn2023-secondary: #165b33;
+    --cn2023-gold: #d4af37;
+    --cn2023-background: rgba(255, 255, 255, 0.9);
+    --cn2023-text: #2c3e50;
+    --cn2023-shadow: rgba(0, 0, 0, 0.2);
+    --cn2023-desktop-height: 500px;
+}
+
+/* Animación de serpentinas */
+
+
+@keyframes fallingStreamers {
+    0% { transform: translateY(-100%) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+.cn2023-streamer {
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background: linear-gradient(var(--color-start), var(--color-end));
+    animation: fallingStreamers var(--fall-duration) linear infinite;
+    top: -50px;
+    z-index: 1;
+    animation: none;
+}
+.carousel-navidad-2023 .cn2023-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: var(--cn2023-background);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--cn2023-shadow);
+    border: 2px solid var(--cn2023-gold);
+}
+
+.carousel-navidad-2023 .cn2023-img-container {
+    position: relative;
+    height: var(--cn2023-desktop-height);
+    overflow: hidden;
+}
+
+.carousel-navidad-2023 .cn2023-carousel-item {
+    height: 100%;
+}
+
+.carousel-navidad-2023 .cn2023-carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.carousel-navidad-2023 .cn2023-content {
+    height: var(--cn2023-desktop-height);
+    padding: 1.5rem;
+    background: linear-gradient(135deg, 
+        rgba(198, 30, 58, 0.1), 
+        rgba(22, 91, 51, 0.1));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-navidad-2023 .cn2023-title {
+    color: var(--cn2023-primary);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px var(--cn2023-shadow);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-navidad-2023 .cn2023-text {
+    color: var(--cn2023-text);
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.carousel-navidad-2023 .cn2023-btn {
+    background: linear-gradient(45deg, var(--cn2023-primary), #e74c3c);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px var(--cn2023-shadow);
+    width: 100%;
+    max-width: 200px;
+    margin: 1rem auto;
+    border: 1px solid var(--cn2023-gold);
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-navidad-2023 .cn2023-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--cn2023-shadow);
+    background: linear-gradient(45deg, #e74c3c, var(--cn2023-primary));
+}
+
+.carousel-navidad-2023 .cn2023-controls {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+}
+.carousel-navidad-2023 .cn2023-control-btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--cn2023-gold);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel-navidad-2023 .cn2023-control-btn:hover {
+    background-color: var(--cn2023-gold);
+}
+
+.carousel-navidad-2023 .cn2023-control-btn i {
+    color: var(--cn2023-primary);
+    font-size: 1.2rem;
+}
+
+.carousel-navidad-2023 .cn2023-control-btn:hover i {
+    color: white;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .carousel-navidad-2023 .cn2023-wrapper {
+        margin: 1rem;
+    }
+
+    .carousel-navidad-2023 .cn2023-img-container,
+    .carousel-navidad-2023 .cn2023-content {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-navidad-2023 .cn2023-wrapper {
+        margin: 0.5rem;
+    }
+
+    .carousel-navidad-2023 .cn2023-img-container,
+    .carousel-navidad-2023 .cn2023-content {
+        height: 300px;
+    }
+
+    .carousel-navidad-2023 .cn2023-title {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .carousel-navidad-2023 .cn2023-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .carousel-navidad-2023 .cn2023-img-container,
+    .carousel-navidad-2023 .cn2023-content {
+        height: 250px;
+    }
+}
+.baner-priañes-charo1 {
+    background-image: url(../img/banner/ace-b-\ \(9\).jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+.baner-priañes-charo2 {
+    background-image: url(../img/banner/priañes-b-12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baner-priañes-charo3 {
+    background-image: url(../img/banner/ace-b-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
