@@ -1,0 +1,238 @@
+:root {
+    --cd-primary: #0056b3;
+    --cd-secondary: #28a745;
+    --cd-accent: #ffc107;
+    --cd-background: rgba(255, 255, 255, 0.9);
+    --cd-text: #333;
+    --cd-shadow: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main-title {
+    color: var(--cd-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px var(--cd-shadow);
+}
+
+.sport-selector {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--cd-primary);
+    border-radius: 50px;
+    background-color: white;
+    color: var(--cd-primary);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+.sport-selector:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.25);
+}
+
+.carousel-deporte {
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+}
+
+.carousel-deporte .sport-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.carousel-deporte .sport-header h2 {
+    color: var(--cd-primary);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-deporte .sport-header p {
+    color: var(--cd-text);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-deporte .cd-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: var(--cd-background);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--cd-shadow);
+    border: 2px solid var(--cd-accent);
+}
+
+.carousel-deporte .cd-img-container {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-deporte .cd-carousel-item {
+    height: 100%;
+}
+
+.carousel-deporte .cd-carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carousel-deporte .cd-content {
+    height: 400px;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, 
+        rgba(0, 86, 179, 0.1), 
+        rgba(40, 167, 69, 0.1));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-deporte .cd-title {
+    color: var(--cd-primary);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px var(--cd-shadow);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-deporte .cd-text {
+    color: var(--cd-text);
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.carousel-deporte .cd-btn {
+    background: linear-gradient(45deg, var(--cd-primary), var(--cd-secondary));
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px var(--cd-shadow);
+    width: 100%;
+    max-width: 200px;
+    margin: 1rem auto;
+    border: 1px solid var(--cd-accent);
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-deporte .cd-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--cd-shadow);
+    background: linear-gradient(45deg, var(--cd-secondary), var(--cd-primary));
+}
+
+.carousel-deporte .cd-controls {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+.carousel-deporte .cd-control-btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--cd-accent);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel-deporte .cd-control-btn:hover {
+    background-color: var(--cd-accent);
+}
+
+.carousel-deporte .cd-control-btn i {
+    color: var(--cd-primary);
+    font-size: 1.2rem;
+}
+
+.carousel-deporte .cd-control-btn:hover i {
+    color: white;
+}
+
+#senderismo { background-color: #e6f3ff; }
+#btt { background-color: #fff0e6; }
+#baloncesto { background-color: #e6ffe6; }
+#gimnasio { background-color: #e6f9ff; }
+#skate { background-color: #fff2e6; }
+#discgolf { background-color: #e6f3ff; }
+#infantil { background-color: #fff0e6; }
+
+@media (max-width: 768px) {
+    .carousel-deporte .cd-wrapper {
+        margin: 1rem;
+    }
+
+    .carousel-deporte .cd-img-container,
+    .carousel-deporte .cd-content {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-deporte .cd-wrapper {
+        margin: 0.5rem;
+    }
+
+    .carousel-deporte .cd-img-container,
+    .carousel-deporte .cd-content {
+        height: 250px;
+    }
+
+    .carousel-deporte .cd-title {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .carousel-deporte .cd-text {
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .sport-selector {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
