@@ -1,14 +1,15 @@
 .bg-g-11{
-    background-image: url("../img/banner/cas-b-\ \(1\).jpg");
+    background-image: url("../img/alargadas/bua-a-\(14\).jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20px;
+    min-height: 400px;
 }
 
 .parallaxcas1{
 
-    background-image: url('../img/alargadas/cas-a-\ \(6\).jpg');
+    background-image: url('../img/alargadas/bua-a-\(19\).jpg');
     min-height: 1000px;
     background-attachment: fixed;
     background-position: center;
@@ -26,3 +27,50 @@
     border-radius: 25px;
     box-shadow: 5px 5px 5px grey;
 }
+
+.imagenmapa{
+    box-shadow: 5px 5px 7px rgb(135, 190, 229), -5px -5px 7px rgb(135, 190, 229)
+  }
+
+.banersendas{
+    background-image: url('../img/banner/bua-b-\(13\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    min-height: 400px;
+  }
+.fondorutas{
+    background: linear-gradient(135deg, 
+    rgba(255, 248, 220, 0.9), 
+    rgba(144, 238, 144, 0.7));
+    }
+.fondorutas2{
+    background: linear-gradient(135deg, 
+    rgba(212, 215, 220, 0.9), 
+    rgba(69, 162, 174, 0.7));
+    }
+.fondorutas1{
+    background: linear-gradient(135deg, 
+    rgba(237, 235, 227, 0.9), 
+    rgba(173, 149, 17, 0.7));
+    }
+
+ .bannersendasdos{
+    background-image: url("../img/alargadas/bua-a-\(2\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    }
+    .imagenesazules{
+        box-shadow: 5px 5px 7px rgb(135, 190, 229)
+      }
+      .bannersanandres{
+        background-image: url("../img/alargadas/bua-a-\(6\).jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 700px;
+       
+        }
