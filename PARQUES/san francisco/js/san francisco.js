@@ -394,6 +394,8 @@ $(document).ready(function () {
         });
 
         // Animación de serpentinas
+       
+        /*
         function createStreamer() {
             const colors = [
                 ['#c41e3a', '#ff4d6a'], // Variaciones de rojo
@@ -425,6 +427,50 @@ $(document).ready(function () {
                 });
             });
         }
+*/
+
+let streamerCount = 0; // Contador de serpentinas activas
+const maxStreamers = 500; // Límite máximo de serpentinas
+
+function createStreamer() {
+    if (streamerCount >= maxStreamers) return; // Si el límite se alcanza, no crear más
+
+    const colors = [
+        ['#c41e3a', '#ff4d6a'], // Variaciones de rojo
+        ['#165b33', '#2a8c53'], // Variaciones de verde
+        ['#d4af37', '#ffd700']  // Variaciones de dorado
+    ];
+
+    const streamer = document.createElement('div');
+    streamer.className = 'cn2023-streamer';
+
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    const randomLeft = Math.random() * 100;
+    const randomDuration = 3 + Math.random() * 4;
+    const randomDelay = Math.random() * 2;
+
+    streamer.style.setProperty('--color-start', randomColor[0]);
+    streamer.style.setProperty('--color-end', randomColor[1]);
+    streamer.style.left = `${randomLeft}%`;
+    streamer.style.setProperty('--fall-duration', `${randomDuration}s`);
+    streamer.style.animationDelay = `${randomDelay}s`;
+
+    const contentElements = document.querySelectorAll('.cn2023-content');
+    contentElements.forEach(element => {
+        const streamerClone = streamer.cloneNode(true);
+        element.appendChild(streamerClone);
+        streamerCount++; // Incrementar el contador
+
+        streamerClone.addEventListener('animationend', () => {
+            streamerClone.remove();
+            streamerCount--; // Decrementar el contador al terminar la animación
+        });
+    });
+}
+
+// Crear serpentinas periódicamente
+setInterval(createStreamer, 200);
+
 
         // Crear serpentinas periódicamente
         setInterval(createStreamer, 200);
@@ -437,4 +483,6 @@ $(document).ready(function () {
 
 
 })();
+
+
 

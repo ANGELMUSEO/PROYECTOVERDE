@@ -903,7 +903,7 @@ margin-top: 10pt;
 /*navidad - gema*/
 
 .banernavidad1{
-    background-image: url("../img/alargadas/sanf-a-\ \(34\).jpg");
+    background-image: url("../img/alargadas/sanf-a-\(134\).jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border: goldenrod 5px solid;
@@ -913,15 +913,15 @@ margin-top: 10pt;
 }
 /* Efecto parallax */
 .parallax-navidad{
-    background-image: url(../img/banner/sanf-b-\ \(46\).jpg);
+    background-image: url(../img/alargadas/sanf-a-\(119\).jpg);
     min-height: 1000px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.deportes{
-    background-image: url("../img/banner/sanf-b-\ \(49\).jpg");
+.bomberos{
+    background-image: url("../img/alargadas/sanf-a-\(141\).jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border: goldenrod 5px solid;
@@ -955,7 +955,7 @@ margin-top: 10pt;
 }
 
 .banernavidad2{
-    background-image: url("../img/banner/sanf-b-\ \(45\).jpg");
+    background-image: url("../img/alargadas/sanf-a-\(136\).jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     border: goldenrod 5px solid;
@@ -963,7 +963,7 @@ margin-top: 10pt;
 
 }
 .banernavidad3{
-    background-image: url("../img/banner/sanf-b-\ \(24\).jpg");
+    background-image: url("../img/alargadas/sanf-a-\(135\).jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     border: goldenrod 5px solid;
@@ -976,12 +976,18 @@ margin-top: 10pt;
 }
 
 .banernavidad4{
-    background-image: url("../img/banner/sanf-b-50.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+   
     border: goldenrod 5px solid;
     border-radius: 20px;  
    
+
+}
+.banernavidad5{
+    background-image: url("../img/alargadas/sanf-a-\(145\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border: goldenrod 5px solid;
+    border-radius: 20px;  
 
 }
 /* Estilos nata */
