@@ -1,0 +1,120 @@
+.bg-imagenAzul{
+    background-image: url("../img/cuadradas/fondo\ -\ 1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.text-relieve{
+    text-shadow: black 0px 0px 1px;
+}
+a.selec-video {
+    display: inline-block;
+    transition: transform 0.2s ;
+}
+
+a.selec-video img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a.selec-video:hover {
+    transform: scale(1.1);
+    opacity: 0.90;
+}
+.selec-video-opacity {
+    opacity: 0.95;
+}
+
+
+/* Borde del video central */ 
+.video-container2 {
+    position: relative;
+    padding: 3px;
+    background: linear-gradient(45deg, 
+        #000428, /* Azul muy oscuro */
+        #ffffff, /* Azul oscuro */
+        #000428  /* Azul muy oscuro */
+    );
+    background-size: 400% 400%;
+    animation: gradientBorder 15s ease infinite;
+    border-radius: 12px;
+}
+
+@keyframes gradientBorder {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}
+
+/* Efecto de sombra pulsante */
+.pulse-shadow {
+    position: relative;
+    animation: darkBluePulse 4s ease-in-out infinite;
+    border-radius: 12px;
+}
+
+@keyframes darkBluePulse {
+    0% {
+        box-shadow: 
+            0 0 20px rgba(0, 32, 63, 0.5),   /* Azul oscuro */
+            0 0 40px rgba(255, 255, 255, 0.5);   /* Azul medio oscuro */
+    }
+    50% {
+        box-shadow: 
+            0 0 30px rgba(59, 157, 255, 0.7),   /* Azul oscuro */
+            0 0 60px rgba(0, 0, 0, 0.5);   /* Azul medio oscuro */
+    }
+    100% {
+        box-shadow: 
+            0 0 20px rgba(0, 32, 63, 0.5),   /* Azul oscuro */
+            0 0 40px rgba(255, 255, 255, 0.9);   /* Azul medio oscuro */
+    }
+}
+
+/* Ajustes para el iframe */
+.video-wrapper2 {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-wrapper2 iframe {
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* color del icono de collapse */ 
+.navbar-toggler-icon {
+    background-image: url("../iconos/icon360.png");
+    /* Cambia rgba(99, 123, 255, 1) por el color que desees */
+}
+/* enlaces en negrita con hover */ 
+.nav-link:hover {
+    font-weight: bold;
+  font-size: 16px;
+}
+
+.dropdown-item:hover {
+    font-weight: bold;
+}
+
+.bg-degrada {
+    background: linear-gradient(90deg, #0b2c56, #0b2c56, #0b2c56, #0b2c56);
+   
+    
+}
+
+.offcanvas {
+    background-color:rgb(0, 1, 20); 
+}
+.btn-close {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(190deg);
+}
+
+.active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
